@@ -261,6 +261,29 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    if (faqItems.length > 0) {
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            if (question) {
+                question.addEventListener('click', () => {
+                    const currentlyActive = document.querySelector('.faq-item.active');
+                    
+                    // If there's an active item and it's not the one clicked, close it
+                    if (currentlyActive && currentlyActive !== item) {
+                        currentlyActive.classList.remove('active');
+                    }
+                    
+                    // Toggle the active class on the clicked item
+                    item.classList.toggle('active');
+                });
+            }
+        });
+    }
+    
     // Add CSS class for animations
     document.body.classList.add('js-loaded');
 }); 

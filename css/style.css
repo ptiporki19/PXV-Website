@@ -10,21 +10,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap');
 
 :root {
-    --primary-color: #0d1b2a; /* Dark Navy */
-    --primary-gradient: linear-gradient(to bottom, #0d1b2a, #2E3E55); /* Dark gradient */
-    --secondary-color: #2E3E55; /* Dark blue */
-    --accent-color-teal: #00A9A5; /* Teal */
-    --accent-color-orange: #D44508; /* Orange */
-    --light-color: #ffffff; /* White (Alternate Section Background) */
-    --light-color-alt: #f0f2f5; /* Light Gray (Alternative if needed) */
-    --dark-color: #0d1b2a; /* Dark Navy */
-    --gray-color: #94a3b8;
+    --primary-color: #0d1b2a; /* Dark Navy (Keep for text contrast) */
+    --secondary-color: #c8a45a; /* Darker Gold (Replaces Orange/Old Secondary) */
+    --accent-color-gold: #eec887; /* Main Gold Accent (Replaces Teal) */
+    --light-color: #f9f2e6; /* Light Beige Background */
+    --background-color: #fcf8f0; /* Very Light Beige Main Background */
     --white-color: #ffffff;
-    --background-color: #f8f9fa; /* Main page background (Very Light Gray) */
+    --dark-color: #0d1b2a; /* Alias for primary */
+    --gray-color: #94a3b8; /* Keep original gray for now */
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     --shadow-hover: 0 10px 25px rgba(0, 0, 0, 0.12);
     --border-radius: 8px;
+
+    /* Remove unused variables */
+    /* --primary-gradient: linear-gradient(to bottom, #0d1b2a, #2E3E55); */
+    /* --accent-color-teal: #00A9A5; */
+    /* --accent-color-orange: #D44508; */
+    /* --light-color-alt: #d8d0c0; */ 
 }
 
 * {
@@ -37,7 +40,7 @@ body {
     font-family: 'Open Sans', 'Roboto', sans-serif;
     line-height: 1.6;
     color: var(--dark-color);
-    background-color: var(--background-color); /* Ensure body uses the main background */
+    background-color: var(--background-color); /* Use new very light beige */
     overflow-x: hidden;
     font-weight: 400; /* Default body weight */
 }
@@ -56,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 25px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Keep dark primary color */
 }
 
 h1 {
@@ -91,7 +94,7 @@ a {
 }
 
 a:hover {
-    color: var(--accent-color-teal);
+    color: var(--accent-color-gold); /* Use gold for link hover */
 }
 
 ul, ol {
@@ -116,7 +119,7 @@ img {
     position: absolute;
     width: 70px;
     height: 3px;
-    background-color: var(--accent-color-teal);
+    background-color: var(--accent-color-gold); /* Use gold for underline */
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -185,15 +188,16 @@ img {
 }
 
 .btn-primary {
-    background-color: var(--accent-color-teal);
-    color: var(--white-color);
-    box-shadow: 0 4px 15px rgba(0, 169, 165, 0.2);
+    background-color: var(--accent-color-gold); /* Gold background */
+    color: var(--primary-color); /* Dark text for contrast */
+    box-shadow: 0 4px 15px rgba(238, 200, 135, 0.3); /* Gold shadow */
 }
 
 .btn-primary:hover {
-    background-color: #008c89;
+    background-color: var(--secondary-color); /* Darker gold on hover */
+    color: var(--white-color); /* White text on darker gold */
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 169, 165, 0.3);
+    box-shadow: 0 8px 25px rgba(200, 164, 90, 0.4); /* Darker gold shadow */
 }
 
 .btn-secondary {
@@ -211,15 +215,16 @@ img {
 }
 
 .btn-accent {
-    background-color: var(--accent-color-orange);
-    color: var(--white-color);
-    box-shadow: 0 4px 15px rgba(212, 69, 8, 0.2);
+    background-color: var(--secondary-color); /* Use darker gold */
+    color: var(--white-color); /* White text */
+    box-shadow: 0 4px 15px rgba(200, 164, 90, 0.3);
 }
 
 .btn-accent:hover {
-    background-color: #b83a06;
+    background-color: var(--accent-color-gold); /* Lighter gold on hover */
+    color: var(--primary-color); /* Dark text on lighter gold */
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(212, 69, 8, 0.3);
+    box-shadow: 0 8px 25px rgba(238, 200, 135, 0.4);
 }
 
 .btn-sm {
@@ -281,12 +286,12 @@ nav ul li a::after {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--accent-color-teal);
+    background-color: var(--accent-color-gold); /* Gold underline */
     transition: var(--transition);
 }
 
 nav ul li a:hover {
-    color: var(--accent-color-teal);
+    color: var(--accent-color-gold); /* Gold hover */
 }
 
 nav ul li a:hover::after,
@@ -310,10 +315,28 @@ nav ul li a.active::after {
 .contact-hero,
 .service-detail-hero {
     position: relative;
-    padding: 120px 0;
-    background: var(--primary-gradient);
+    padding: 150px 0; /* Standardize padding for all hero sections */
     color: var(--light-color);
     overflow: hidden;
+}
+
+/* Add semi-transparent overlay to all hero sections for better text readability */
+.hero::before,
+.about-hero::before,
+.services-hero::before,
+.courses-hero::before,
+.ebooks-hero::before,
+.contact-hero::before,
+.service-detail-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(13, 27, 42, 0.5); /* Semi-transparent dark overlay */
+    pointer-events: none;
+    z-index: 1;
 }
 
 .hero {
@@ -323,31 +346,30 @@ nav ul li a.active::after {
     position: relative;
 }
 
-/* Removed ::before pseudo-element to avoid overlay on the image */
-/* .hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 30% 50%, rgba(0, 169, 165, 0.05), transparent 50%),
-                radial-gradient(circle at 70% 30%, rgba(212, 69, 8, 0.05), transparent 50%);
-    pointer-events: none;
-} */
+.about-hero {
+    background: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
+    padding: 150px 0;
+}
 
-.about-hero,
-.services-hero, 
+.services-hero {
+    background: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
+    padding: 150px 0;
+}
+
 .courses-hero,
-.ebooks-hero,
+.ebooks-hero {
+    background: url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
+    padding: 150px 0;
+}
+
 .contact-hero {
-    padding: 120px 0;
-    background: linear-gradient(135deg, #0d1b2a, #2E3E55);
+    background: url('https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
+    padding: 150px 0;
 }
 
 .service-detail-hero {
-    padding: 100px 0;
-    background: linear-gradient(to right, #0d1b2a, #2E3E55);
+    background: url('https://images.unsplash.com/photo-1531973576160-7125cd663d86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
+    padding: 150px 0;
 }
 
 .hero-content,
@@ -356,9 +378,10 @@ nav ul li a.active::after {
 .courses-hero-content,
 .ebooks-hero-content,
 .contact-hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+    max-width: 55%; /* Limit width to left side */
+    margin: 0; /* Remove auto horizontal margins */
+    margin-right: auto; /* Push to the left */
+    text-align: left; /* Align text to the left */
     position: relative;
     z-index: 2;
 }
@@ -388,16 +411,17 @@ nav ul li a.active::after {
 .service-detail-hero p {
     font-size: 1.2rem;
     margin-bottom: 30px;
-    max-width: 65ch;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 65ch; /* Keep max width for readability */
+    /* Remove auto horizontal margins */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
     line-height: 1.7;
 }
 
 .cta-buttons {
     display: flex;
     gap: 25px;
-    justify-content: center;
+    justify-content: flex-start; /* Align buttons to the left */
     margin-top: 45px;
 }
 
@@ -455,7 +479,7 @@ nav ul li a.active::after {
 
 .service-card i {
     font-size: 2.2rem;
-    color: var(--accent-color-teal);
+    color: var(--accent-color-gold); /* Use gold for icons */
     transition: var(--transition);
 }
 
@@ -488,7 +512,7 @@ nav ul li a.active::after {
 /* Testimonials */
 .testimonials {
     padding: 100px 0;
-    background-color: var(--light-color);
+    background-color: var(--light-color); /* Use light beige background */
     position: relative;
 }
 
@@ -518,12 +542,12 @@ nav ul li a.active::after {
     position: relative;
     box-shadow: var(--shadow);
     transition: var(--transition);
-    border-top: 4px solid var(--accent-color-teal);
+    border-top: 4px solid var(--accent-color-gold); /* Gold border */
 }
 
 .testimonial-quote-icon {
     font-size: 2.5rem;
-    color: var(--accent-color-teal);
+    color: var(--accent-color-gold); /* Gold quote icon */
     opacity: 0.2;
     position: absolute;
     top: 20px;
@@ -590,7 +614,7 @@ nav ul li a.active::after {
 }
 
 .dot.active {
-    background-color: var(--accent-color-teal);
+    background-color: var(--accent-color-gold); /* Gold active dot */
     transform: scale(1.2);
 }
 
@@ -605,7 +629,7 @@ nav ul li a.active::after {
 }
 
 .prev-btn:hover, .next-btn:hover {
-    color: var(--accent-color-teal);
+    color: var(--accent-color-gold); /* Gold hover on controls */
 }
 
 /* CTA Section */
@@ -650,7 +674,7 @@ nav ul li a.active::after {
 }
 
 .cta-banner .btn {
-    background-color: var(--accent-color-orange);
+    background-color: var(--secondary-color); /* Use darker gold */
     color: var(--white-color);
     position: relative;
     z-index: 1;
@@ -660,7 +684,8 @@ nav ul li a.active::after {
 }
 
 .cta-banner .btn:hover {
-    background-color: var(--accent-color-teal);
+    background-color: var(--accent-color-gold); /* Lighter gold on hover */
+    color: var(--primary-color);
     transform: translateY(-5px);
 }
 
@@ -684,7 +709,7 @@ nav ul li a.active::after {
 
 .message-item i {
     font-size: 2.5rem;
-    color: var(--accent-color-teal);
+    color: var(--accent-color-gold); /* Gold icon */
     margin-bottom: 30px;
 }
 
@@ -761,7 +786,7 @@ footer::before {
     left: 0;
     width: 50px;
     height: 2px;
-    background-color: var(--accent-color-teal);
+    background-color: var(--accent-color-gold); /* Gold underline */
 }
 
 .footer-links ul li {
@@ -776,7 +801,7 @@ footer::before {
 }
 
 .footer-links ul li a:hover {
-    color: var(--accent-color-teal);
+    color: var(--accent-color-gold); /* Gold link hover */
     padding-left: 5px;
 }
 
@@ -789,7 +814,7 @@ footer::before {
 
 .footer-contact p i {
     margin-right: 15px;
-    color: var(--accent-color-teal);
+    color: var(--accent-color-gold); /* Gold icon */
     margin-top: 5px;
 }
 
@@ -819,8 +844,8 @@ footer::before {
 }
 
 .newsletter button {
-    background-color: var(--accent-color-teal);
-    color: var(--white-color);
+    background-color: var(--accent-color-gold); /* Gold button */
+    color: var(--primary-color); /* Dark text */
     border: none;
     padding: 0 25px;
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
@@ -830,7 +855,8 @@ footer::before {
 }
 
 .newsletter button:hover {
-    background-color: #008c89;
+    background-color: var(--secondary-color); /* Darker gold on hover */
+    color: var(--white-color);
 }
 
 .footer-bottom {
@@ -862,9 +888,9 @@ footer::before {
 }
 
 .social-icons a:hover {
-    color: var(--light-color);
+    color: var(--white-color);
     transform: translateY(-3px);
-    background-color: var(--accent-color-teal);
+    background-color: var(--accent-color-gold); /* Gold background on hover */
 }
 
 .footer-legal {
@@ -879,7 +905,7 @@ footer::before {
 }
 
 .footer-legal a:hover {
-    color: var(--accent-color-teal);
+    color: var(--accent-color-gold); /* Gold link hover */
 }
 
 /* Media Queries */
@@ -892,6 +918,15 @@ footer::before {
     .contact-hero h1,
     .service-detail-hero h1 {
         font-size: 2.8rem;
+    }
+    
+    .hero-content,
+    .about-hero-content,
+    .services-hero-content,
+    .courses-hero-content,
+    .ebooks-hero-content,
+    .contact-hero-content {
+        max-width: 70%; /* Wider content area on medium screens */
     }
     
     .cta-banner h2 {
@@ -918,6 +953,31 @@ footer::before {
         transition: all 0.3s ease;
         padding: 20px 0;
         z-index: 99;
+    }
+    
+    .hero,
+    .about-hero,
+    .services-hero,
+    .courses-hero,
+    .ebooks-hero,
+    .contact-hero,
+    .service-detail-hero {
+        padding: 100px 0; /* Reduce padding on mobile */
+    }
+    
+    .hero-content,
+    .about-hero-content,
+    .services-hero-content,
+    .courses-hero-content,
+    .ebooks-hero-content,
+    .contact-hero-content {
+        max-width: 90%; /* Almost full width on small screens */
+        margin: 0 auto; /* Center on mobile */
+        text-align: center; /* Center text on mobile */
+    }
+    
+    .cta-buttons {
+        justify-content: center; /* Center buttons on mobile */
     }
     
     nav ul.active {
@@ -963,6 +1023,16 @@ footer::before {
         font-size: 1.7rem;
     }
     
+    .hero,
+    .about-hero,
+    .services-hero,
+    .courses-hero,
+    .ebooks-hero,
+    .contact-hero,
+    .service-detail-hero {
+        padding: 80px 0; /* Further reduce padding on very small screens */
+    }
+    
     .hero h1,
     .about-hero h1,
     .services-hero h1,
@@ -1003,10 +1073,14 @@ footer::before {
 
 /* About Us Page Styles */
 .about-hero {
-    background: linear-gradient(rgba(28, 46, 61, 0.85), rgba(28, 46, 61, 0.85)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
-    color: var(--white-color);
-    padding: 80px 0;
-    text-align: center;
+    /* Removed overlay gradient, we just want the image */
+}
+
+.about-hero-content {
+    max-width: 55%;
+    margin: 0;
+    margin-right: auto;
+    text-align: left;
 }
 
 .about-hero-content h1 {
@@ -1059,19 +1133,19 @@ footer::before {
 
 .value-card:hover {
     transform: translateY(-10px);
-    border-top: 3px solid var(--secondary-color);
+    border-top: 3px solid var(--secondary-color); /* Darker gold border */
 }
 
 .value-card i {
     font-size: 2.5rem;
-    color: var(--secondary-color);
+    color: var(--secondary-color); /* Darker gold icon */
     margin-bottom: 20px;
     transition: var(--transition);
 }
 
 .value-card:hover i {
     transform: rotateY(180deg);
-    color: var(--accent-color-teal);
+    color: var(--accent-color-gold); /* Lighter gold on hover */
 }
 
 .why-choose-us {
@@ -1138,30 +1212,19 @@ footer::before {
 }
 
 @media (max-width: 576px) {
-    .about-hero {
-        padding: 60px 0;
-    }
-    
-    .about-hero-content h1 {
-        font-size: 2rem;
-    }
-    
-    .value-card {
-        padding: 20px;
-    }
+    /* Remove specific about-hero styles as they're now handled in the main media queries */
 }
 
 /* Services Page Styles */
 .services-hero {
-    background: linear-gradient(rgba(28, 46, 61, 0.85), rgba(28, 46, 61, 0.85)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
-    color: var(--white-color);
-    padding: 80px 0;
-    text-align: center;
+    /* Removed overlay gradient, we just want the image */
 }
 
 .services-hero-content {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 55%;
+    margin: 0;
+    margin-right: auto;
+    text-align: left;
 }
 
 .services-hero-content h1 {
@@ -1234,7 +1297,7 @@ footer::before {
 }
 
 .package-card:hover .package-icon {
-    background-color: var(--accent-color-teal);
+    background-color: var(--accent-color-gold); /* Gold icon background on hover */
 }
 
 .package-content {
@@ -1297,13 +1360,13 @@ footer::before {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: var(--light-color);
+    background-color: var(--light-color); /* Light beige */
     cursor: pointer;
     transition: var(--transition);
 }
 
 .faq-question:hover {
-    background-color: #e2e8f0;
+    background-color: var(--background-color); /* Very light beige on hover */
 }
 
 .faq-question h3 {
@@ -1333,9 +1396,7 @@ footer::before {
 
 /* Media Queries for Services Page */
 @media (max-width: 992px) {
-    .services-hero-content h1 {
-        font-size: 2.3rem;
-    }
+    /* Remove specific services-hero styles as they're now handled in the main media queries */
 }
 
 @media (max-width: 768px) {
@@ -1344,6 +1405,7 @@ footer::before {
     }
     
     .services-intro-image {
+        order: -1;
         margin-bottom: 30px;
     }
     
@@ -1352,23 +1414,13 @@ footer::before {
     }
     
     .package-icon {
-        min-width: 100%;
+        width: 100%;
         padding: 20px;
     }
 }
 
 @media (max-width: 576px) {
-    .services-hero {
-        padding: 60px 0;
-    }
-    
-    .services-hero-content h1 {
-        font-size: 1.8rem;
-    }
-    
-    .services-hero-content p {
-        font-size: 1rem;
-    }
+    /* Remove specific services-hero styles as they're now handled in the main media queries */
     
     .package-content {
         padding: 20px;
@@ -1377,15 +1429,14 @@ footer::before {
 
 /* Courses & E-books Page Styles */
 .courses-hero {
-    background: linear-gradient(rgba(28, 46, 61, 0.85), rgba(28, 46, 61, 0.85)), url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
-    color: var(--white-color);
-    padding: 80px 0;
-    text-align: center;
+    /* Removed overlay gradient, we just want the image */
 }
 
 .courses-hero-content {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 55%;
+    margin: 0;
+    margin-right: auto;
+    text-align: left;
 }
 
 .courses-hero-content h1 {
@@ -1463,8 +1514,8 @@ footer::before {
     position: absolute;
     top: 15px;
     right: 15px;
-    background-color: var(--accent-color-teal);
-    color: var(--white-color);
+    background-color: var(--accent-color-gold); /* Gold tag */
+    color: var(--primary-color); /* Dark text */
     padding: 5px 10px;
     border-radius: 3px;
     font-size: 0.75rem;
@@ -1473,7 +1524,8 @@ footer::before {
 }
 
 .course-card:hover .course-tag {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color); /* Darker gold on hover */
+    color: var(--white-color);
 }
 
 .course-content, .ebook-content {
@@ -1519,7 +1571,7 @@ footer::before {
 .course-price, .ebook-price {
     font-weight: 700;
     font-size: 1.2rem;
-    color: var(--accent-color-teal);
+    color: var(--accent-color-gold); /* Gold price */
 }
 
 .ebooks-section {
@@ -1601,9 +1653,7 @@ footer::before {
 
 /* Media Queries for Courses Page */
 @media (max-width: 992px) {
-    .courses-hero-content h1 {
-        font-size: 2.3rem;
-    }
+    /* Remove specific courses-hero styles as they're now handled in the main media queries */
     
     .bundle-content {
         grid-template-columns: 1fr;
@@ -1627,17 +1677,7 @@ footer::before {
 }
 
 @media (max-width: 576px) {
-    .courses-hero {
-        padding: 60px 0;
-    }
-    
-    .courses-hero-content h1 {
-        font-size: 1.8rem;
-    }
-    
-    .courses-hero-content p {
-        font-size: 1rem;
-    }
+    /* Remove specific courses-hero styles as they're now handled in the main media queries */
     
     .course-content,
     .ebook-content {
@@ -1652,15 +1692,14 @@ footer::before {
 
 /* Contact Page Styles */
 .contact-hero {
-    background: linear-gradient(rgba(28, 46, 61, 0.85), rgba(28, 46, 61, 0.85)), url('https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
-    color: var(--white-color);
-    padding: 80px 0;
-    text-align: center;
+    /* Removed overlay gradient, we just want the image */
 }
 
 .contact-hero-content {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 55%;
+    margin: 0;
+    margin-right: auto;
+    text-align: left;
 }
 
 .contact-hero-content h1 {
@@ -1723,7 +1762,7 @@ footer::before {
 }
 
 .info-card:hover .info-icon {
-    color: var(--accent-color-teal);
+    color: var(--accent-color-gold); /* Gold icon hover */
     transform: scale(1.1);
 }
 
@@ -1744,7 +1783,7 @@ footer::before {
 }
 
 .info-card a:hover {
-    color: var(--primary-color);
+    color: var(--accent-color-gold); /* Gold link hover */
 }
 
 .contact-form-section {
@@ -1840,6 +1879,7 @@ footer::before {
     font-weight: 600;
     margin-right: 15px;
     flex-shrink: 0;
+    /* Consider if this should use gold shades */
 }
 
 .step-content h3 {
@@ -1858,44 +1898,33 @@ footer::before {
 
 /* Media Queries for Contact Page */
 @media (max-width: 992px) {
-    .contact-hero-content h1 {
-        font-size: 2.3rem;
-    }
+    /* Remove specific contact-hero styles as they're now handled in the main media queries */
     
     .contact-grid {
         grid-template-columns: 1fr;
+        gap: 40px;
     }
     
     .booking-container {
-        margin-top: 30px;
+        order: -1;
     }
 }
 
 @media (max-width: 768px) {
     .info-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 576px) {
-    .contact-hero {
-        padding: 60px 0;
-    }
-    
-    .contact-hero-content h1 {
-        font-size: 1.8rem;
-    }
-    
-    .contact-hero-content p {
-        font-size: 1rem;
-    }
+    /* Remove specific contact-hero styles as they're now handled in the main media queries */
     
     .info-grid {
         grid-template-columns: 1fr;
     }
     
     .form-container, .booking-container {
-        padding: 25px;
+        padding: 30px 20px;
     }
 }
 
@@ -1964,7 +1993,7 @@ footer::before {
 .service-price {
     margin-bottom: 20px;
     font-weight: bold;
-    color: var(--accent-color-teal);
+    color: var(--accent-color-gold);
     font-size: 18px;
 }
 
@@ -2089,13 +2118,15 @@ footer::before {
 .service-detail-hero h1 {
     font-size: 2.8rem;
     margin-bottom: 20px;
+    text-align: left; /* Align left like other hero sections */
 }
 
 .service-detail-hero p {
     font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 65ch; /* Match other hero sections */
+    margin: 0; /* Remove auto margins */
     opacity: 0.9;
+    text-align: left; /* Align left like other hero sections */
 }
 
 .service-detail-content {
@@ -2186,8 +2217,8 @@ footer::before {
     position: absolute;
     top: 15px;
     right: -30px;
-    background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
-    color: var(--white-color);
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color-gold)); /* Gold gradient */
+    color: var(--primary-color);
     padding: 5px 30px;
     transform: rotate(45deg);
     font-size: 0.8rem;
@@ -2201,7 +2232,7 @@ footer::before {
 .pricing-price {
     font-size: 2.5rem;
     font-weight: bold;
-    color: var(--accent-color-teal);
+    color: var(--accent-color-gold); /* Gold price */
     margin-bottom: 20px;
 }
 
@@ -2319,12 +2350,14 @@ footer::before {
 
 .cta-banner .btn {
     margin-top: 10px;
-    background-color: var(--accent-color-orange);
+    background-color: var(--secondary-color); /* Use darker gold */
     color: var(--white-color);
 }
 
 .cta-banner .btn:hover {
-    background-color: var(--accent-color-teal);
+    background-color: var(--accent-color-gold); /* Lighter gold on hover */
+    color: var(--primary-color);
+    transform: translateY(-5px);
 }
 
 /* Redesigned Contact Page Styles */
@@ -2355,15 +2388,15 @@ footer::before {
 
 .info-card-redesigned:hover {
     transform: translateY(-5px);
-    border-left-color: var(--primary-color);
+    border-left-color: var(--accent-color-gold); /* Gold border */
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
 .info-icon-redesigned {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
-    color: var(--white-color);
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color-gold)); /* Gold gradient */
+    color: var(--primary-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -2502,8 +2535,8 @@ footer::before {
 .why-partner-icon {
     width: 65px;
     height: 65px;
-    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-    color: #fff;
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color-gold)); /* Gold gradient */
+    color: var(--primary-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -2638,7 +2671,7 @@ footer::before {
 }
 
 .product-thumbnail.active {
-    border-color: var(--accent-color-orange);
+    border-color: var(--accent-color-gold); /* Gold border */
 }
 
 .product-thumbnail:hover {
@@ -2683,7 +2716,7 @@ footer::before {
 .product-price {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--accent-color-orange);
+    color: var(--accent-color-gold); /* Gold price */
     margin-bottom: 20px;
 }
 
@@ -2712,10 +2745,10 @@ footer::before {
 }
 
 .features-list li:before {
-    content: '✓';
+    content: '\2713'; /* Checkmark */
     position: absolute;
     left: 0;
-    color: var(--secondary-color);
+    color: var(--secondary-color); /* Darker gold checkmark */
     font-weight: bold;
 }
 
@@ -2759,7 +2792,7 @@ footer::before {
     left: 0;
     width: 0;
     height: 3px;
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color); /* Darker gold underline */
     transition: width 0.3s cubic-bezier(0.77, 0, 0.175, 1);
     z-index: 2;
 }
@@ -2968,7 +3001,7 @@ section {
 }
 
 .section-title span {
-    color: var(--accent-color-teal);
+    color: var(--accent-color-gold); /* Gold highlight */
 }
 
 /* Add subtle dividers between sections */
@@ -2985,7 +3018,7 @@ section:not(:last-child)::after {
 
 /* Enhance focus states for accessibility */
 a:focus, button:focus, input:focus {
-    outline: 2px solid var(--accent-color-teal);
+    outline: 2px solid var(--accent-color-gold); /* Gold focus outline */
     outline-offset: 2px;
 }
 
