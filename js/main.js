@@ -6,16 +6,28 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     // Mobile menu toggle
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileMenuBtn = document.querySelector('.mobile-menu');
+    const navMenu = document.querySelector('nav ul');
     
     if (mobileMenuBtn) {
         mobileMenuBtn.addEventListener('click', function() {
-            this.classList.toggle('active');
-            mobileMenu.classList.toggle('active');
-            document.body.classList.toggle('menu-open');
+            navMenu.classList.toggle('active');
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('nav') && navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                }
+            });
         });
     }
+    
+    // Close menu when clicking a link
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
     
     // Scroll animation for elements
     const scrollElements = document.querySelectorAll('.scroll-animation');

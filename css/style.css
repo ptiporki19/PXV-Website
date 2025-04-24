@@ -941,18 +941,34 @@ footer::before {
 
 @media (max-width: 768px) {
     nav ul {
-        position: fixed;
-        top: 70px;
-        left: 0;
+        display: none; /* Change from fixed positioning to display none */
         width: 100%;
         background-color: var(--primary-color);
-        flex-direction: column;
-        text-align: center;
-        transform: translateY(-100%);
-        opacity: 0;
-        transition: all 0.3s ease;
         padding: 20px 0;
-        z-index: 99;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    nav ul.active {
+        display: block; /* Show menu when active */
+    }
+    
+    nav ul li {
+        margin: 15px 0;
+    }
+    
+    .mobile-menu {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+    }
+    
+    .mobile-menu i {
+        font-size: 24px;
+        color: var(--light-color);
     }
     
     .hero,
@@ -972,25 +988,13 @@ footer::before {
     .ebooks-hero-content,
     .contact-hero-content {
         max-width: 90%; /* Almost full width on small screens */
-        margin: 0 auto; /* Center on mobile */
-        text-align: center; /* Center text on mobile */
+        margin: 0; /* Remove auto margins to maintain left alignment */
+        text-align: left; /* Keep text left-aligned */
     }
     
     .cta-buttons {
-        justify-content: center; /* Center buttons on mobile */
-    }
-    
-    nav ul.active {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    
-    nav ul li {
-        margin: 15px 0;
-    }
-    
-    .mobile-menu {
-        display: block;
+        justify-content: flex-start; /* Align buttons to the left */
+        gap: 15px; /* Add some space between buttons */
     }
     
     .services-grid,
