@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - PrimeX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .thank-you-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .thank-you-icon {
+            font-size: 5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .thank-you-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .thank-you-message {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        
+        .order-details {
+            background-color: var(--light-color);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            margin: 40px 0;
+            text-align: left;
+        }
+        
+        .order-details h3 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .order-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .order-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: var(--border-radius);
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        
+        .item-details {
+            flex-grow: 1;
+        }
+        
+        .item-details h4 {
+            margin-bottom: 5px;
+        }
+        
+        .item-details p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .item-price {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        .next-steps {
+            background-color: #f9f9f9;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            margin: 40px 0;
+        }
+        
+        .next-steps h3 {
+            margin-bottom: 20px;
+        }
+        
+        .steps-list {
+            text-align: left;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .steps-list li {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        
+        .steps-list i {
+            color: var(--primary-color);
+            margin-right: 10px;
+            margin-top: 3px;
+        }
+        
+        .cta-buttons {
+            margin-top: 40px;
+        }
+        
+        .cta-buttons .btn {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>PrimeX</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Agency Services</a></li>
+                    <li><a href="ebooks.html">E-Books & Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Thank You Section -->
+    <section class="thank-you-section">
+        <div class="thank-you-container">
+            <div class="thank-you-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h1 class="thank-you-title">Thank You for Your Purchase!</h1>
+            <p class="thank-you-message">Your order has been successfully processed and a confirmation email has been sent to your inbox.</p>
+            
+            <!-- Order Summary -->
+            <div class="order-details">
+                <h3>Order Summary</h3>
+                <div class="order-item">
+                    <img id="product-image" src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Product Image">
+                    <div class="item-details">
+                        <h4 id="product-title">From Idea to Income: Your First Client Roadmap</h4>
+                        <p id="product-type">E-Book</p>
+                    </div>
+                    <div class="item-price" id="product-price">$29.99</div>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd;">
+                    <strong>Order Total:</strong>
+                    <strong id="order-total" class="item-price">$29.99</strong>
+                </div>
+            </div>
+            
+            <!-- Next Steps -->
+            <div class="next-steps">
+                <h3>What Happens Next?</h3>
+                <div class="steps-list" id="ebook-steps">
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li><i class="fas fa-envelope"></i> <span>You'll receive an email with your purchase details and download instructions</span></li>
+                        <li><i class="fas fa-download"></i> <span>Click the download link in the email to access your e-book</span></li>
+                        <li><i class="fas fa-book-reader"></i> <span>Start implementing the strategies and see results in your business</span></li>
+                        <li><i class="fas fa-question-circle"></i> <span>If you have any questions, reach out to our support team</span></li>
+                    </ul>
+                </div>
+                <div class="steps-list" id="service-steps" style="display: none;">
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li><i class="fas fa-envelope"></i> <span>You'll receive an email confirming your purchase and outlining next steps</span></li>
+                        <li><i class="fas fa-calendar-alt"></i> <span>Our team will contact you within 1 business day to schedule an onboarding call</span></li>
+                        <li><i class="fas fa-clipboard-list"></i> <span>We'll gather any additional information needed to deliver your service</span></li>
+                        <li><i class="fas fa-rocket"></i> <span>Service delivery will begin according to the timeline discussed during onboarding</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="ebooks.html" class="btn btn-secondary">Browse More E-Books</a>
+                <a href="index.html" class="btn btn-primary">Return to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>PrimeX</h2>
+                    <p>Empowering businesses through premium agency services and practical resources.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Agency Services</a></li>
+                        <li><a href="ebooks.html">E-Books</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 7520 NW 104TH AVE UNIT A103 DORAL, FLORIDA 33178</p>
+                    <p><i class="fas fa-phone"></i> +1 (249) 487-1688</p>
+                    <p><i class="fas fa-envelope"></i> info@primexvanguard.com</p>
+                </div>
+                <div class="newsletter">
+                    <h3>Join Our Newsletter</h3>
+                    <p>Stay updated with our latest resources and agency insights.</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn btn-sm">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>&copy; 2023 PrimeX. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="terms.html">Terms & Conditions</a> | 
+                    <a href="privacy.html">Privacy Policy</a> | 
+                    <a href="refund.html">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript to show order details -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const productTitle = urlParams.get('title');
+            const productPrice = urlParams.get('price');
+            const productImage = urlParams.get('image');
+            const productType = urlParams.get('type') || 'E-Book';
+            
+            // Update product information if parameters are available
+            if (productTitle) {
+                document.getElementById('product-title').textContent = decodeURIComponent(productTitle);
+            }
+            
+            if (productPrice) {
+                const price = decodeURIComponent(productPrice);
+                document.getElementById('product-price').textContent = price;
+                document.getElementById('order-total').textContent = price;
+            }
+            
+            if (productImage) {
+                document.getElementById('product-image').src = decodeURIComponent(productImage);
+                document.getElementById('product-image').alt = productTitle ? `${decodeURIComponent(productTitle)} Image` : 'Product Image';
+            }
+            
+            if (productType) {
+                document.getElementById('product-type').textContent = decodeURIComponent(productType);
+                
+                // Show appropriate next steps based on product type
+                if (productType.toLowerCase().includes('service')) {
+                    document.getElementById('ebook-steps').style.display = 'none';
+                    document.getElementById('service-steps').style.display = 'block';
+                } else {
+                    document.getElementById('ebook-steps').style.display = 'block';
+                    document.getElementById('service-steps').style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html> 

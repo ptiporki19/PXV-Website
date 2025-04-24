@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PrimeX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>PrimeX</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="ebooks.html">E-Books & Resources</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section - Redesigned -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Get in Touch With Us</h1>
+                <p>We're here to listen, collaborate, and provide solutions tailored to your business needs. Reach out to discuss how PrimeX can help transform your vision into reality.</p>
+                <div class="cta-buttons">
+                    <a href="#contact-form" class="btn btn-primary">Send a Message</a>
+                    <a href="tel:+12494871688" class="btn btn-secondary"><i class="fas fa-phone-alt"></i> Call Us Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section - Redesigned -->
+    <section class="contact-info-redesigned">
+        <div class="container">
+            <h2 class="section-title">How to Reach Us</h2>
+            <p class="section-subtitle">Choose your preferred method to connect with the PrimeX team</p>
+            
+            <div class="info-grid-redesigned">
+                <!-- Email Card -->
+                <div class="info-card-redesigned">
+                    <div class="info-icon-redesigned">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>For general inquiries, service quotes, or support.</p>
+                    <a href="mailto:info@primexvanguard.com">info@primexvanguard.com</a>
+                </div>
+                
+                <!-- Phone Card -->
+                <div class="info-card-redesigned">
+                    <div class="info-icon-redesigned">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Speak directly with a team member during business hours.</p>
+                    <a href="tel:+12494871688">+1 (249) 487-1688</a>
+                    <p style="font-size: 0.8rem; margin-top: 5px;">(Mon-Fri, 9 AM - 5 PM EST)</p>
+                </div>
+                
+                <!-- Address Card -->
+                <div class="info-card-redesigned">
+                    <div class="info-icon-redesigned">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>Our office location for scheduled meetings.</p>
+                    <p>7520 NW 104TH AVE<br>UNIT A103, DORAL, FL 33178</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map Section - Redesigned -->
+    <section class="contact-form-map-section">
+        <div class="container">
+            <div class="contact-grid-redesigned">
+                <div class="form-container-redesigned">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below, and we'll get back to you as soon as possible.</p>
+                    <form id="contact-form" action="#" method="post">
+                        <div class="form-row">
+                            <div class="form-group half-width">
+                                <label for="name">Full Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                            </div>
+                            <div class="form-group half-width">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group half-width">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+                            </div>
+                            <div class="form-group half-width">
+                                <label for="subject">Subject <span class="required">*</span></label>
+                                <input type="text" id="subject" name="subject" placeholder="Reason for contacting us" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell us more about your inquiry..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="map-container-redesigned">
+                    <h2>Find Us on the Map</h2>
+                    <p>Our office is conveniently located in Doral, Florida.</p>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.733547750647!2d-80.3613386849779!3d25.81228698361313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9bb36e7f5067f%3A0xb2b1a392a3e78b86!2s7520%20NW%20104th%20Ave%20Unit%20A103%2C%20Doral%2C%20FL%2033178%2C%20USA!5e0!3m2!1sen!2sca!4v1678886400000!5m2!1sen!2sca" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0; border-radius: var(--border-radius); box-shadow: var(--shadow);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (Optional - Reuse from Services page if needed) -->
+    <!-- 
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            ...
+        </div>
+    </section> 
+    -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>PrimeX</h2>
+                    <p>Empowering businesses through premium agency services and practical resources.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Agency Services</a></li>
+                        <li><a href="ebooks.html">E-Books</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 7520 NW 104TH AVE UNIT A103 DORAL, FLORIDA 33178</p>
+                    <p><i class="fas fa-phone"></i> +1 (249) 487-1688</p>
+                    <p><i class="fas fa-envelope"></i> info@primexvanguard.com</p>
+                </div>
+                <div class="newsletter">
+                    <h3>Join Our Newsletter</h3>
+                    <p>Stay updated with our latest resources and agency insights.</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn btn-sm">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>&copy; 2023 PrimeX. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="terms.html">Terms & Conditions</a> | 
+                    <a href="privacy.html">Privacy Policy</a> | 
+                    <a href="refund.html">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

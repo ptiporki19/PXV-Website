@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - PrimeX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Checkout-specific styles */
+        .checkout-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .checkout-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .checkout-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .product-summary {
+            background-color: var(--light-color);
+            border-radius: var(--border-radius);
+            padding: 30px;
+        }
+        
+        .product-summary img {
+            max-width: 100%;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+        }
+        
+        .product-meta {
+            margin: 15px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .product-meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .checkout-form {
+            background-color: #fff;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .order-summary {
+            background-color: #f9f9f9;
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .order-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .order-total {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: 15px;
+            border-top: 2px solid #ddd;
+        }
+        
+        .btn-checkout {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .btn-checkout:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .payment-icons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        
+        .payment-icons i {
+            font-size: 2rem;
+            color: #666;
+        }
+        
+        .secure-badge {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>PrimeX</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Agency Services</a></li>
+                    <li><a href="ebooks.html">E-Books & Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <div class="checkout-container">
+            <h1 class="section-title">Checkout</h1>
+            
+            <div class="checkout-grid">
+                <!-- Product Summary -->
+                <div class="product-summary">
+                    <h2>Order Summary</h2>
+                    <div id="product-image">
+                        <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Product Image">
+                    </div>
+                    <h3 id="product-title">From Idea to Income: Your First Client Roadmap</h3>
+                    <div class="product-meta">
+                        <span id="product-type"><i class="fas fa-file-pdf"></i> E-Book</span>
+                        <span id="product-pages"><i class="fas fa-pager"></i> 120 Pages</span>
+                        <span id="product-format"><i class="fas fa-download"></i> Downloadable PDF</span>
+                    </div>
+                    <p id="product-description">A comprehensive guide to launching your service-based business and landing your first paying client. Packed with actionable advice, templates, and real-world examples.</p>
+                    
+                    <div class="order-summary">
+                        <div class="order-item">
+                            <span>Product Price</span>
+                            <span id="product-price">$29.99</span>
+                        </div>
+                        <div class="order-total">
+                            <span>Total</span>
+                            <span id="order-total">$29.99</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Checkout Form -->
+                <div class="checkout-form">
+                    <h2>Billing Information</h2>
+                    <form id="checkout-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <h2 style="margin-top: 30px;">Payment Details</h2>
+                        
+                        <div class="form-group">
+                            <label for="card-number">Card Number</label>
+                            <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="expiry">Expiry Date</label>
+                                <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="card-name">Name on Card</label>
+                            <input type="text" id="card-name" name="card-name" required>
+                        </div>
+                        
+                        <button type="submit" class="btn-checkout">Complete Purchase</button>
+                        
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-amex"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                        </div>
+                        
+                        <div class="secure-badge">
+                            <i class="fas fa-lock"></i> Secure Checkout - Your information is protected
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>PrimeX</h2>
+                    <p>Empowering businesses through premium agency services and practical resources.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Agency Services</a></li>
+                        <li><a href="ebooks.html">E-Books</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 7520 NW 104TH AVE UNIT A103 DORAL, FLORIDA 33178</p>
+                    <p><i class="fas fa-phone"></i> +1 (249) 487-1688</p>
+                    <p><i class="fas fa-envelope"></i> info@primexvanguard.com</p>
+                </div>
+                <div class="newsletter">
+                    <h3>Join Our Newsletter</h3>
+                    <p>Stay updated with our latest resources and agency insights.</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn btn-sm">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>&copy; 2023 PrimeX. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="terms.html">Terms & Conditions</a> | 
+                    <a href="privacy.html">Privacy Policy</a> | 
+                    <a href="refund.html">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript to handle dynamic product information -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+            const productTitle = urlParams.get('title');
+            const productPrice = urlParams.get('price');
+            const productImage = urlParams.get('image');
+            const productType = urlParams.get('type') || 'E-Book';
+            const productDescription = urlParams.get('description');
+            
+            // Update product information if parameters are available
+            if (productTitle) {
+                document.getElementById('product-title').textContent = decodeURIComponent(productTitle);
+                document.title = `Checkout: ${decodeURIComponent(productTitle)} - PrimeX`;
+            }
+            
+            if (productPrice) {
+                const price = decodeURIComponent(productPrice);
+                document.getElementById('product-price').textContent = price;
+                document.getElementById('order-total').textContent = price;
+            }
+            
+            if (productImage) {
+                document.querySelector('#product-image img').src = decodeURIComponent(productImage);
+                document.querySelector('#product-image img').alt = productTitle ? `${decodeURIComponent(productTitle)} Image` : 'Product Image';
+            }
+            
+            if (productType) {
+                // Update the icon based on product type
+                let icon = 'fas fa-file-pdf';
+                let metaHtml = '';
+                
+                if (productType.toLowerCase().includes('service')) {
+                    icon = 'fas fa-briefcase';
+                    // Different meta information for services
+                    metaHtml = `
+                        <span id="product-type"><i class="${icon}"></i> ${decodeURIComponent(productType)}</span>
+                        <span id="product-delivery"><i class="fas fa-calendar-check"></i> Service Delivery</span>
+                        <span id="product-support"><i class="fas fa-headset"></i> Support Included</span>
+                    `;
+                } else {
+                    // E-Book meta information
+                    metaHtml = `
+                        <span id="product-type"><i class="${icon}"></i> ${decodeURIComponent(productType)}</span>
+                        <span id="product-pages"><i class="fas fa-pager"></i> Digital Product</span>
+                        <span id="product-format"><i class="fas fa-download"></i> Instant Access</span>
+                    `;
+                }
+                
+                document.querySelector('.product-meta').innerHTML = metaHtml;
+            }
+            
+            if (productDescription) {
+                document.getElementById('product-description').textContent = decodeURIComponent(productDescription);
+            }
+            
+            // Handle form submission
+            document.getElementById('checkout-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Here you would typically send the form data to a payment processor
+                // For demonstration, we'll just show an alert
+                alert('Thank you for your purchase! You will receive your product shortly via email.');
+                
+                // Redirect to the thank you page
+                const encodedTitle = encodeURIComponent(productTitle);
+                const encodedPrice = encodeURIComponent(price);
+                const encodedImage = encodeURIComponent(productImage);
+                window.location.href = `thank-you.html?title=${encodedTitle}&price=${encodedPrice}&image=${encodedImage}&type=${productType}`;
+            });
+        });
+    </script>
+</body>
+</html> 
