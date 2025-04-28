@@ -3332,5 +3332,44 @@ body.menu-open {
     color: #adb5bd;
 }
 
+.dark-theme .service-icon {
     background-color: rgba(200, 164, 90, 0.2);
+}
+
+/* Form success message styles */
+.form-success {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(40, 167, 69, 0.1);
+    border-radius: 8px;
+    border: 1px solid rgba(40, 167, 69, 0.2);
+    margin: 20px 0;
+}
+
+.form-success i {
+    font-size: 64px;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.form-success h3 {
+    color: #28a745;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.form-success p {
+    color: #495057;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Dark mode overrides for success message */
+body.dark-mode .form-success {
+    background-color: rgba(40, 167, 69, 0.1);
+    border-color: rgba(40, 167, 69, 0.3);
+}
+
+body.dark-mode .form-success p {
+    color: #e0e0e0;
 } 
