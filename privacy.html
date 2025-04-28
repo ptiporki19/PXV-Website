@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - PrimeX</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hero-override.css">
+    <link rel="stylesheet" href="css/hero-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <div class="container">
+        <div class="container" style="position: relative; z-index: 1;">
             <div class="logo">
                 <a href="index.html"><h1>PrimeX</h1></a>
             </div>
@@ -22,9 +24,6 @@
                     <li><a href="ebooks.html">E-Books & Resources</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-                    <i id="theme-toggle-icon" class="fas fa-moon"></i>
-                </button>                <div class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </div>
             </nav>
@@ -32,8 +31,9 @@
     </header>
 
     <!-- Privacy Hero Section -->
-    <section class="service-detail-hero">
-        <div class="container">
+    <section class="hero">
+        <!-- Dark overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4);"></div>        <div class="container" style="position: relative; z-index: 1;">
             <div class="hero-content">
                 <h1>Privacy Policy</h1>
                 <p>How we collect, use, and protect your personal information.</p>
@@ -43,7 +43,7 @@
 
     <!-- Privacy Content -->
     <section class="service-detail-content">
-        <div class="container">
+        <div class="container" style="position: relative; z-index: 1;">
             <div class="service-overview">
                 <div class="service-text">
                     <h2>Privacy Policy</h2>
@@ -121,7 +121,7 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div class="container" style="position: relative; z-index: 1;">
             <div class="footer-content">
                 <div class="footer-logo">
                     <h2>PrimeX</h2>
@@ -170,5 +170,4 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/theme-toggle.js"></script></body>
 </html> 

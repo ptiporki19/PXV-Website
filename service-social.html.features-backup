@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Content Strategy & Creation - PrimeX</title>
+    <title>Social Media Management - PrimeX</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hero-override.css">
+    <link rel="stylesheet" href="css/hero-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <div class="container">
+        <div class="container" style="position: relative; z-index: 1;">
             <div class="logo">
                 <a href="index.html"><h1>PrimeX</h1></a>
             </div>
@@ -22,9 +24,6 @@
                     <li><a href="ebooks.html">E-Books & Resources</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-                    <i id="theme-toggle-icon" class="fas fa-moon"></i>
-                </button>                <div class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </div>
             </nav>
@@ -32,25 +31,27 @@
     </header>
 
     <!-- Service Hero Section -->
-    <section class="service-detail-hero" style="background-image: url('https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'); background-size: cover; background-position: center; position: relative; color: white; padding: 100px 0;">
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');">
         <!-- Dark overlay for better text readability -->
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.8);"></div>
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4);"></div>        <!-- Dark overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4);"></div>        <!-- Dark overlay for better text readability -->
         <div class="container" style="position: relative; z-index: 1;">
-            <h1>Content Strategy & Creation</h1>
-            <p>High-quality, engaging content that positions your brand as an authority and drives conversions</p>
+            <div class="hero-content">
+            <h1>Social Media Management</h1>
+            <p>Strategic social media presence that engages your audience and builds meaningful connections with potential clients</p>
         </div>
     </section>
 
     <!-- Service Detail Content -->
     <section class="service-detail-content" style="background-color: #212529; color: white; padding: 60px 0;">
-        <div class="container">
+        <div class="container" style="position: relative; z-index: 1;">
             <!-- Service Overview -->
             <div class="service-overview" style="background-color: #2c3035; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
                 <div class="service-image">
-                    <img src="https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Content Strategy and Creation" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                    <img src="https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
                 </div>
                 <div class="service-text">
-                    <h2 style="color: white;">Compelling Content That Converts</h2>
+                    <h2 style="color: white;">Engage Your Audience on Social Media</h2>
                     <p style="color: #e0e0e0;">In today's digital landscape, quality content isn't just nice to have—it's essential for building trust, engaging your audience, and driving business results.</p>
                     <p style="color: #e0e0e0;">Our content strategy and creation service helps you develop a cohesive content approach that aligns with your business goals and resonates with your target audience. From blog posts and website copy to lead magnets and email sequences, we create compelling content that positions your brand as an authority and drives conversions.</p>
                     
@@ -69,25 +70,25 @@
             
             <!-- Service Pricing Packages -->
             <div class="service-packages" style="margin-top: 50px;">
-                <h2 class="section-title" style="color: white;">Our Content Packages</h2>
+                <h2 class="section-title" style="color: white;">Our Social Media Packages</h2>
                 <p class="section-subtitle" style="color: #e0e0e0;">Select the package that best fits your business needs</p>
                 
                 <div class="pricing-grid">
                     <!-- Starter Package -->
                     <div class="pricing-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
                         <h3 style="color: white;">Starter Package</h3>
-                        <div class="pricing-price" style="color: #ffc107;">$499<span style="color: #adb5bd;">/one-time</span></div>
-                        <p style="color: #e0e0e0;">Perfect for businesses just starting to develop their content strategy.</p>
+                        <div class="pricing-price" style="color: #ffc107;">$399<span style="color: #adb5bd;">/month</span></div>
+                        <p style="color: #e0e0e0;">Perfect for businesses just starting to establish their social media presence.</p>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Content strategy assessment</span></li>
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">4 SEO-optimized blog articles</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Social media audit <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Content strategy assessment</span></li> assessment</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">12 social media posts per month</span></li>
                             <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">1 lead magnet (PDF guide or checklist)</span></li>
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">5 social media posts</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Basic community management</span></li>
                             <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Basic keyword research</span></li>
                             <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Content calendar template</span></li>
                         </ul>
                         <div class="button-group" style="display: flex; gap: 10px; justify-content: center;">
-                            <a href="javascript:void(0)" onclick="buyNow('Starter Content Package', '$499', 'https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80', 'Content strategy assessment, 4 SEO-optimized blog articles, 1 lead magnet, and more.', 'Service')" class="btn btn-primary">Buy Now</a>
+                            <a href="javascript:void(0)" onclick="buyNow('Starter Social Media Package', '$499', 'https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
                         </div>
                     </div>
                     
@@ -95,8 +96,8 @@
                     <div class="pricing-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
                         <div class="popular-tag" style="background-color: #ffc107; color: #212529;">Popular</div>
                         <h3 style="color: white;">Growth Package</h3>
-                        <div class="pricing-price" style="color: #ffc107;">$899<span style="color: #adb5bd;">/one-time</span></div>
-                        <p style="color: #e0e0e0;">Comprehensive content strategy for businesses ready to scale their online presence.</p>
+                        <div class="pricing-price" style="color: #ffc107;">$799<span style="color: #adb5bd;">/month</span></div>
+                        <p style="color: #e0e0e0;">Comprehensive social media management for businesses ready to grow their online engagement.</p>
                         <ul class="pricing-features">
                             <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">In-depth content strategy development</span></li>
                             <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">8 SEO-optimized blog articles</span></li>
@@ -107,15 +108,15 @@
                             <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Email newsletter sequence (5 emails)</span></li>
                         </ul>
                         <div class="button-group" style="display: flex; gap: 10px; justify-content: center;">
-                            <a href="javascript:void(0)" onclick="buyNow('Growth Content Package', '$899', 'https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80', 'In-depth content strategy development, 8 SEO-optimized blog articles, 2 lead magnets, and more.', 'Service')" class="btn btn-primary">Buy Now</a>
+                            <a href="javascript:void(0)" onclick="buyNow('Growth Social Media Package', '$899', 'https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
                         </div>
                     </div>
                     
                     <!-- Premium Package -->
                     <div class="pricing-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
                         <h3 style="color: white;">Premium Package</h3>
-                        <div class="pricing-price" style="color: #ffc107;">$1,499<span style="color: #adb5bd;">/one-time</span></div>
-                        <p style="color: #e0e0e0;">Elite content strategy and creation for established businesses seeking maximum impact.</p>
+                        <div class="pricing-price" style="color: #ffc107;">$1,299<span style="color: #adb5bd;">/month</span></div>
+                        <p style="color: #e0e0e0;">Elite social media strategy and management for established businesses seeking maximum brand awareness and engagement.</p>
                         <ul class="pricing-features">
                             <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Comprehensive content strategy blueprint</span></li>
                             <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">12 SEO-optimized blog articles</span></li>
@@ -127,7 +128,7 @@
                             <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Website copy audit and recommendations</span></li>
                         </ul>
                         <div class="button-group" style="display: flex; gap: 10px; justify-content: center;">
-                            <a href="javascript:void(0)" onclick="buyNow('Premium Content Package', '$1,499', 'https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80', 'Comprehensive content strategy blueprint, 12 SEO-optimized blog articles, 3 premium lead magnets, and more.', 'Service')" class="btn btn-primary">Buy Now</a>
+                            <a href="javascript:void(0)" onclick="buyNow('Premium Social Media Package', '$1,499', 'https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
                         </div>
                     </div>
                 </div>
@@ -144,7 +145,7 @@
             
             <!-- How It Works Section -->
             <div class="how-it-works" style="margin-top: 50px; background-color: #2c3035; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-                <h2 class="section-title" style="color: white;">Our Content Creation Process</h2>
+                <h2 class="section-title" style="color: white;">Our Social Media Management Process</h2>
                 
                 <div class="process-grid">
                     <div class="process-step" style="background-color: #343a40; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
@@ -181,19 +182,19 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-banner" style="background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; position: relative; color: white; padding: 60px 0; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); text-align: center;">
+    <section class="cta-banner" style="background-image: url(https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1000); background-size: cover; background-position: center; position: relative; color: white; padding: 60px 0; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); text-align: center;">
         <!-- Dark overlay for better text readability -->
         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.8);"></div>
         <div class="container" style="position: relative; z-index: 1;">
-            <h2 style="color: white;">Ready to elevate your content strategy?</h2>
-            <p style="color: #e0e0e0;">Let's create compelling content that resonates with your audience and drives business growth.</p>
+            <h2 style="color: white;">Ready to elevate your social media presence?</h2>
+            <p style="color: #e0e0e0;">Let's create a strategic social media presence that engages your audience and builds your brand.</p>
             <a href="contact.html" class="btn btn-primary">Get Started Today</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div class="container" style="position: relative; z-index: 1;">
             <div class="footer-content">
                 <div class="footer-logo">
                     <h2>PrimeX</h2>
@@ -243,17 +244,26 @@
 
     <!-- JavaScript for Buy Now functionality -->
     <script>
-        function buyNow(title, price, image, description, type) {
-            // Encode the values to safely include them in the URL
-            const encodedTitle = encodeURIComponent(title);
-            const encodedPrice = encodeURIComponent(price);
-            const encodedImage = encodeURIComponent(image);
-            const encodedDescription = encodeURIComponent(description);
-            
-            // Redirect to the checkout page with the product information
-            window.location.href = `checkout.html?title=${encodedTitle}&price=${encodedPrice}&image=${encodedImage}&description=${encodedDescription}&type=${type}`;
-        }
+    function buyNow(title, price, image, description, type) {
+        // Store data in localStorage for backup
+        localStorage.setItem('checkoutProduct', JSON.stringify({
+            name: title,
+            price: price,
+            image: image,
+            description: description,
+            type: type || 'Service Package'
+        }));
+        
+        // Now also pass data directly via URL parameters
+        const encodedTitle = encodeURIComponent(title);
+        const encodedPrice = encodeURIComponent(price);
+        const encodedImage = encodeURIComponent(image);
+        const encodedDescription = encodeURIComponent(description);
+        const encodedType = encodeURIComponent(type || 'Service Package');
+        
+        // Redirect with URL parameters
+        window.location.href = `checkout.html?title=${encodedTitle}&price=${encodedPrice}&image=${encodedImage}&description=${encodedDescription}&type=${encodedType}`;
+    }
     </script>
     <script src="js/main.js"></script>
-    <script src="js/theme-toggle.js"></script></body>
 </html> 

@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Books & Resources - PrimeX</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hero-override.css">
+    <link rel="stylesheet" href="css/hero-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <div class="container">
+        <div class="container" style="position: relative; z-index: 1;">
             <div class="logo">
                 <a href="index.html"><h1>PrimeX</h1></a>
             </div>
@@ -22,9 +24,6 @@
                     <li><a href="ebooks.html" class="active">E-Books & Resources</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-                    <i id="theme-toggle-icon" class="fas fa-moon"></i>
-                </button>                <div class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </div>
             </nav>
@@ -32,9 +31,9 @@
     </header>
 
     <!-- E-Books Hero Section -->
-    <section class="ebooks-hero" style="background-image: url('https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; position: relative; color: white;">
-        <!-- Add an overlay for better text readability -->
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.8);"></div>
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');">
+        <!-- Dark overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4);"></div>        <!-- Add an overlay for better text readability -->
         <div class="container" style="position: relative; z-index: 1;">
             <div class="hero-content">
                 <h1>Practical E-Books for Business Success</h1>
@@ -49,7 +48,7 @@
 
     <!-- E-Books Introduction -->
     <section class="about-intro" style="background-color: #212529; color: white; padding: 80px 0;">
-        <div class="container">
+        <div class="container" style="position: relative; z-index: 1;">
             <div class="about-intro-content">
                 <div class="about-image">
                     <img src="https://images.unsplash.com/photo-1535905748047-14b2415c77d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="E-Books Collection" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
@@ -65,7 +64,7 @@
 
     <!-- Featured E-Books -->
     <section id="featured-books" class="featured-courses" style="background-color: #2c3035; color: white; padding: 80px 0;">
-        <div class="container">
+        <div class="container" style="position: relative; z-index: 1;">
             <h2 class="section-title" style="color: white;">Featured E-Books</h2>
             <div class="courses-grid">
                 <div class="course-card" style="background-color: #212529; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
@@ -94,7 +93,7 @@
                             <div class="course-price">
                                 <span class="price" style="color: #ffc107; font-weight: bold;">$69</span>
                             </div>
-                            <a href="product-details.html" class="btn btn-primary">Learn More</a>
+                            <a href="product-details.html?title=From%20Idea%20to%20Income:%20Your%20First%20Client%20Roadmap&price=$69&image=https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80&description=A%20structured%20guide%20to%20go%20from%20business%20idea%20to%20securing%20your%20first%20paying%20client%20in%2030%20days%20or%20less." class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -124,7 +123,7 @@
                             <div class="course-price">
                                 <span class="price" style="color: #ffc107; font-weight: bold;">$69</span>
                             </div>
-                            <a href="product-details.html" class="btn btn-primary">Learn More</a>
+                            <a href="product-details.html?title=Client%20Acquisition%20Mastery:%20The%20First%2010%20Clients&price=$69&image=https://images.unsplash.com/photo-1579389083078-4e7018379f7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&description=Proven%20strategies%20to%20find,%20attract,%20and%20convert%20your%20first%2010%20clients%20without%20paid%20advertising%20or%20a%20large%20network." class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -155,7 +154,7 @@
                             <div class="course-price">
                                 <span class="price" style="color: #ffc107; font-weight: bold;">$45</span>
                             </div>
-                            <a href="product-details.html" class="btn btn-primary">Learn More</a>
+                            <a href="product-details.html?title=Profitable%20Pricing:%20Strategies%20for%20Service-Based%20Businesses&price=$45&image=https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80&description=End%20the%20guesswork%20and%20strategically%20price%20your%20services%20to%20maximize%20profit%20while%20attracting%20ideal%20clients." class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -165,7 +164,7 @@
 
     <!-- More E-Books Section -->
     <section class="ebooks-section" style="background-color: #212529; color: white; padding: 80px 0;">
-        <div class="container">
+        <div class="container" style="position: relative; z-index: 1;">
             <h2 class="section-title" style="color: white;">More Essential E-Books</h2>
             <div class="ebooks-grid">
                 <div class="ebook-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
@@ -177,7 +176,7 @@
                         <p style="color: #e0e0e0;">Essential tools, templates, and workflows to automate your business and save 10+ hours per week.</p>
                         <div class="ebook-footer">
                             <span class="ebook-price" style="color: #ffc107; font-weight: bold;">$39</span>
-                            <a href="product-details.html" class="btn btn-secondary">View Details</a>
+                            <a href="product-details.html?title=The%20Solopreneur's%20Systems%20Guide&price=$39&image=https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&description=Essential%20tools,%20templates,%20and%20workflows%20to%20automate%20your%20business%20and%20save%2010+%20hours%20per%20week." class="btn btn-secondary">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -191,7 +190,7 @@
                         <p style="color: #e0e0e0;">Protect your business and set up the right foundation for long-term success and compliance.</p>
                         <div class="ebook-footer">
                             <span class="ebook-price" style="color: #ffc107; font-weight: bold;">$49</span>
-                            <a href="product-details.html" class="btn btn-secondary">View Details</a>
+                            <a href="product-details.html?title=Business%20Foundations:%20Legal,%20Financial%20%26%20Tax%20Essentials&price=$49&image=https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&description=Protect%20your%20business%20and%20set%20up%20the%20right%20foundation%20for%20long-term%20success%20and%20compliance." class="btn btn-secondary">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -205,7 +204,7 @@
                         <p style="color: #e0e0e0;">How to transition from solo operator to building a team that delivers results without sacrificing quality.</p>
                         <div class="ebook-footer">
                             <span class="ebook-price" style="color: #ffc107; font-weight: bold;">$79</span>
-                            <a href="product-details.html" class="btn btn-secondary">View Details</a>
+                            <a href="product-details.html?title=Scale%20Without%20Burnout:%20From%20Freelancer%20to%20Agency&price=$79&image=https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&description=How%20to%20transition%20from%20solo%20operator%20to%20building%20a%20team%20that%20delivers%20results%20without%20sacrificing%20quality." class="btn btn-secondary">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -233,7 +232,7 @@
                         <div class="original-price" style="color: #adb5bd;">$330</div>
                         <div class="sale-price" style="color: #ffc107; font-size: 2.5rem; font-weight: bold;">$219</div>
                     </div>
-                    <a href="product-details.html" class="btn btn-primary">Get The Bundle</a>
+                    <a href="product-details.html?title=Complete%20Business%20Starter%20Bundle&price=$219&image=https://images.unsplash.com/photo-1561489413-985b06da5bee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&description=Get%20all%206%20premium%20e-books%20at%20one%20discounted%20price.%20Everything%20you%20need%20to%20start,%20grow,%20and%20optimize%20your%20business%20from%20day%20one." class="btn btn-primary">Get The Bundle</a>
                 </div>
                 <div class="bundle-image">
                     <img src="https://images.unsplash.com/photo-1561489413-985b06da5bee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Bundle Offer" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
@@ -244,7 +243,7 @@
 
     <!-- Testimonials Section -->
     <section class="testimonials" style="background-color: #212529; color: white; padding: 80px 0;">
-        <div class="container">
+        <div class="container" style="position: relative; z-index: 1;">
             <h2 class="section-title" style="color: white;">What Our Readers Say</h2>
             <div class="testimonial-carousel">
                 <div class="testimonial-item active">
@@ -303,7 +302,7 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div class="container" style="position: relative; z-index: 1;">
             <div class="footer-content">
                 <div class="footer-logo">
                     <h2>PrimeX</h2>
@@ -360,13 +359,22 @@
             const image = bookCard.parentElement.querySelector('img').src;
             const description = bookCard.querySelector('p').textContent;
             
+            // Store in localStorage as backup
+            localStorage.setItem('checkoutProduct', JSON.stringify({
+                name: title,
+                price: price,
+                image: image,
+                description: description,
+                type: 'E-Book'
+            }));
+            
             // Encode the values for URL
             const encodedTitle = encodeURIComponent(title);
             const encodedPrice = encodeURIComponent(price);
             const encodedImage = encodeURIComponent(image);
             const encodedDescription = encodeURIComponent(description);
             
-            // Redirect to checkout page
+            // Redirect to checkout page with URL parameters
             window.location.href = `checkout.html?title=${encodedTitle}&price=${encodedPrice}&image=${encodedImage}&description=${encodedDescription}&type=E-Book`;
             
             // Prevent default link behavior
@@ -480,5 +488,4 @@
         });
     </script>
     <script src="js/main.js"></script>
-    <script src="js/theme-toggle.js"></script></body>
 </html> 

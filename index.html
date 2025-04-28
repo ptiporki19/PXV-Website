@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PrimeX - Premium Business Agency & Digital Resources</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hero-override.css">
+    <link rel="stylesheet" href="css/hero-override.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <div class="container">
+        <div class="container" style="position: relative; z-index: 1;">
             <div class="logo">
                 <a href="index.html"><h1>PrimeX</h1></a>
             </div>
@@ -22,9 +24,7 @@
                     <li><a href="ebooks.html">E-Books & Resources</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-                    <i id="theme-toggle-icon" class="fas fa-moon"></i>
-                </button>                <div class="mobile-menu-btn">
+                <div class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </div>
             </nav>
@@ -34,7 +34,8 @@
     <!-- Hero Section -->
     <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1496902526517-c0f2cb8fdb6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; position: relative; color: white;">
         <!-- Dark overlay for better text readability -->
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6);"></div>
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4);"></div>        <!-- Dark overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4);"></div>
         <div class="container" style="position: relative; z-index: 1;">
             <div class="hero-content">
                 <h1>Transform Your Business Vision Into Reality</h1>
@@ -49,7 +50,7 @@
 
     <!-- Services Overview -->
     <section class="services-overview" style="background-color: #212529; color: white; padding: 80px 0;">
-        <div class="container">
+        <div class="container" style="position: relative; z-index: 1;">
             <h2 class="section-title" style="color: white;">Our Premium Agency Services</h2>
             <p class="section-subtitle" style="text-align: center; color: #e0e0e0; margin-bottom: 40px;">Drive growth and efficiency with our suite of expert-led agency services tailored to your unique business needs.</p>
             
@@ -163,7 +164,7 @@
 
     <!-- Testimonials -->
     <section class="testimonials" style="background-color: #212529; color: white; padding: 80px 0;">
-        <div class="container">
+        <div class="container" style="position: relative; z-index: 1;">
             <h2 class="section-title" style="color: white;">Success Stories</h2>
             <p class="section-subtitle" style="text-align: center; color: #e0e0e0; margin-bottom: 40px;">Hear directly from clients who achieved results with PrimeX.</p>
             <div class="testimonial-carousel">
@@ -280,7 +281,7 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div class="container" style="position: relative; z-index: 1;">
             <div class="footer-content">
                 <div class="footer-logo">
                     <h2>PrimeX</h2>
@@ -329,5 +330,5 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/theme-toggle.js"></script></body>
+<script src="js/light-theme.js"></script></body>
 </html> 
