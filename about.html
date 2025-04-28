@@ -22,7 +22,9 @@
                     <li><a href="ebooks.html">E-Books & Resources</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="mobile-menu">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i id="theme-toggle-icon" class="fas fa-moon"></i>
+                </button>                <div class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </div>
             </nav>
@@ -30,8 +32,10 @@
     </header>
 
     <!-- About Hero Section -->
-    <section class="about-hero">
-        <div class="container">
+    <section class="about-hero" style="background-image: url('https://images.unsplash.com/photo-1554774853-719586f82d77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; position: relative; color: white; padding: 100px 0;">
+        <!-- Dark overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.8);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
             <div class="hero-content">
                 <h1>About PrimeX</h1>
                 <p>We're a team of dedicated experts committed to delivering strategic solutions that drive real business growth and lasting success.</p>
@@ -44,99 +48,103 @@
     </section>
 
     <!-- About Intro Section -->
-    <section class="about-intro">
+    <section id="our-story" class="about-intro" style="background-color: #212529; color: white; padding: 80px 0;">
         <div class="container">
             <div class="about-intro-content">
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Business Agency">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Business Agency" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
                 </div>
                 <div class="about-text">
-                    <h2>PrimeX Agency is your partner for strategic business growth.</h2>
-                    <p>Founded by a team of marketing strategists and business development experts, PrimeX was created with a singular mission: to provide businesses with premium agency services and practical resources that deliver measurable results.</p>
-                    <p>With a background in content strategy, market research, and brand development, our team has helped dozens of businesses establish strong market positions and accelerate their growth.</p>
-                    <p>We understand the challenges of scaling a business in today's competitive landscape. Our proven frameworks and data-driven approaches eliminate the guesswork, providing you with clear strategies for success.</p>
+                    <h2 style="color: white;">PrimeX Agency is your partner for strategic business growth.</h2>
+                    <p style="color: #e0e0e0;">Founded by a team of marketing strategists and business development experts, PrimeX was created with a singular mission: to provide businesses with premium agency services and practical resources that deliver measurable results.</p>
+                    <p style="color: #e0e0e0;">With a background in content strategy, market research, and brand development, our team has helped dozens of businesses establish strong market positions and accelerate their growth.</p>
+                    <p style="color: #e0e0e0;">We understand the challenges of scaling a business in today's competitive landscape. Our proven frameworks and data-driven approaches eliminate the guesswork, providing you with clear strategies for success.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Our Values Section -->
-    <section class="our-values">
+    <section class="our-values" style="background-color: #2c3035; color: white; padding: 80px 0;">
         <div class="container">
-            <h2 class="section-title">Our Values</h2>
+            <h2 class="section-title" style="color: white;">Our Values</h2>
             <div class="values-grid">
-                <div class="value-card">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Results-Driven</h3>
-                    <p>We're committed to delivering strategies that create measurable outcomes for your business.</p>
+                <div class="value-card" style="background-color: #212529; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                    <i class="fas fa-chart-line" style="color: #ffc107;"></i>
+                    <h3 style="color: white;">Results-Driven</h3>
+                    <p style="color: #e0e0e0;">We're committed to delivering strategies that create measurable outcomes for your business.</p>
                 </div>
-                <div class="value-card">
-                    <i class="fas fa-puzzle-piece"></i>
-                    <h3>Strategic Clarity</h3>
-                    <p>We transform complex business challenges into clear, actionable plans.</p>
+                <div class="value-card" style="background-color: #212529; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                    <i class="fas fa-puzzle-piece" style="color: #ffc107;"></i>
+                    <h3 style="color: white;">Strategic Clarity</h3>
+                    <p style="color: #e0e0e0;">We transform complex business challenges into clear, actionable plans.</p>
                 </div>
-                <div class="value-card">
-                    <i class="fas fa-eye"></i>
-                    <h3>Transparency</h3>
-                    <p>We're honest about what works, what doesn't, and what you can realistically expect.</p>
+                <div class="value-card" style="background-color: #212529; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                    <i class="fas fa-eye" style="color: #ffc107;"></i>
+                    <h3 style="color: white;">Transparency</h3>
+                    <p style="color: #e0e0e0;">We're honest about what works, what doesn't, and what you can realistically expect.</p>
                 </div>
-                <div class="value-card">
-                    <i class="fas fa-handshake"></i>
-                    <h3>Partnership</h3>
-                    <p>We work as an extension of your team, aligning our expertise with your business goals.</p>
+                <div class="value-card" style="background-color: #212529; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                    <i class="fas fa-handshake" style="color: #ffc107;"></i>
+                    <h3 style="color: white;">Partnership</h3>
+                    <p style="color: #e0e0e0;">We work as an extension of your team, aligning our expertise with your business goals.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Why Choose Us Section -->
-    <section class="why-choose-us">
-        <div class="container">
-            <h2 class="section-title">Why Choose Us</h2>
+    <section class="why-choose-us" style="background-image: url('https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; position: relative; color: white; padding: 80px 0;">
+        <!-- Dark overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.85);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2 class="section-title" style="color: white;">Why Choose Us</h2>
             <div class="choose-us-content">
                 <div class="choose-us-list">
                     <div class="choose-us-item">
-                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-check-circle" style="color: #ffc107;"></i>
                         <div>
-                            <h3>Agency Expertise</h3>
-                            <p>Our team brings specialized skills in content creation, market research, and brand strategy from years of experience across various industries.</p>
+                            <h3 style="color: white;">Agency Expertise</h3>
+                            <p style="color: #e0e0e0;">Our team brings specialized skills in content creation, market research, and brand strategy from years of experience across various industries.</p>
                         </div>
                     </div>
                     <div class="choose-us-item">
-                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-check-circle" style="color: #ffc107;"></i>
                         <div>
-                            <h3>Premium Client Experience</h3>
-                            <p>Our systems and communication processes are designed to provide a seamless, professional experience for clients with high standards.</p>
+                            <h3 style="color: white;">Premium Client Experience</h3>
+                            <p style="color: #e0e0e0;">Our systems and communication processes are designed to provide a seamless, professional experience for clients with high standards.</p>
                         </div>
                     </div>
                     <div class="choose-us-item">
-                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-check-circle" style="color: #ffc107;"></i>
                         <div>
-                            <h3>Custom-Tailored Solutions</h3>
-                            <p>We don't believe in one-size-fits-all approaches. Your business deserves strategies as unique as your goals and market position.</p>
+                            <h3 style="color: white;">Custom-Tailored Solutions</h3>
+                            <p style="color: #e0e0e0;">We don't believe in one-size-fits-all approaches. Your business deserves strategies as unique as your goals and market position.</p>
                         </div>
                     </div>
                     <div class="choose-us-item">
-                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-check-circle" style="color: #ffc107;"></i>
                         <div>
-                            <h3>Actionable Resources</h3>
-                            <p>Beyond our agency services, we provide practical e-books with frameworks and templates you can implement immediately in your business.</p>
+                            <h3 style="color: white;">Actionable Resources</h3>
+                            <p style="color: #e0e0e0;">Beyond our agency services, we provide practical e-books with frameworks and templates you can implement immediately in your business.</p>
                         </div>
                     </div>
                 </div>
                 <div class="choose-us-image">
-                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Team Meeting">
+                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Team Meeting" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-banner">
-        <div class="container">
-            <h2>Ready to transform your business strategy?</h2>
-            <p>Let's work together to elevate your market position and accelerate growth.</p>
-            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    <section class="cta-banner" style="background-image: url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80'); background-size: cover; background-position: center; position: relative; color: white; padding: 60px 0; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); text-align: center;">
+        <!-- Dark overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.8);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2 style="color: white; font-size: 2.2rem; margin-bottom: 15px;">Ready to transform your business strategy?</h2>
+            <p style="color: #e0e0e0; font-size: 1.1rem; margin-bottom: 30px;">Let's work together to elevate your market position and accelerate growth.</p>
+            <a href="contact.html" class="btn btn-primary" style="padding: 12px 28px; font-size: 1.1rem; font-weight: 600;">Get in Touch</a>
         </div>
     </section>
 
@@ -180,7 +188,7 @@
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <p>&copy; 2023 PrimeX. All Rights Reserved.</p>
+                <p>&copy; 2025 PrimeX. All Rights Reserved.</p>
                 <div class="footer-legal">
                     <a href="terms.html">Terms & Conditions</a> | 
                     <a href="privacy.html">Privacy Policy</a> | 
@@ -191,5 +199,5 @@
     </footer>
 
     <script src="js/main.js"></script>
-</body>
+    <script src="js/theme-toggle.js"></script></body>
 </html> 

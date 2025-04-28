@@ -12,7 +12,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1>PrimeX</h1>
+                <a href="index.html"><h1>PrimeX</h1></a>
             </div>
             <nav>
                 <ul>
@@ -22,7 +22,9 @@
                     <li><a href="ebooks.html">E-Books & Resources</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="mobile-menu">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i id="theme-toggle-icon" class="fas fa-moon"></i>
+                </button>                <div class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </div>
             </nav>
@@ -30,8 +32,10 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero pulsating-background">
-        <div class="container">
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1496902526517-c0f2cb8fdb6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; position: relative; color: white;">
+        <!-- Dark overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
             <div class="hero-content">
                 <h1>Transform Your Business Vision Into Reality</h1>
                 <p>Partner with PrimeX for expert agency services and actionable resources designed to accelerate growth, establish your brand, and deliver measurable results for your business.</p>
@@ -44,69 +48,69 @@
     </section>
 
     <!-- Services Overview -->
-    <section class="services-overview">
+    <section class="services-overview" style="background-color: #212529; color: white; padding: 80px 0;">
         <div class="container">
-            <h2 class="section-title">Our Premium Agency Services</h2>
-            <p class="section-subtitle" style="text-align: center; color: #666; margin-bottom: 40px;">Drive growth and efficiency with our suite of expert-led agency services tailored to your unique business needs.</p>
+            <h2 class="section-title" style="color: white;">Our Premium Agency Services</h2>
+            <p class="section-subtitle" style="text-align: center; color: #e0e0e0; margin-bottom: 40px;">Drive growth and efficiency with our suite of expert-led agency services tailored to your unique business needs.</p>
             
             <div class="services-grid">
                 <!-- Content Strategy Service -->
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="service-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                    <div class="service-icon" style="background-color: #ffc107; color: #212529;">
                         <i class="fas fa-pen-fancy"></i>
                     </div>
-                    <h3>Content Strategy & Creation</h3>
-                    <p>High-quality content that positions your brand as an authority.</p>
+                    <h3 style="color: white;">Content Strategy & Creation</h3>
+                    <p style="color: #e0e0e0;">High-quality content that positions your brand as an authority.</p>
                     <a href="service-content.html" class="btn btn-primary btn-sm">Learn More</a>
                 </div>
                 
                 <!-- Market Research Service -->
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="service-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                    <div class="service-icon" style="background-color: #ffc107; color: #212529;">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Market Research & Analysis</h3>
-                    <p>Data-driven insights to inform your business strategy.</p>
+                    <h3 style="color: white;">Market Research & Analysis</h3>
+                    <p style="color: #e0e0e0;">Data-driven insights to inform your business strategy.</p>
                     <a href="service-market.html" class="btn btn-primary btn-sm">Learn More</a>
                 </div>
                 
                 <!-- MVP Development Service -->
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="service-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                    <div class="service-icon" style="background-color: #ffc107; color: #212529;">
                         <i class="fas fa-rocket"></i>
                     </div>
-                    <h3>MVP Development</h3>
-                    <p>Fast-track your idea with a minimum viable product.</p>
+                    <h3 style="color: white;">MVP Development</h3>
+                    <p style="color: #e0e0e0;">Fast-track your idea with a minimum viable product.</p>
                     <a href="service-mvp.html" class="btn btn-primary btn-sm">Learn More</a>
                 </div>
                 
                 <!-- Brand Identity Service -->
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="service-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                    <div class="service-icon" style="background-color: #ffc107; color: #212529;">
                         <i class="fas fa-paint-brush"></i>
                     </div>
-                    <h3>Brand Identity & Design</h3>
-                    <p>Create a compelling visual brand that captivates.</p>
+                    <h3 style="color: white;">Brand Identity & Design</h3>
+                    <p style="color: #e0e0e0;">Create a compelling visual brand that captivates.</p>
                     <a href="service-branding.html" class="btn btn-primary btn-sm">Learn More</a>
                 </div>
                 
                 <!-- Social Media Management -->
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="service-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                    <div class="service-icon" style="background-color: #ffc107; color: #212529;">
                         <i class="fas fa-bullhorn"></i>
                     </div>
-                    <h3>Social Media Management</h3>
-                    <p>Strategic social media presence that engages your audience.</p>
+                    <h3 style="color: white;">Social Media Management</h3>
+                    <p style="color: #e0e0e0;">Strategic social media presence that engages your audience.</p>
                     <a href="service-social.html" class="btn btn-primary btn-sm">Learn More</a>
                 </div>
                 
                 <!-- SEO Optimization -->
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="service-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                    <div class="service-icon" style="background-color: #ffc107; color: #212529;">
                         <i class="fas fa-search"></i>
                     </div>
-                    <h3>SEO Optimization</h3>
-                    <p>Boost your online visibility and attract organic traffic.</p>
+                    <h3 style="color: white;">SEO Optimization</h3>
+                    <p style="color: #e0e0e0;">Boost your online visibility and attract organic traffic.</p>
                     <a href="service-seo.html" class="btn btn-primary btn-sm">Learn More</a>
                 </div>
             </div>
@@ -118,76 +122,78 @@
     </section>
 
     <!-- Why Partner With PrimeX Section -->
-    <section class="why-partner-section" style="padding: 80px 0; background-color: var(--light-color);">
-        <div class="container">
-            <h2 class="section-title">Why Partner With PrimeX?</h2>
-            <p class="section-subtitle" style="text-align: center; color: #666; margin-bottom: 50px;">Leverage our expertise and resources for tangible business results.</p>
+    <section class="why-partner-section" style="padding: 80px 0; background-image: url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; position: relative; color: white;">
+        <!-- Dark overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.85);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2 class="section-title" style="color: white;">Why Partner With PrimeX?</h2>
+            <p class="section-subtitle" style="text-align: center; color: #e0e0e0; margin-bottom: 50px;">Leverage our expertise and resources for tangible business results.</p>
             <div class="why-partner-grid">
-                <div class="why-partner-item">
-                    <div class="why-partner-icon">
+                <div class="why-partner-item" style="background-color: rgba(44, 48, 53, 0.7); padding: 25px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                    <div class="why-partner-icon" style="background-color: #ffc107; color: #212529;">
                         <i class="fas fa-bullseye"></i>
                     </div>
-                    <h3>Strategic Approach</h3>
-                    <p>We develop tailored strategies focused on your specific business goals and target market.</p>
+                    <h3 style="color: white;">Strategic Approach</h3>
+                    <p style="color: #e0e0e0;">We develop tailored strategies focused on your specific business goals and target market.</p>
                 </div>
-                <div class="why-partner-item">
-                    <div class="why-partner-icon">
+                <div class="why-partner-item" style="background-color: rgba(44, 48, 53, 0.7); padding: 25px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                    <div class="why-partner-icon" style="background-color: #ffc107; color: #212529;">
                         <i class="fas fa-chart-pie"></i>
                     </div>
-                    <h3>Data-Driven Insights</h3>
-                    <p>Our recommendations are backed by thorough research and data analysis for maximum impact.</p>
+                    <h3 style="color: white;">Data-Driven Insights</h3>
+                    <p style="color: #e0e0e0;">Our recommendations are backed by thorough research and data analysis for maximum impact.</p>
                 </div>
-                <div class="why-partner-item">
-                    <div class="why-partner-icon">
+                <div class="why-partner-item" style="background-color: rgba(44, 48, 53, 0.7); padding: 25px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                    <div class="why-partner-icon" style="background-color: #ffc107; color: #212529;">
                         <i class="fas fa-book-open"></i>
                     </div>
-                    <h3>Actionable Resources</h3>
-                    <p>Gain access to practical e-books and templates designed for immediate implementation.</p>
+                    <h3 style="color: white;">Actionable Resources</h3>
+                    <p style="color: #e0e0e0;">Gain access to practical e-books and templates designed for immediate implementation.</p>
                 </div>
-                <div class="why-partner-item">
-                    <div class="why-partner-icon">
+                <div class="why-partner-item" style="background-color: rgba(44, 48, 53, 0.7); padding: 25px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                    <div class="why-partner-icon" style="background-color: #ffc107; color: #212529;">
                         <i class="fas fa-handshake"></i>
                     </div>
-                    <h3>Collaborative Partnership</h3>
-                    <p>We work closely with you, ensuring transparency and alignment throughout every project.</p>
+                    <h3 style="color: white;">Collaborative Partnership</h3>
+                    <p style="color: #e0e0e0;">We work closely with you, ensuring transparency and alignment throughout every project.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials" style="background-color: #fff; padding: 80px 0;">
+    <section class="testimonials" style="background-color: #212529; color: white; padding: 80px 0;">
         <div class="container">
-            <h2 class="section-title">Success Stories</h2>
-            <p class="section-subtitle" style="text-align: center; color: #666; margin-bottom: 40px;">Hear directly from clients who achieved results with PrimeX.</p>
+            <h2 class="section-title" style="color: white;">Success Stories</h2>
+            <p class="section-subtitle" style="text-align: center; color: #e0e0e0; margin-bottom: 40px;">Hear directly from clients who achieved results with PrimeX.</p>
             <div class="testimonial-carousel">
                 <div class="testimonial-item active">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left testimonial-quote-icon"></i>
-                        <p>"PrimeX transformed our marketing content completely. Their team delivered a content strategy that increased our organic traffic by 145% and directly led to 17 new client accounts."</p>
+                    <div class="testimonial-content" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        <i class="fas fa-quote-left testimonial-quote-icon" style="color: #ffc107;"></i>
+                        <p style="color: #e0e0e0;">"PrimeX transformed our marketing content completely. Their team delivered a content strategy that increased our organic traffic by 145% and directly led to 17 new client accounts."</p>
                         <div class="client-info">
-                            <h4>Sarah Johnson</h4>
-                            <p>Marketing Director, Tech Solutions Inc.</p>
+                            <h4 style="color: #ffc107;">Sarah Johnson</h4>
+                            <p style="color: #e0e0e0;">Marketing Director, Tech Solutions Inc.</p>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left testimonial-quote-icon"></i>
-                        <p>"The market research report provided by PrimeX gave us insights we never would have discovered on our own. It completely changed our product launch strategy for the better, saving us significant resources."</p>
+                    <div class="testimonial-content" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        <i class="fas fa-quote-left testimonial-quote-icon" style="color: #ffc107;"></i>
+                        <p style="color: #e0e0e0;">"The market research report provided by PrimeX gave us insights we never would have discovered on our own. It completely changed our product launch strategy for the better, saving us significant resources."</p>
                         <div class="client-info">
-                            <h4>Michael Rodriguez</h4>
-                            <p>Founder, Innovate Startups</p>
+                            <h4 style="color: #ffc107;">Michael Rodriguez</h4>
+                            <p style="color: #e0e0e0;">Founder, Innovate Startups</p>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left testimonial-quote-icon"></i>
-                        <p>"Their brand messaging work helped us clarify our value proposition and speak directly to our ideal clients. Since implementing their framework, our conversion rate has increased by 38%."</p>
+                    <div class="testimonial-content" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        <i class="fas fa-quote-left testimonial-quote-icon" style="color: #ffc107;"></i>
+                        <p style="color: #e0e0e0;">"Their brand messaging work helped us clarify our value proposition and speak directly to our ideal clients. Since implementing their framework, our conversion rate has increased by 38%."</p>
                         <div class="client-info">
-                            <h4>Jessica Williams</h4>
-                            <p>CEO, Digital Solutions Co.</p>
+                            <h4 style="color: #ffc107;">Jessica Williams</h4>
+                            <p style="color: #e0e0e0;">CEO, Digital Solutions Co.</p>
                         </div>
                     </div>
                 </div>
@@ -205,66 +211,70 @@
     </section>
 
     <!-- Featured E-books Section -->
-    <section class="featured-ebooks" style="padding: 80px 0; background-color: var(--light-color);">
-        <div class="container">
-            <h2 class="section-title">Featured Resources</h2>
-            <p class="section-subtitle" style="text-align: center; color: #666; margin-bottom: 40px;">Get started with our practical guides for entrepreneurs and business owners.</p>
-            <div class="ebooks-grid" style="grid-template-columns: repeat(3, 1fr);"> 
+    <section class="featured-ebooks" style="padding: 80px 0; background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; position: relative; color: white;">
+        <!-- Dark overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.85);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2 class="section-title" style="color: white;">Featured Resources</h2>
+            <p class="section-subtitle" style="text-align: center; color: #e0e0e0; margin-bottom: 40px;">Get started with our practical guides for entrepreneurs and business owners.</p>
+            <div class="ebooks-grid">
                 <!-- Featured E-book 1 -->
-                <div class="ebook-card">
+                <div class="ebook-card" style="background-color: rgba(44, 48, 53, 0.8); border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
                     <div class="ebook-image">
                         <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="E-book: From Idea to Income">
                     </div>
                     <div class="ebook-content">
-                        <h3>From Idea to Income: Your First Client Roadmap</h3>
-                        <p style="font-size: 0.9rem; color: #666;">The essential guide to validating your idea and landing your first paying client.</p>
+                        <h3 style="color: white;">From Idea to Income: Your First Client Roadmap</h3>
+                        <p style="font-size: 0.9rem; color: #e0e0e0;">The essential guide to validating your idea and landing your first paying client.</p>
                         <div class="ebook-footer">
-                            <span class="ebook-price">$29.99</span>
+                            <span class="ebook-price" style="color: #ffc107; font-weight: bold;">$29.99</span>
                             <a href="product-details.html" class="btn btn-primary btn-sm">View Details</a>
                         </div>
                     </div>
                 </div>
                 <!-- Featured E-book 2 -->
-                <div class="ebook-card">
+                <div class="ebook-card" style="background-color: rgba(44, 48, 53, 0.8); border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
                     <div class="ebook-image">
                         <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="E-book: Client Acquisition Mastery">
                     </div>
                     <div class="ebook-content">
-                        <h3>Client Acquisition Mastery: The First 10 Clients</h3>
-                        <p style="font-size: 0.9rem; color: #666;">Proven strategies to consistently attract and sign your crucial first clients.</p>
+                        <h3 style="color: white;">Client Acquisition Mastery: The First 10 Clients</h3>
+                        <p style="font-size: 0.9rem; color: #e0e0e0;">Proven strategies to consistently attract and sign your crucial first clients.</p>
                         <div class="ebook-footer">
-                            <span class="ebook-price">$34.99</span>
+                            <span class="ebook-price" style="color: #ffc107; font-weight: bold;">$34.99</span>
                             <a href="#" class="btn btn-primary btn-sm">View Details</a>
                         </div>
                     </div>
                 </div>
                 <!-- Featured E-book 3 -->
-                <div class="ebook-card">
+                <div class="ebook-card" style="background-color: rgba(44, 48, 53, 0.8); border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
                     <div class="ebook-image">
                         <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="E-book: Profitable Pricing Strategies">
                     </div>
                     <div class="ebook-content">
-                        <h3>Profitable Pricing Strategies for Services</h3>
-                        <p style="font-size: 0.9rem; color: #666;">Price your services with confidence and ensure maximum profitability.</p>
+                        <h3 style="color: white;">Profitable Pricing Strategies for Services</h3>
+                        <p style="font-size: 0.9rem; color: #e0e0e0;">Price your services with confidence and ensure maximum profitability.</p>
                         <div class="ebook-footer">
-                            <span class="ebook-price">$24.99</span>
+                            <span class="ebook-price" style="color: #ffc107; font-weight: bold;">$24.99</span>
                             <a href="#" class="btn btn-primary btn-sm">View Details</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center" style="margin-top: 40px;">
+            <div class="text-center">
                 <a href="ebooks.html" class="btn btn-secondary">Explore All E-Books</a>
             </div>
         </div>
     </section>
 
     <!-- Call to Action Banner -->
-    <section class="cta-banner">
-        <div class="container">
-            <h2>Ready to Grow Your Business with Confidence?</h2>
-            <p>Explore our agency services or practical e-books to find the right solution for your needs.</p>
-            <a href="contact.html" class="btn btn-primary">Discuss Your Project</a>
+    <section class="cta-banner" style="background-image: url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; position: relative; color: white; text-align: center; padding: 80px 0;">
+        <!-- Dark overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.8);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2 style="color: white; font-size: 2.2rem; margin-bottom: 20px;">Ready to Grow Your Business with Confidence?</h2>
+            <p style="color: #e0e0e0; font-size: 1.1rem; margin-bottom: 30px;">Explore our agency services or practical e-books to find the right solution for your needs.</p>
+            <a href="contact.html" class="btn btn-primary" style="padding: 12px 28px; font-size: 1.1rem; font-weight: 600;">Discuss Your Project</a>
         </div>
     </section>
 
@@ -308,7 +318,7 @@
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <p>&copy; 2023 PrimeX. All Rights Reserved.</p>
+                <p>&copy; 2025 PrimeX. All Rights Reserved.</p>
                 <div class="footer-legal">
                     <a href="terms.html">Terms & Conditions</a> | 
                     <a href="privacy.html">Privacy Policy</a> | 
@@ -319,5 +329,5 @@
     </footer>
 
     <script src="js/main.js"></script>
-</body>
+    <script src="js/theme-toggle.js"></script></body>
 </html> 

@@ -12,7 +12,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1>PrimeX</h1>
+                <a href="index.html"><h1>PrimeX</h1></a>
             </div>
             <nav>
                 <ul>
@@ -22,7 +22,9 @@
                     <li><a href="ebooks.html">E-Books & Resources</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="mobile-menu">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i id="theme-toggle-icon" class="fas fa-moon"></i>
+                </button>                <div class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </div>
             </nav>
@@ -30,163 +32,162 @@
     </header>
 
     <!-- Service Hero Section -->
-    <section class="service-detail-hero">
-        <div class="container">
+    <section class="service-detail-hero" style="background-image: url('https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80'); background-size: cover; background-position: center; position: relative; color: white; padding: 100px 0;">
+        <!-- Dark overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.8);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
             <h1>Social Media Management</h1>
-            <p>Engage your audience and grow your brand with strategic social media presence</p>
+            <p>Strategic social media presence that engages your audience and builds meaningful connections with potential clients</p>
         </div>
     </section>
 
     <!-- Service Detail Content -->
-    <section class="service-detail-content">
+    <section class="service-detail-content" style="background-color: #212529; color: white; padding: 60px 0;">
         <div class="container">
             <!-- Service Overview -->
-            <div class="service-overview">
+            <div class="service-overview" style="background-color: #2c3035; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
                 <div class="service-image">
-                    <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Social Media Management">
+                    <img src="https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?ixlib=rb-4.0.3https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80auto=formathttps://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80fit=crophttps://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80w=1170https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80q=80" alt="Content Strategy and Creation" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
                 </div>
                 <div class="service-text">
-                    <h2>Build Meaningful Connections Online</h2>
-                    <p>Social media is more than just posting updates; it's about building relationships, engaging your community, and driving business results. Our Social Media Management service helps you create a strategic presence on the platforms that matter most to your audience.</p>
-                    <p>We develop tailored content strategies, manage your profiles, engage with your followers, and track performance to ensure your social media efforts contribute directly to your business goals. Let us handle the complexities of social media so you can focus on your core operations.</p>
+                    <h2 style="color: white;">Engage Your Audience on Social Media</h2>
+                    <p style="color: #e0e0e0;">In today's digital landscape, quality content isn't just nice to have—it's essential for building trust, engaging your audience, and driving business results.</p>
+                    <p style="color: #e0e0e0;">Our content strategy and creation service helps you develop a cohesive content approach that aligns with your business goals and resonates with your target audience. From blog posts and website copy to lead magnets and email sequences, we create compelling content that positions your brand as an authority and drives conversions.</p>
                     
                     <div class="service-features">
-                        <h3>Key Benefits</h3>
+                        <h3 style="color: #ffc107;">Key Benefits</h3>
                         <ul>
-                            <li><i class="fas fa-check-circle"></i> <span>Increase brand awareness and reach</span></li>
-                            <li><i class="fas fa-check-circle"></i> <span>Engage your target audience effectively</span></li>
-                            <li><i class="fas fa-check-circle"></i> <span>Drive traffic to your website and generate leads</span></li>
-                            <li><i class="fas fa-check-circle"></i> <span>Build a loyal community around your brand</span></li>
-                            <li><i class="fas fa-check-circle"></i> <span>Save time and resources with professional management</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Establish your brand as an industry authority</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Attract and engage your ideal audience</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Improve search engine visibility with SEO-optimized content</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Generate more leads with valuable, relevant content</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Build trust and credibility with your audience</span></li>
                         </ul>
                     </div>
                 </div>
             </div>
             
             <!-- Service Pricing Packages -->
-            <div class="service-packages">
-                <h2 class="section-title">Social Media Packages</h2>
-                <p class="section-subtitle">Choose the monthly plan that suits your business needs</p>
+            <div class="service-packages" style="margin-top: 50px;">
+                <h2 class="section-title" style="color: white;">Our Social Media Packages</h2>
+                <p class="section-subtitle" style="color: #e0e0e0;">Select the package that best fits your business needs</p>
                 
                 <div class="pricing-grid">
-                    <!-- Basic Package -->
-                    <div class="pricing-card">
-                        <h3>Starter Social</h3>
-                        <div class="pricing-price">$399<span>/month</span></div>
-                        <p>Ideal for businesses establishing their social media presence.</p>
+                    <!-- Starter Package -->
+                    <div class="pricing-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <h3 style="color: white;">Starter Package</h3>
+                        <div class="pricing-price" style="color: #ffc107;">$499<span style="color: #adb5bd;">/one-time</span></div>
+                        <p style="color: #e0e0e0;">Perfect for businesses just starting to develop their content strategy.</p>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> 1 Social Media Platform</li>
-                            <li><i class="fas fa-check"></i> Content calendar creation</li>
-                            <li><i class="fas fa-check"></i> 8 Posts per month</li>
-                            <li><i class="fas fa-check"></i> Basic community engagement</li>
-                            <li><i class="fas fa-check"></i> Monthly performance report</li>
-                            <li><i class="fas fa-check"></i> Profile optimization</li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Content strategy assessment</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">4 SEO-optimized blog articles</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">1 lead magnet (PDF guide or checklist)</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">5 social media posts</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Basic keyword research</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Content calendar template</span></li>
                         </ul>
-                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                        <div class="button-group" style="display: flex; gap: 10px; justify-content: center;">
+                            <a href="javascript:void(0)" onclick="buyNow('Starter Content Package', '$499', 'https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?ixlib=rb-4.0.3https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80auto=formathttps://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80fit=crophttps://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80w=1170https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80q=80', 'Content strategy assessment, 4 SEO-optimized blog articles, 1 lead magnet, and more.', 'Service')" class="btn btn-primary">Buy Now</a>
+                        </div>
                     </div>
                     
                     <!-- Growth Package -->
-                    <div class="pricing-card">
-                        <div class="popular-tag">Popular</div>
-                        <h3>Growth Social</h3>
-                        <div class="pricing-price">$699<span>/month</span></div>
-                        <p>Comprehensive management for businesses focused on growth.</p>
+                    <div class="pricing-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <div class="popular-tag" style="background-color: #ffc107; color: #212529;">Popular</div>
+                        <h3 style="color: white;">Growth Package</h3>
+                        <div class="pricing-price" style="color: #ffc107;">$899<span style="color: #adb5bd;">/one-time</span></div>
+                        <p style="color: #e0e0e0;">Comprehensive content strategy for businesses ready to scale their online presence.</p>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> 2 Social Media Platforms</li>
-                            <li><i class="fas fa-check"></i> Advanced content strategy</li>
-                            <li><i class="fas fa-check"></i> 12 Posts per month per platform</li>
-                            <li><i class="fas fa-check"></i> Custom graphic design</li>
-                            <li><i class="fas fa-check"></i> Active community management</li>
-                            <li><i class="fas fa-check"></i> Detailed monthly report & insights</li>
-                            <li><i class="fas fa-check"></i> Follower growth strategies</li>
-                            <li><i class="fas fa-check"></i> Basic social media ad setup</li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">In-depth content strategy development</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">8 SEO-optimized blog articles</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">2 lead magnets (with custom design)</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">10 social media posts</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Advanced keyword research</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">3-month content calendar</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Email newsletter sequence (5 emails)</span></li>
                         </ul>
-                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                        <div class="button-group" style="display: flex; gap: 10px; justify-content: center;">
+                            <a href="javascript:void(0)" onclick="buyNow('Growth Content Package', '$899', 'https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?ixlib=rb-4.0.3https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80auto=formathttps://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80fit=crophttps://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80w=1170https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80q=80', 'In-depth content strategy development, 8 SEO-optimized blog articles, 2 lead magnets, and more.', 'Service')" class="btn btn-primary">Buy Now</a>
+                        </div>
                     </div>
                     
                     <!-- Premium Package -->
-                    <div class="pricing-card">
-                        <h3>Premium Social</h3>
-                        <div class="pricing-price">$1,199<span>/month</span></div>
-                        <p>Full-service social media management for maximum impact and reach.</p>
+                    <div class="pricing-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <h3 style="color: white;">Premium Package</h3>
+                        <div class="pricing-price" style="color: #ffc107;">$1,499<span style="color: #adb5bd;">/one-time</span></div>
+                        <p style="color: #e0e0e0;">Elite content strategy and creation for established businesses seeking maximum impact.</p>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Up to 3 Social Media Platforms</li>
-                            <li><i class="fas fa-check"></i> Comprehensive social media strategy</li>
-                            <li><i class="fas fa-check"></i> 20 Posts per month per platform</li>
-                            <li><i class="fas fa-check"></i> Custom video/animation content</li>
-                            <li><i class="fas fa-check"></i> Proactive community building</li>
-                            <li><i class="fas fa-check"></i> Influencer outreach (optional add-on)</li>
-                            <li><i class="fas fa-check"></i> Social media ad campaign management</li>
-                            <li><i class="fas fa-check"></i> Advanced reporting & ROI tracking</li>
-                            <li><i class="fas fa-check"></i> Competitor monitoring</li>
-                            <li><i class="fas fa-check"></i> Bi-weekly strategy calls</li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Comprehensive content strategy blueprint</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">12 SEO-optimized blog articles</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">3 premium lead magnets with design</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">20 social media posts</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Competitive content analysis</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">6-month content calendar</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Email nurture sequence (8 emails)</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Website copy audit and recommendations</span></li>
                         </ul>
-                        <a href="contact.html" class="btn btn-primary">Get Started</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Social Media Process Section -->
-            <div class="social-media-process" style="margin-top: 80px;">
-                <h2 class="section-title">Our Management Process</h2>
-                <p class="section-subtitle">A strategic approach to building your social presence</p>
-                
-                <div class="process-grid" style="grid-template-columns: repeat(5, 1fr);">
-                    <div class="process-step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h3>Audit & Strategy</h3>
-                            <p>We assess your current presence and develop a tailored social media strategy.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h3>Content Planning</h3>
-                            <p>We create a content calendar with engaging posts aligned with your brand.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h3>Content Creation</h3>
-                            <p>Our team designs and writes compelling content for your approval.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">4</div>
-                        <div class="step-content">
-                            <h3>Management</h3>
-                            <p>We schedule posts, engage with your audience, and monitor activity.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">5</div>
-                        <div class="step-content">
-                            <h3>Reporting</h3>
-                            <p>We provide regular reports with insights and recommendations.</p>
+                        <div class="button-group" style="display: flex; gap: 10px; justify-content: center;">
+                            <a href="javascript:void(0)" onclick="buyNow('Premium Content Package', '$1,499', 'https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?ixlib=rb-4.0.3https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80auto=formathttps://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80fit=crophttps://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80w=1170https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80q=80', 'Comprehensive content strategy blueprint, 12 SEO-optimized blog articles, 3 premium lead magnets, and more.', 'Service')" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                 </div>
             </div>
             
             <!-- Custom Solutions Section -->
-            <div class="custom-solutions" style="margin-top: 80px;">
-                <h2 class="section-title">Need a Tailored Social Plan?</h2>
-                <p class="text-center">We understand every business has unique social media needs. Contact us to discuss a custom management plan.</p>
+            <div class="custom-solutions" style="margin-top: 50px; background-color: #2c3035; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                <h2 class="section-title" style="color: white;">Need a Custom Solution?</h2>
+                <p class="text-center" style="color: #e0e0e0;">We understand that each business has unique content needs. Contact us to discuss a tailored content strategy that aligns perfectly with your specific goals.</p>
                 <div class="text-center" style="margin-top: 30px;">
                     <a href="contact.html" class="btn btn-primary">Request a Custom Quote</a>
+                </div>
+            </div>
+            
+            <!-- How It Works Section -->
+            <div class="how-it-works" style="margin-top: 50px; background-color: #2c3035; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                <h2 class="section-title" style="color: white;">Our Social Media Management Process</h2>
+                
+                <div class="process-grid">
+                    <div class="process-step" style="background-color: #343a40; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                        <div class="step-number" style="background-color: #343a40; color: white; border: 2px solid #ffc107;">1</div>
+                        <div class="step-content">
+                            <h3 style="color: white;">Discovery</h3>
+                            <p style="color: #e0e0e0;">We analyze your business, target audience, competitors, and goals to understand your content needs.</p>
+                        </div>
+                    </div>
+                    <div class="process-step" style="background-color: #343a40; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                        <div class="step-number" style="background-color: #343a40; color: white; border: 2px solid #ffc107;">2</div>
+                        <div class="step-content">
+                            <h3 style="color: white;">Strategy</h3>
+                            <p style="color: #e0e0e0;">We develop a custom content strategy tailored to your audience and business objectives.</p>
+                        </div>
+                    </div>
+                    <div class="process-step" style="background-color: #343a40; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                        <div class="step-number" style="background-color: #343a40; color: white; border: 2px solid #ffc107;">3</div>
+                        <div class="step-content">
+                            <h3 style="color: white;">Creation</h3>
+                            <p style="color: #e0e0e0;">Our expert content team crafts engaging, valuable content aligned with your brand voice.</p>
+                        </div>
+                    </div>
+                    <div class="process-step" style="background-color: #343a40; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                        <div class="step-number" style="background-color: #343a40; color: white; border: 2px solid #ffc107;">4</div>
+                        <div class="step-content">
+                            <h3 style="color: white;">Delivery</h3>
+                            <p style="color: #e0e0e0;">You receive finalized content ready for implementation, with support for any revisions needed.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-banner">
-        <div class="container">
-            <h2>Ready to amplify your social media presence?</h2>
-            <p>Let us manage your social channels while you focus on growing your business.</p>
-            <a href="contact.html" class="btn btn-primary">Get Started with Social</a>
+    <section class="cta-banner" style="background-image: url(https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1000); background-size: cover; background-position: center; position: relative; color: white; padding: 60px 0; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); text-align: center;">
+        <!-- Dark overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.8);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2 style="color: white;">Ready to elevate your social media presence?</h2>
+            <p style="color: #e0e0e0;">Let's create a strategic social media presence that engages your audience and builds your brand.</p>
+            <a href="contact.html" class="btn btn-primary">Get Started Today</a>
         </div>
     </section>
 
@@ -230,7 +231,7 @@
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <p>&copy; 2023 PrimeX. All Rights Reserved.</p>
+                <p>&copy; 2025 PrimeX. All Rights Reserved.</p>
                 <div class="footer-legal">
                     <a href="terms.html">Terms & Conditions</a> | 
                     <a href="privacy.html">Privacy Policy</a> | 
@@ -240,6 +241,19 @@
         </div>
     </footer>
 
+    <!-- JavaScript for Buy Now functionality -->
+    <script>
+        function buyNow(title, price, image, description, type) {
+            // Encode the values to safely include them in the URL
+            const encodedTitle = encodeURIComponent(title);
+            const encodedPrice = encodeURIComponent(price);
+            const encodedImage = encodeURIComponent(image);
+            const encodedDescription = encodeURIComponent(description);
+            
+            // Redirect to the checkout page with the product information
+            window.location.href = `checkout.html?title=${encodedTitle}&price=${encodedPrice}&image=${encodedImage}&description=${encodedDescription}&type=${type}`;
+        }
+    </script>
     <script src="js/main.js"></script>
-</body>
+    <script src="js/theme-toggle.js"></script></body>
 </html> 

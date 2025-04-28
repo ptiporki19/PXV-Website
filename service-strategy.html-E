@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Strategy & Planning - PrimeX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>PrimeX</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html" class="active">Agency Services</a></li>
+                    <li><a href="ebooks.html">E-Books & Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Service Hero Section -->
+    <section class="service-detail-hero" style="background: linear-gradient(135deg, #1a2b3c 0%, #2a3b4c 50%, #1a2b3c 100%); color: white; padding: 100px 0;">
+        <div class="container">
+            <h1>Business Strategy & Planning</h1>
+            <p>Transform your vision into actionable plans with expert-guided strategy development</p>
+        </div>
+    </section>
+
+    <!-- Service Detail Content -->
+    <section class="service-detail-content">
+        <div class="container">
+            <!-- Service Overview -->
+            <div class="service-overview">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Business Strategy & Planning">
+                </div>
+                <div class="service-text">
+                    <h2>Navigate Your Path to Success</h2>
+                    <p>Every successful business is built on a solid strategic foundation. Our Business Strategy & Planning service helps you clarify your vision, define your goals, and create a roadmap to achieve them. Whether you're launching a new venture, entering a new market, or scaling your existing business, our strategic expertise will guide you through the complexities of business growth.</p>
+                    <p>We combine proven strategic frameworks with creative problem-solving to develop actionable plans tailored to your unique business challenges. Our collaborative approach ensures that strategies are not only ambitious but also practical and implementable.</p>
+                    
+                    <div class="service-features">
+                        <h3>Key Benefits</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> <span>Clarify your business vision and long-term objectives</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Develop actionable strategic plans with measurable milestones</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Identify and prioritize growth opportunities</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Optimize resource allocation for maximum ROI</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Create competitive advantage in your market</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Pricing Packages -->
+            <div class="service-packages">
+                <h2 class="section-title">Strategy Packages</h2>
+                <p class="section-subtitle">Choose the level of strategic support that matches your business needs</p>
+                
+                <div class="pricing-grid">
+                    <!-- Basic Package -->
+                    <div class="pricing-card">
+                        <h3>Startup Strategy</h3>
+                        <div class="pricing-price">$1,499<span>/plan</span></div>
+                        <p>Essential strategy development for startups and small businesses.</p>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Business model canvas development</li>
+                            <li><i class="fas fa-check"></i> Core value proposition definition</li>
+                            <li><i class="fas fa-check"></i> Target market analysis</li>
+                            <li><i class="fas fa-check"></i> Basic competitive analysis</li>
+                            <li><i class="fas fa-check"></i> 90-day action plan</li>
+                            <li><i class="fas fa-check"></i> 2 strategy sessions (2 hours each)</li>
+                            <li><i class="fas fa-check"></i> Implementation guidance</li>
+                            <li><i class="fas fa-check"></i> 30-day follow-up call</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                    
+                    <!-- Standard Package -->
+                    <div class="pricing-card">
+                        <div class="popular-tag">Popular</div>
+                        <h3>Growth Strategy</h3>
+                        <div class="pricing-price">$2,999<span>/plan</span></div>
+                        <p>Comprehensive strategy for businesses focused on scaling and growth.</p>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Business model optimization</li>
+                            <li><i class="fas fa-check"></i> Detailed market analysis</li>
+                            <li><i class="fas fa-check"></i> Customer acquisition strategy</li>
+                            <li><i class="fas fa-check"></i> Comprehensive competitive analysis</li>
+                            <li><i class="fas fa-check"></i> Revenue growth modeling</li>
+                            <li><i class="fas fa-check"></i> Strategic partnerships plan</li>
+                            <li><i class="fas fa-check"></i> 6-month roadmap with KPIs</li>
+                            <li><i class="fas fa-check"></i> 4 strategy sessions (2 hours each)</li>
+                            <li><i class="fas fa-check"></i> Monthly implementation calls (3 months)</li>
+                            <li><i class="fas fa-check"></i> Strategy adjustment support</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                    
+                    <!-- Premium Package -->
+                    <div class="pricing-card">
+                        <h3>Enterprise Strategy</h3>
+                        <div class="pricing-price">$5,999<span>/plan</span></div>
+                        <p>Advanced strategic planning for established businesses and complex initiatives.</p>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Full business model innovation</li>
+                            <li><i class="fas fa-check"></i> Market expansion strategy</li>
+                            <li><i class="fas fa-check"></i> Customer retention & lifecycle optimization</li>
+                            <li><i class="fas fa-check"></i> In-depth industry analysis</li>
+                            <li><i class="fas fa-check"></i> Product/service portfolio optimization</li>
+                            <li><i class="fas fa-check"></i> Organizational structure recommendations</li>
+                            <li><i class="fas fa-check"></i> Risk management framework</li>
+                            <li><i class="fas fa-check"></i> 12-month strategic roadmap</li>
+                            <li><i class="fas fa-check"></i> Executive team workshop (1 day)</li>
+                            <li><i class="fas fa-check"></i> 6 strategy sessions (2 hours each)</li>
+                            <li><i class="fas fa-check"></i> Quarterly implementation reviews (12 months)</li>
+                            <li><i class="fas fa-check"></i> Strategic advisory retainer (10 hours)</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Strategic Frameworks Section -->
+            <div class="strategic-frameworks" style="margin-top: 80px;">
+                <h2 class="section-title">Our Strategic Frameworks</h2>
+                <p class="section-subtitle">We leverage proven methodologies tailored to your unique business challenges</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px;">
+                    <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h3 style="color: #1a4d94; margin-bottom: 15px;"><i class="fas fa-chess" style="margin-right: 10px;"></i> Strategic Positioning</h3>
+                        <p>Define your unique place in the market and develop a compelling value proposition that sets you apart from competitors.</p>
+                    </div>
+                    <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h3 style="color: #1a4d94; margin-bottom: 15px;"><i class="fas fa-chart-line" style="margin-right: 10px;"></i> Growth Modeling</h3>
+                        <p>Identify and prioritize growth opportunities through market expansion, product development, or strategic partnerships.</p>
+                    </div>
+                    <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h3 style="color: #1a4d94; margin-bottom: 15px;"><i class="fas fa-users" style="margin-right: 10px;"></i> Customer Strategy</h3>
+                        <p>Develop comprehensive acquisition, retention, and expansion strategies to maximize customer lifetime value.</p>
+                    </div>
+                    <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h3 style="color: #1a4d94; margin-bottom: 15px;"><i class="fas fa-cogs" style="margin-right: 10px;"></i> Operational Excellence</h3>
+                        <p>Optimize your operational processes to increase efficiency, reduce costs, and scale your business effectively.</p>
+                    </div>
+                    <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h3 style="color: #1a4d94; margin-bottom: 15px;"><i class="fas fa-dollar-sign" style="margin-right: 10px;"></i> Financial Strategy</h3>
+                        <p>Develop sustainable revenue models, pricing strategies, and resource allocation frameworks to maximize profitability.</p>
+                    </div>
+                    <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h3 style="color: #1a4d94; margin-bottom: 15px;"><i class="fas fa-rocket" style="margin-right: 10px;"></i> Innovation Planning</h3>
+                        <p>Create frameworks for continuous innovation in your products, services, and business model to stay ahead of market disruption.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- How It Works Section -->
+            <div class="how-it-works" style="margin-top: 80px;">
+                <h2 class="section-title">Our Strategic Planning Process</h2>
+                
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Discovery</h3>
+                            <p>We conduct a comprehensive assessment of your current business situation, goals, challenges, and market position.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Analysis</h3>
+                            <p>We analyze your industry, competitors, target market, and internal capabilities to identify opportunities and threats.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Strategy Development</h3>
+                            <p>We collaborate with you to develop strategic objectives, initiatives, and key performance indicators.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Action Planning</h3>
+                            <p>We create detailed action plans, resource requirements, and implementation timelines for each strategic initiative.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Implementation Support</h3>
+                            <p>We provide guidance, accountability, and adjustments during the implementation phase to ensure success.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Custom Solutions Section -->
+            <div class="custom-solutions" style="margin-top: 80px;">
+                <h2 class="section-title">Need a Specialized Strategy?</h2>
+                <p class="text-center">Every business faces unique challenges. Contact us to discuss your specific strategic needs for a tailored solution.</p>
+                <div class="text-center" style="margin-top: 30px;">
+                    <a href="contact.html" class="btn btn-primary">Request Custom Strategy</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-banner" style="background: linear-gradient(90deg, #091e36 0%, #1c3f60 100%); padding: 60px 0; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); position: relative; overflow: hidden;">
+        <div class="container">
+            <h2>Ready to transform your business vision into reality?</h2>
+            <p>Partner with our strategic experts to create a clear path to sustainable growth.</p>
+            <a href="contact.html" class="btn btn-primary">Start Your Strategic Journey</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>PrimeX</h2>
+                    <p>Empowering businesses through premium agency services and practical resources.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Agency Services</a></li>
+                        <li><a href="ebooks.html">E-Books</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 7520 NW 104TH AVE UNIT A103 DORAL, FLORIDA 33178</p>
+                    <p><i class="fas fa-phone"></i> +1 (249) 487-1688</p>
+                    <p><i class="fas fa-envelope"></i> info@primexvanguard.com</p>
+                </div>
+                <div class="newsletter">
+                    <h3>Join Our Newsletter</h3>
+                    <p>Stay updated with our latest resources and agency insights.</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn btn-sm">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>&copy; 2025 PrimeX. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="terms.html">Terms & Conditions</a> | 
+                    <a href="privacy.html">Privacy Policy</a> | 
+                    <a href="refund.html">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

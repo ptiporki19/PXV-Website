@@ -27,24 +27,15 @@
         }
         
         .product-summary {
-            background-color: #2c3035; /* Darker card background */
+            background-color: var(--light-color);
             border-radius: var(--border-radius);
             padding: 30px;
-            color: white; /* White text */
-            border: 1px solid #444;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
         
         .product-summary img {
             max-width: 100%;
             border-radius: var(--border-radius);
             margin-bottom: 20px;
-            border: 1px solid #444;
-        }
-        
-        .product-summary h2,
-        .product-summary h3 {
-            color: white;
         }
         
         .product-meta {
@@ -53,7 +44,7 @@
             flex-wrap: wrap;
             gap: 10px;
             font-size: 0.9rem;
-            color: #adb5bd; /* Lighter gray for meta text */
+            color: #666;
         }
         
         .product-meta span {
@@ -62,24 +53,11 @@
             gap: 5px;
         }
         
-        .product-meta i {
-            color: #ffc107; /* Accent color */
-        }
-        
-        .product-summary p {
-            color: #e0e0e0; /* Light gray for descriptions */
-        }
-        
         .checkout-form {
-            background-color: #212529; /* Main dark background */
+            background-color: #fff;
             border-radius: var(--border-radius);
             padding: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-            color: white;
-        }
-        
-        .checkout-form h2 {
-            color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
         
         .form-group {
@@ -90,22 +68,15 @@
             display: block;
             margin-bottom: 5px;
             font-weight: 500;
-            color: #e0e0e0; /* Light gray for labels */
         }
         
         .form-group input,
         .form-group select {
             width: 100%;
             padding: 12px 15px;
-            border: 1px solid #495057; /* Darker border */
+            border: 1px solid #ddd;
             border-radius: var(--border-radius);
             font-size: 1rem;
-            background-color: #343a40; /* Dark input background */
-            color: white; /* White input text */
-        }
-        
-        .form-group input::placeholder {
-            color: #adb5bd; /* Lighter placeholder text */
         }
         
         .form-row {
@@ -115,19 +86,17 @@
         }
         
         .order-summary {
-            background-color: #343a40; /* Slightly lighter dark background */
+            background-color: #f9f9f9;
             border-radius: var(--border-radius);
             padding: 20px;
             margin-top: 20px;
-            border: 1px solid #495057;
         }
         
         .order-item {
             display: flex;
             justify-content: space-between;
             padding: 10px 0;
-            border-bottom: 1px solid #495057; /* Darker border */
-            color: #e0e0e0;
+            border-bottom: 1px solid #eee;
         }
         
         .order-total {
@@ -137,13 +106,12 @@
             font-weight: 700;
             font-size: 1.1rem;
             margin-top: 15px;
-            border-top: 2px solid #495057; /* Darker border */
-            color: white;
+            border-top: 2px solid #ddd;
         }
         
         .btn-checkout {
-            background-color: var(--primary-color); /* Accent color */
-            color: #ffffff; /* Changed to white text for better contrast */
+            background-color: var(--primary-color);
+            color: white;
             padding: 15px 25px;
             border: none;
             border-radius: var(--border-radius);
@@ -156,9 +124,7 @@
         }
         
         .btn-checkout:hover {
-            background-color: #ffca2c; /* Lighter accent on hover */
-            box-shadow: 0 4px 8px rgba(255, 193, 7, 0.2);
-            color: #212529; /* Keep dark text on hover for lighter background */
+            background-color: var(--secondary-color);
         }
         
         .payment-icons {
@@ -170,37 +136,18 @@
         
         .payment-icons i {
             font-size: 2rem;
-            color: #adb5bd; /* Lighter gray for icons */
+            color: #666;
         }
         
         .secure-badge {
             text-align: center;
             margin-top: 20px;
-            color: #adb5bd; /* Lighter gray */
+            color: #666;
             font-size: 0.9rem;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 5px;
-        }
-
-        .secure-badge i {
-            color: #28a745; /* Green for secure icon */
-        }
-
-        body {
-            background-color: #1a1d20; /* Dark body background */
-        }
-
-        header {
-             background-color: #212529;
-             box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        }
-
-        .checkout-section h1.section-title {
-            color: white;
-            text-align: center;
-            margin-bottom: 40px;
         }
     </style>
 </head>
@@ -219,9 +166,7 @@
                     <li><a href="ebooks.html">E-Books & Resources</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-                    <i id="theme-toggle-icon" class="fas fa-moon"></i>
-                </button>                <div class="mobile-menu-btn">
+                <div class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </div>
             </nav>
@@ -368,93 +313,74 @@
     <!-- JavaScript to handle dynamic product information -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Get product data from localStorage
-            const productDataString = localStorage.getItem('checkoutProduct');
-            let productData = null;
-
-            if (productDataString) {
-                try {
-                    productData = JSON.parse(productDataString);
-                } catch (error) {
-                    console.error('Error parsing product data from localStorage:', error);
-                    // Optionally clear the invalid item
-                    // localStorage.removeItem('checkoutProduct');
+            // Get URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+            const productTitle = urlParams.get('title');
+            const productPrice = urlParams.get('price');
+            const productImage = urlParams.get('image');
+            const productType = urlParams.get('type') || 'E-Book';
+            const productDescription = urlParams.get('description');
+            
+            // Update product information if parameters are available
+            if (productTitle) {
+                document.getElementById('product-title').textContent = decodeURIComponent(productTitle);
+                document.title = `Checkout: ${decodeURIComponent(productTitle)} - PrimeX`;
+            }
+            
+            if (productPrice) {
+                const price = decodeURIComponent(productPrice);
+                document.getElementById('product-price').textContent = price;
+                document.getElementById('order-total').textContent = price;
+            }
+            
+            if (productImage) {
+                document.querySelector('#product-image img').src = decodeURIComponent(productImage);
+                document.querySelector('#product-image img').alt = productTitle ? `${decodeURIComponent(productTitle)} Image` : 'Product Image';
+            }
+            
+            if (productType) {
+                // Update the icon based on product type
+                let icon = 'fas fa-file-pdf';
+                let metaHtml = '';
+                
+                if (productType.toLowerCase().includes('service')) {
+                    icon = 'fas fa-briefcase';
+                    // Different meta information for services
+                    metaHtml = `
+                        <span id="product-type"><i class="${icon}"></i> ${decodeURIComponent(productType)}</span>
+                        <span id="product-delivery"><i class="fas fa-calendar-check"></i> Service Delivery</span>
+                        <span id="product-support"><i class="fas fa-headset"></i> Support Included</span>
+                    `;
+                } else {
+                    // E-Book meta information
+                    metaHtml = `
+                        <span id="product-type"><i class="${icon}"></i> ${decodeURIComponent(productType)}</span>
+                        <span id="product-pages"><i class="fas fa-pager"></i> Digital Product</span>
+                        <span id="product-format"><i class="fas fa-download"></i> Instant Access</span>
+                    `;
                 }
+                
+                document.querySelector('.product-meta').innerHTML = metaHtml;
             }
             
-            // Default values if localStorage data is missing or invalid
-            const defaultProduct = {
-                name: 'From Idea to Income: Your First Client Roadmap',
-                price: '$29.99',
-                image: 'https://images.unsplash.com/photo-1516979187457-637abb4f9353?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
-                description: 'A comprehensive guide to launching your service-based business and landing your first paying client. Packed with actionable advice, templates, and real-world examples.',
-                type: 'E-Book'
-            };
-
-            // Use localStorage data if available, otherwise use defaults
-            const productName = productData?.name || defaultProduct.name;
-            const productPrice = productData?.price || defaultProduct.price;
-            const productImage = productData?.image || defaultProduct.image;
-            const productDescription = productData?.description || defaultProduct.description;
-            const productType = productData?.type || defaultProduct.type;
-
-            // Update product information on the page
-            document.getElementById('product-title').textContent = productName;
-            document.title = `Checkout: ${productName} - PrimeX`; // Update page title
-            
-            document.getElementById('product-price').textContent = productPrice;
-            document.getElementById('order-total').textContent = productPrice;
-            
-            const imgElement = document.querySelector('#product-image img');
-            if (imgElement) {
-                imgElement.src = productImage;
-                imgElement.alt = `${productName} Image`;
-            }
-            
-            document.getElementById('product-description').textContent = productDescription;
-
-            // Update the product meta information based on type
-            let icon = 'fas fa-file-pdf';
-            let metaHtml = '';
-            
-            if (productType.toLowerCase().includes('service')) {
-                icon = 'fas fa-briefcase';
-                metaHtml = `
-                    <span id="product-type"><i class="${icon}"></i> ${productType}</span>
-                    <span id="product-delivery"><i class="fas fa-calendar-check"></i> Service Delivery</span>
-                    <span id="product-support"><i class="fas fa-headset"></i> Support Included</span>
-                `;
-            } else { // Default to E-Book/Digital Product type
-                icon = 'fas fa-file-pdf';
-                 metaHtml = `
-                    <span id="product-type"><i class="${icon}"></i> ${productType}</span>
-                    <span id="product-pages"><i class="fas fa-pager"></i> Digital Product</span>
-                    <span id="product-format"><i class="fas fa-download"></i> Instant Access</span>
-                `;
-            }
-            
-            const productMetaElement = document.querySelector('.product-meta');
-            if (productMetaElement) {
-                 productMetaElement.innerHTML = metaHtml;
+            if (productDescription) {
+                document.getElementById('product-description').textContent = decodeURIComponent(productDescription);
             }
             
             // Handle form submission
             document.getElementById('checkout-form').addEventListener('submit', function(e) {
                 e.preventDefault();
                 
-                // Clear the item from localStorage after checkout attempt
-                localStorage.removeItem('checkoutProduct');
-                
                 // Here you would typically send the form data to a payment processor
                 // For demonstration, we'll just show an alert
-                alert('Thank you for your purchase! You will receive confirmation shortly.');
+                alert('Thank you for your purchase! You will receive your product shortly via email.');
                 
-                // Redirect to the thank you page (pass details again or use localStorage if needed there too)
-                 const encodedTitle = encodeURIComponent(productName);
-                 const encodedPrice = encodeURIComponent(productPrice);
-                 const encodedImage = encodeURIComponent(productImage);
-                 const encodedType = encodeURIComponent(productType);
-                window.location.href = `thank-you.html?title=${encodedTitle}&price=${encodedPrice}&image=${encodedImage}&type=${encodedType}`;
+                // Redirect to the thank you page
+                const encodedTitle = encodeURIComponent(productTitle);
+                const encodedPrice = encodeURIComponent(price);
+                const encodedImage = encodeURIComponent(productImage);
+                window.location.href = `thank-you.html?title=${encodedTitle}&price=${encodedPrice}&image=${encodedImage}&type=${productType}`;
             });
         });
     </script>

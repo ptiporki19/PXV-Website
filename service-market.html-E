@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Research & Business Intelligence - PrimeX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>PrimeX</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html" class="active">Agency Services</a></li>
+                    <li><a href="ebooks.html">E-Books & Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Service Hero Section -->
+    <section class="service-detail-hero" style="background: linear-gradient(135deg, #1a2b3c 0%, #2a3b4c 50%, #1a2b3c 100%); color: white; padding: 100px 0;">
+        <div class="container">
+            <h1>Market Research & Business Intelligence</h1>
+            <p>Data-driven insights to power strategic decisions and identify untapped market opportunities</p>
+        </div>
+    </section>
+
+    <!-- Service Detail Content -->
+    <section class="service-detail-content">
+        <div class="container">
+            <!-- Service Overview -->
+            <div class="service-overview">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Market Research & Business Intelligence">
+                </div>
+                <div class="service-text">
+                    <h2>Make Strategic Decisions with Confidence</h2>
+                    <p>In today's competitive landscape, making decisions based on assumptions rather than data can be costly. Our Market Research & Business Intelligence service provides the strategic insights you need to identify opportunities, understand your competitive landscape, and make data-driven decisions that drive growth.</p>
+                    <p>We combine rigorous market analysis with cutting-edge research methodologies to deliver actionable intelligence tailored to your specific business goals. Whether you're entering a new market, launching a product, or refining your business strategy, our insights will give you the competitive edge.</p>
+                    
+                    <div class="service-features">
+                        <h3>Key Benefits</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> <span>Identify untapped market opportunities and growth areas</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Understand your target audience with detailed customer profiles</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Analyze competitors to identify strengths and weaknesses</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Validate business ideas with data before investing heavily</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Make strategic decisions based on reliable market insights</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Pricing Packages -->
+            <div class="service-packages">
+                <h2 class="section-title">Our Research Packages</h2>
+                <p class="section-subtitle">Choose the level of insight that matches your business needs</p>
+                
+                <div class="pricing-grid">
+                    <!-- Basic Package -->
+                    <div class="pricing-card">
+                        <h3>Essential Research</h3>
+                        <div class="pricing-price">$799<span>/report</span></div>
+                        <p>Perfect for startups and small businesses needing fundamental market insights.</p>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Industry overview & trends</li>
+                            <li><i class="fas fa-check"></i> Target audience analysis</li>
+                            <li><i class="fas fa-check"></i> Competitor analysis (3 competitors)</li>
+                            <li><i class="fas fa-check"></i> Basic SWOT analysis</li>
+                            <li><i class="fas fa-check"></i> Market size estimation</li>
+                            <li><i class="fas fa-check"></i> Essential recommendations</li>
+                            <li><i class="fas fa-check"></i> 1 revision round</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                    
+                    <!-- Standard Package -->
+                    <div class="pricing-card">
+                        <div class="popular-tag">Popular</div>
+                        <h3>Comprehensive Research</h3>
+                        <div class="pricing-price">$1,499<span>/report</span></div>
+                        <p>In-depth analysis for businesses seeking detailed market intelligence.</p>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Detailed industry analysis</li>
+                            <li><i class="fas fa-check"></i> Customer segmentation</li>
+                            <li><i class="fas fa-check"></i> Competitor analysis (5-7 competitors)</li>
+                            <li><i class="fas fa-check"></i> Comprehensive SWOT analysis</li>
+                            <li><i class="fas fa-check"></i> Market opportunity mapping</li>
+                            <li><i class="fas fa-check"></i> Pricing strategy recommendations</li>
+                            <li><i class="fas fa-check"></i> Entry barriers analysis</li>
+                            <li><i class="fas fa-check"></i> Strategic recommendations</li>
+                            <li><i class="fas fa-check"></i> 2 revision rounds</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                    
+                    <!-- Premium Package -->
+                    <div class="pricing-card">
+                        <h3>Strategic Intelligence</h3>
+                        <div class="pricing-price">$2,999<span>/report</span></div>
+                        <p>Advanced research and analysis for businesses requiring in-depth market intelligence.</p>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Comprehensive industry analysis</li>
+                            <li><i class="fas fa-check"></i> In-depth customer research</li>
+                            <li><i class="fas fa-check"></i> Competitor analysis (10+ competitors)</li>
+                            <li><i class="fas fa-check"></i> Advanced SWOT & PESTEL analysis</li>
+                            <li><i class="fas fa-check"></i> Market forecast (3-5 years)</li>
+                            <li><i class="fas fa-check"></i> Business model canvas</li>
+                            <li><i class="fas fa-check"></i> Risk assessment</li>
+                            <li><i class="fas fa-check"></i> Go-to-market strategy</li>
+                            <li><i class="fas fa-check"></i> Strategic partnership recommendations</li>
+                            <li><i class="fas fa-check"></i> Executive presentation</li>
+                            <li><i class="fas fa-check"></i> Unlimited revisions (30 days)</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Research Methodology Section -->
+            <div class="research-methodology" style="margin-top: 80px;">
+                <h2 class="section-title">Our Research Methodology</h2>
+                <p class="section-subtitle">Comprehensive approach to deliver reliable market insights</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-top: 40px;">
+                    <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h3 style="color: #1a4d94; margin-bottom: 15px;"><i class="fas fa-search" style="margin-right: 10px;"></i> Primary Research</h3>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 10px;"><i class="fas fa-angle-right" style="color: #1a4d94; margin-right: 10px;"></i> Customer surveys and interviews</li>
+                            <li style="margin-bottom: 10px;"><i class="fas fa-angle-right" style="color: #1a4d94; margin-right: 10px;"></i> Focus group discussions</li>
+                            <li style="margin-bottom: 10px;"><i class="fas fa-angle-right" style="color: #1a4d94; margin-right: 10px;"></i> Industry expert consultations</li>
+                            <li><i class="fas fa-angle-right" style="color: #1a4d94; margin-right: 10px;"></i> Market observation and field studies</li>
+                        </ul>
+                    </div>
+                    <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h3 style="color: #1a4d94; margin-bottom: 15px;"><i class="fas fa-database" style="margin-right: 10px;"></i> Secondary Research</h3>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 10px;"><i class="fas fa-angle-right" style="color: #1a4d94; margin-right: 10px;"></i> Industry reports and publications</li>
+                            <li style="margin-bottom: 10px;"><i class="fas fa-angle-right" style="color: #1a4d94; margin-right: 10px;"></i> Competitor analysis and benchmarking</li>
+                            <li style="margin-bottom: 10px;"><i class="fas fa-angle-right" style="color: #1a4d94; margin-right: 10px;"></i> Market data and statistics</li>
+                            <li><i class="fas fa-angle-right" style="color: #1a4d94; margin-right: 10px;"></i> Digital presence and sentiment analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- How It Works Section -->
+            <div class="how-it-works" style="margin-top: 80px;">
+                <h2 class="section-title">Our Research Process</h2>
+                
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Discovery</h3>
+                            <p>We start by understanding your business goals, target market, and specific research questions.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Research Design</h3>
+                            <p>We develop a tailored research methodology combining primary and secondary research methods.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Data Collection</h3>
+                            <p>Our team gathers relevant market data from multiple sources using rigorous data collection techniques.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Analysis</h3>
+                            <p>We analyze the collected data to identify patterns, trends, and insights relevant to your business.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Reporting</h3>
+                            <p>We deliver a comprehensive report with actionable recommendations and strategic insights.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Custom Solutions Section -->
+            <div class="custom-solutions" style="margin-top: 80px;">
+                <h2 class="section-title">Need Customized Research?</h2>
+                <p class="text-center">Every business has unique research needs. Contact us to discuss your specific requirements for a tailored research proposal.</p>
+                <div class="text-center" style="margin-top: 30px;">
+                    <a href="contact.html" class="btn btn-primary">Request Custom Research</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-banner" style="background: linear-gradient(90deg, #091e36 0%, #1c3f60 100%); padding: 60px 0; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); position: relative; overflow: hidden;">
+        <div class="container">
+            <h2>Ready to make data-driven decisions?</h2>
+            <p>Get the market insights you need to stay ahead of the competition.</p>
+            <a href="contact.html" class="btn btn-primary">Start Your Research Project</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>PrimeX</h2>
+                    <p>Empowering businesses through premium agency services and practical resources.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Agency Services</a></li>
+                        <li><a href="ebooks.html">E-Books</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 7520 NW 104TH AVE UNIT A103 DORAL, FLORIDA 33178</p>
+                    <p><i class="fas fa-phone"></i> +1 (249) 487-1688</p>
+                    <p><i class="fas fa-envelope"></i> info@primexvanguard.com</p>
+                </div>
+                <div class="newsletter">
+                    <h3>Join Our Newsletter</h3>
+                    <p>Stay updated with our latest resources and agency insights.</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn btn-sm">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>&copy; 2025 PrimeX. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="terms.html">Terms & Conditions</a> | 
+                    <a href="privacy.html">Privacy Policy</a> | 
+                    <a href="refund.html">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -12,7 +12,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1>PrimeX</h1>
+                <a href="index.html"><h1>PrimeX</h1></a>
             </div>
             <nav>
                 <ul>
@@ -22,7 +22,10 @@
                     <li><a href="ebooks.html">E-Books & Resources</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="mobile-menu">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i id="theme-toggle-icon" class="fas fa-moon"></i>
+                </button>                
+                <div class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </div>
             </nav>
@@ -30,171 +33,162 @@
     </header>
 
     <!-- Service Hero Section -->
-    <section class="service-detail-hero">
-        <div class="container">
+    <section class="service-detail-hero" style="background-image: url('https://images.unsplash.com/photo-1599658880436-c61792e70672?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'); background-size: cover; background-position: center; position: relative; color: white; padding: 100px 0;">
+        <!-- Dark overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.8);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
             <h1>SEO Optimization</h1>
-            <p>Boost your online visibility and attract qualified organic traffic with data-driven SEO strategies</p>
+            <p>Boost your online visibility and attract organic traffic with data-driven search engine optimization strategies</p>
         </div>
     </section>
 
     <!-- Service Detail Content -->
-    <section class="service-detail-content">
+    <section class="service-detail-content" style="background-color: #212529; color: white; padding: 60px 0;">
         <div class="container">
             <!-- Service Overview -->
-            <div class="service-overview">
+            <div class="service-overview" style="background-color: #2c3035; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
                 <div class="service-image">
-                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=970&q=80" alt="SEO Optimization">
+                    <img src="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="SEO Optimization" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
                 </div>
                 <div class="service-text">
-                    <h2>Climb the Ranks, Gain Visibility</h2>
-                    <p>In a crowded digital marketplace, being found by the right audience is crucial. Our SEO Optimization service helps improve your website's ranking on search engines like Google, driving more qualified organic traffic and increasing your online visibility.</p>
-                    <p>We employ a comprehensive approach, covering technical SEO, on-page optimization, content strategy, and off-page link building. Our data-driven strategies are designed to deliver sustainable results and position your business for long-term success in search rankings.</p>
+                    <h2 style="color: white;">Improve Your Search Engine Rankings</h2>
+                    <p style="color: #e0e0e0;">In today's digital landscape, ranking well on search engines isn't optional—it's essential for driving targeted traffic and growing your business online.</p>
+                    <p style="color: #e0e0e0;">Our SEO optimization service helps you improve your website's visibility in search results through proven strategies that focus on both technical SEO and high-quality content. From keyword research and on-page optimization to link building and performance improvements, we implement comprehensive SEO strategies that deliver long-term results.</p>
                     
                     <div class="service-features">
-                        <h3>Key Benefits</h3>
+                        <h3 style="color: #ffc107;">Key Benefits</h3>
                         <ul>
-                            <li><i class="fas fa-check-circle"></i> <span>Increase organic website traffic</span></li>
-                            <li><i class="fas fa-check-circle"></i> <span>Improve search engine rankings for relevant keywords</span></li>
-                            <li><i class="fas fa-check-circle"></i> <span>Enhance website authority and credibility</span></li>
-                            <li><i class="fas fa-check-circle"></i> <span>Attract more qualified leads and customers</span></li>
-                            <li><i class="fas fa-check-circle"></i> <span>Achieve long-term, sustainable online growth</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Increase organic traffic to your website</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Improve rankings for valuable keywords in your industry</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Enhance user experience and website performance</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Generate higher quality leads through targeted traffic</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Track progress with detailed performance reports</span></li>
                         </ul>
                     </div>
                 </div>
             </div>
             
             <!-- Service Pricing Packages -->
-            <div class="service-packages">
-                <h2 class="section-title">SEO Packages</h2>
-                <p class="section-subtitle">Select the package that best fits your SEO goals</p>
+            <div class="service-packages" style="margin-top: 50px;">
+                <h2 class="section-title" style="color: white;">Our SEO Packages</h2>
+                <p class="section-subtitle" style="color: #e0e0e0;">Select the package that best fits your business needs</p>
                 
                 <div class="pricing-grid">
-                    <!-- Basic Package -->
-                    <div class="pricing-card">
-                        <h3>SEO Audit & Foundation</h3>
-                        <div class="pricing-price">$599<span>/one-time</span></div>
-                        <p>Comprehensive analysis and foundational setup for SEO success.</p>
+                    <!-- Starter Package -->
+                    <div class="pricing-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <h3 style="color: white;">Starter Package</h3>
+                        <div class="pricing-price" style="color: #ffc107;">$649<span style="color: #adb5bd;">/one-time</span></div>
+                        <p style="color: #e0e0e0;">Essential SEO foundations for small businesses and local services.</p>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Full technical SEO audit</li>
-                            <li><i class="fas fa-check"></i> On-page SEO analysis (up to 10 pages)</li>
-                            <li><i class="fas fa-check"></i> Keyword research ( foundational set)</li>
-                            <li><i class="fas fa-check"></i> Competitor analysis (3 competitors)</li>
-                            <li><i class="fas fa-check"></i> Google Analytics & Search Console setup</li>
-                            <li><i class="fas fa-check"></i> Actionable recommendations report</li>
-                            <li><i class="fas fa-check"></i> Implementation guidance call</li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Keyword research & strategy</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">On-page SEO for 5 core pages</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Technical SEO audit & fixes</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Google Business Profile optimization</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Basic competitor analysis</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Monthly performance report</span></li>
                         </ul>
-                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                        <div class="button-group" style="display: flex; gap: 10px; justify-content: center;">
+                            <a href="javascript:void(0)" onclick="buyNow('Starter SEO Package', '$649', 'https://images.unsplash.com/photo-1562577309-4932fdd64cd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80', 'Keyword research, on-page SEO for 5 core pages, technical audit, and more.', 'Service')" class="btn btn-primary">Buy Now</a>
+                        </div>
                     </div>
                     
                     <!-- Growth Package -->
-                    <div class="pricing-card">
-                        <div class="popular-tag">Popular</div>
-                        <h3>Growth SEO</h3>
-                        <div class="pricing-price">$999<span>/month</span></div>
-                        <p>Ongoing optimization for businesses aiming for steady growth.</p>
+                    <div class="pricing-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <div class="popular-tag" style="background-color: #ffc107; color: #212529;">Popular</div>
+                        <h3 style="color: white;">Growth Package</h3>
+                        <div class="pricing-price" style="color: #ffc107;">$1,199<span style="color: #adb5bd;">/one-time</span></div>
+                        <p style="color: #e0e0e0;">Comprehensive SEO strategy for businesses serious about improving their online visibility.</p>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Includes foundational audit (first month)</li>
-                            <li><i class="fas fa-check"></i> Monthly keyword tracking & expansion</li>
-                            <li><i class="fas fa-check"></i> On-page optimization (5 pages/month)</li>
-                            <li><i class="fas fa-check"></i> Content optimization suggestions</li>
-                            <li><i class="fas fa-check"></i> Basic link building outreach</li>
-                            <li><i class="fas fa-check"></i> Local SEO optimization (if applicable)</li>
-                            <li><i class="fas fa-check"></i> Monthly performance report & analysis</li>
-                            <li><i class="fas fa-check"></i> Monthly strategy call</li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Advanced keyword research & mapping</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">On-page SEO for 15 pages</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Content optimization for 5 existing posts</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Comprehensive technical SEO audit & fixes</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Link building strategy (5 quality backlinks)</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Schema markup implementation</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Bi-weekly performance reports</span></li>
                         </ul>
-                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                        <div class="button-group" style="display: flex; gap: 10px; justify-content: center;">
+                            <a href="javascript:void(0)" onclick="buyNow('Growth SEO Package', '$1,199', 'https://images.unsplash.com/photo-1562577309-4932fdd64cd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80', 'Advanced keyword research, on-page SEO for 15 pages, link building strategy, and more.', 'Service')" class="btn btn-primary">Buy Now</a>
+                        </div>
                     </div>
                     
                     <!-- Premium Package -->
-                    <div class="pricing-card">
-                        <h3>Premium SEO</h3>
-                        <div class="pricing-price">$1,999<span>/month</span></div>
-                        <p>Aggressive SEO strategy for businesses seeking maximum visibility.</p>
+                    <div class="pricing-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <h3 style="color: white;">Premium Package</h3>
+                        <div class="pricing-price" style="color: #ffc107;">$2,499<span style="color: #adb5bd;">/one-time</span></div>
+                        <p style="color: #e0e0e0;">Elite SEO implementation for businesses ready to dominate their niche online.</p>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Includes foundational audit (first month)</li>
-                            <li><i class="fas fa-check"></i> Advanced keyword strategy & tracking</li>
-                            <li><i class="fas fa-check"></i> On-page optimization (10 pages/month)</li>
-                            <li><i class="fas fa-check"></i> SEO content creation (1 article/month)</li>
-                            <li><i class="fas fa-check"></i> Comprehensive link building campaign</li>
-                            <li><i class="fas fa-check"></i> Technical SEO monitoring & fixes</li>
-                            <li><i class="fas fa-check"></i> Advanced Local SEO & citation management</li>
-                            <li><i class="fas fa-check"></i> Detailed monthly reporting & ROI analysis</li>
-                            <li><i class="fas fa-check"></i> Competitor SEO monitoring</li>
-                            <li><i class="fas fa-check"></i> Bi-weekly strategy calls</li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Comprehensive SEO strategy development</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Full website SEO optimization</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Content creation (3 SEO-focused articles)</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Advanced technical SEO implementation</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Premium link building (12 quality backlinks)</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Site speed optimization</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Competitor analysis & strategy</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Weekly performance reporting</span></li>
                         </ul>
-                        <a href="contact.html" class="btn btn-primary">Get Started</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- SEO Process Section -->
-            <div class="seo-process" style="margin-top: 80px;">
-                <h2 class="section-title">Our SEO Optimization Process</h2>
-                <p class="section-subtitle">A structured approach to boosting your search rankings</p>
-                
-                <div class="process-grid" style="grid-template-columns: repeat(6, 1fr);">
-                    <div class="process-step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h3>Audit</h3>
-                            <p>We analyze your website's technical health, content, and backlink profile.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h3>Research</h3>
-                            <p>We identify high-value keywords and analyze competitor strategies.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h3>Strategy</h3>
-                            <p>We develop a tailored SEO strategy based on audit findings and research.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">4</div>
-                        <div class="step-content">
-                            <h3>On-Page</h3>
-                            <p>We optimize your website content, meta tags, and internal linking.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">5</div>
-                        <div class="step-content">
-                            <h3>Off-Page</h3>
-                            <p>We build high-quality backlinks to increase your site's authority.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">6</div>
-                        <div class="step-content">
-                            <h3>Reporting</h3>
-                            <p>We monitor progress and provide detailed performance reports.</p>
+                        <div class="button-group" style="display: flex; gap: 10px; justify-content: center;">
+                            <a href="javascript:void(0)" onclick="buyNow('Premium SEO Package', '$2,499', 'https://images.unsplash.com/photo-1562577309-4932fdd64cd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80', 'Comprehensive SEO strategy, full website optimization, content creation, premium link building, and more.', 'Service')" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                 </div>
             </div>
             
             <!-- Custom Solutions Section -->
-            <div class="custom-solutions" style="margin-top: 80px;">
-                <h2 class="section-title">Need a Custom SEO Strategy?</h2>
-                <p class="text-center">Every website is different. Contact us to discuss your unique SEO challenges and goals for a personalized plan.</p>
+            <div class="custom-solutions" style="margin-top: 50px; background-color: #2c3035; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                <h2 class="section-title" style="color: white;">Need a Custom Solution?</h2>
+                <p class="text-center" style="color: #e0e0e0;">We understand that each business has unique SEO requirements. Contact us to discuss a tailored SEO strategy that aligns perfectly with your specific goals.</p>
                 <div class="text-center" style="margin-top: 30px;">
                     <a href="contact.html" class="btn btn-primary">Request a Custom Quote</a>
+                </div>
+            </div>
+            
+            <!-- How It Works Section -->
+            <div class="how-it-works" style="margin-top: 50px; background-color: #2c3035; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                <h2 class="section-title" style="color: white;">Our SEO Optimization Process</h2>
+                
+                <div class="process-grid">
+                    <div class="process-step" style="background-color: #343a40; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                        <div class="step-number" style="background-color: #343a40; color: white; border: 2px solid #ffc107;">1</div>
+                        <div class="step-content">
+                            <h3 style="color: white;">Research & Analysis</h3>
+                            <p style="color: #e0e0e0;">We analyze your website, competitors, and target keywords to develop a data-driven SEO strategy.</p>
+                        </div>
+                    </div>
+                    <div class="process-step" style="background-color: #343a40; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                        <div class="step-number" style="background-color: #343a40; color: white; border: 2px solid #ffc107;">2</div>
+                        <div class="step-content">
+                            <h3 style="color: white;">On-Page Optimization</h3>
+                            <p style="color: #e0e0e0;">We implement technical and content improvements to make your website more search engine friendly.</p>
+                        </div>
+                    </div>
+                    <div class="process-step" style="background-color: #343a40; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                        <div class="step-number" style="background-color: #343a40; color: white; border: 2px solid #ffc107;">3</div>
+                        <div class="step-content">
+                            <h3 style="color: white;">Off-Page Optimization</h3>
+                            <p style="color: #e0e0e0;">We build high-quality backlinks and citations to boost your website's authority and rankings.</p>
+                        </div>
+                    </div>
+                    <div class="process-step" style="background-color: #343a40; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                        <div class="step-number" style="background-color: #343a40; color: white; border: 2px solid #ffc107;">4</div>
+                        <div class="step-content">
+                            <h3 style="color: white;">Monitoring & Refinement</h3>
+                            <p style="color: #e0e0e0;">We track performance, analyze results, and make continuous improvements to maximize your ROI.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-banner">
-        <div class="container">
-            <h2>Ready to dominate the search results?</h2>
-            <p>Let our SEO experts drive targeted organic traffic to your website.</p>
-            <a href="contact.html" class="btn btn-primary">Boost Your SEO Today</a>
+    <section class="cta-banner" style="background-image: url(https://images.unsplash.com/photo-1567721913486-6585f069b332?q=80&w=1000); background-size: cover; background-position: center; position: relative; color: white; padding: 60px 0; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); text-align: center;">
+        <!-- Dark overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.8);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2 style="color: white;">Ready to improve your search visibility?</h2>
+            <p style="color: #e0e0e0;">Let's optimize your website for better search rankings and increased organic traffic.</p>
+            <a href="contact.html" class="btn btn-primary">Get Started Today</a>
         </div>
     </section>
 
@@ -207,47 +201,90 @@
                     <p>Empowering businesses through premium agency services and practical resources.</p>
                 </div>
                 <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Agency Services</a></li>
-                        <li><a href="ebooks.html">E-Books</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                    <div class="footer-links-column">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Agency Services</a></li>
+                            <li><a href="ebooks.html">E-Books & Resources</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="terms.html">Terms & Conditions</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="refund.html">Refund Policy</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> 7520 NW 104TH AVE UNIT A103 DORAL, FLORIDA 33178</p>
-                    <p><i class="fas fa-phone"></i> +1 (249) 487-1688</p>
-                    <p><i class="fas fa-envelope"></i> info@primexvanguard.com</p>
-                </div>
-                <div class="newsletter">
-                    <h3>Join Our Newsletter</h3>
-                    <p>Stay updated with our latest resources and agency insights.</p>
-                    <form id="newsletter-form">
-                        <input type="email" placeholder="Your Email" required>
-                        <button type="submit" class="btn btn-sm">Subscribe</button>
-                    </form>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="footer-contact">Email: info@primex.com</p>
+                    <p class="footer-contact">Phone: +1 (555) 123-4567</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <p>&copy; 2023 PrimeX. All Rights Reserved.</p>
-                <div class="footer-legal">
-                    <a href="terms.html">Terms & Conditions</a> | 
-                    <a href="privacy.html">Privacy Policy</a> | 
-                    <a href="refund.html">Refund Policy</a>
-                </div>
+                <p>&copy; 2025 PrimeX. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <!-- JavaScript for Dark Mode Toggle -->
+    <script>
+        // Toggle Mobile Menu
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+        
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeToggleIcon = document.getElementById('theme-toggle-icon');
+        const body = document.body;
+        
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            body.classList.add('dark-mode');
+            themeToggleIcon.classList.remove('fa-moon');
+            themeToggleIcon.classList.add('fa-sun');
+        }
+        
+        // Theme toggle functionality
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                themeToggleIcon.classList.remove('fa-moon');
+                themeToggleIcon.classList.add('fa-sun');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeToggleIcon.classList.remove('fa-sun');
+                themeToggleIcon.classList.add('fa-moon');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
+    
+    <script>
+    function buyNow(productName, productPrice, productImage, productDescription, productType) {
+        localStorage.setItem('checkoutProduct', JSON.stringify({
+            name: productName,
+            price: productPrice,
+            image: productImage,
+            description: productDescription,
+            type: productType
+        }));
+        window.location.href = 'checkout.html';
+    }
+    </script>
 </body>
-</html> 
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Strategy & Planning - PrimeX</title>
+    <title>Business Strategy & Consulting - PrimeX</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -12,7 +12,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1>PrimeX</h1>
+                <a href="index.html"><h1>PrimeX</h1></a>
             </div>
             <nav>
                 <ul>
@@ -22,7 +22,9 @@
                     <li><a href="ebooks.html">E-Books & Resources</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="mobile-menu">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i id="theme-toggle-icon" class="fas fa-moon"></i>
+                </button>                <div class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </div>
             </nav>
@@ -30,201 +32,162 @@
     </header>
 
     <!-- Service Hero Section -->
-    <section class="service-detail-hero">
-        <div class="container">
-            <h1>Business Strategy & Planning</h1>
-            <p>Transform your vision into actionable plans with expert-guided strategy development</p>
+    <section class="service-detail-hero" style="background-image: url('https://images.unsplash.com/photo-1586165368502-1bad197a6468?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'); background-size: cover; background-position: center; position: relative; color: white; padding: 100px 0;">
+        <!-- Dark overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.8);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <h1>Business Strategy & Consulting</h1>
+            <p>Expert guidance to optimize your business operations, enhance performance, and drive sustainable growth</p>
         </div>
     </section>
 
     <!-- Service Detail Content -->
-    <section class="service-detail-content">
+    <section class="service-detail-content" style="background-color: #212529; color: white; padding: 60px 0;">
         <div class="container">
             <!-- Service Overview -->
-            <div class="service-overview">
+            <div class="service-overview" style="background-color: #2c3035; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
                 <div class="service-image">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Business Strategy & Planning">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Business Strategy & Consulting" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
                 </div>
                 <div class="service-text">
-                    <h2>Navigate Your Path to Success</h2>
-                    <p>Every successful business is built on a solid strategic foundation. Our Business Strategy & Planning service helps you clarify your vision, define your goals, and create a roadmap to achieve them. Whether you're launching a new venture, entering a new market, or scaling your existing business, our strategic expertise will guide you through the complexities of business growth.</p>
-                    <p>We combine proven strategic frameworks with creative problem-solving to develop actionable plans tailored to your unique business challenges. Our collaborative approach ensures that strategies are not only ambitious but also practical and implementable.</p>
+                    <h2 style="color: white;">Strategic Solutions for Business Growth</h2>
+                    <p style="color: #e0e0e0;">In today's competitive business landscape, a well-crafted strategy is essential for sustainable growth, operational efficiency, and market leadership.</p>
+                    <p style="color: #e0e0e0;">Our business strategy and consulting service provides you with expert guidance to navigate challenges, identify opportunities, and implement effective solutions. From market analysis and operational optimization to growth planning and implementation, we help you make data-driven decisions that drive measurable results.</p>
                     
                     <div class="service-features">
-                        <h3>Key Benefits</h3>
+                        <h3 style="color: #ffc107;">Key Benefits</h3>
                         <ul>
-                            <li><i class="fas fa-check-circle"></i> <span>Clarify your business vision and long-term objectives</span></li>
-                            <li><i class="fas fa-check-circle"></i> <span>Develop actionable strategic plans with measurable milestones</span></li>
-                            <li><i class="fas fa-check-circle"></i> <span>Identify and prioritize growth opportunities</span></li>
-                            <li><i class="fas fa-check-circle"></i> <span>Optimize resource allocation for maximum ROI</span></li>
-                            <li><i class="fas fa-check-circle"></i> <span>Create competitive advantage in your market</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Gain strategic clarity and direction for your business</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Identify and capitalize on growth opportunities</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Optimize operations and improve efficiency</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Develop actionable implementation plans</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Make better business decisions backed by data</span></li>
                         </ul>
                     </div>
                 </div>
             </div>
             
             <!-- Service Pricing Packages -->
-            <div class="service-packages">
-                <h2 class="section-title">Strategy Packages</h2>
-                <p class="section-subtitle">Choose the level of strategic support that matches your business needs</p>
+            <div class="service-packages" style="margin-top: 50px;">
+                <h2 class="section-title" style="color: white;">Our Strategy Packages</h2>
+                <p class="section-subtitle" style="color: #e0e0e0;">Select the package that best fits your business needs</p>
                 
                 <div class="pricing-grid">
-                    <!-- Basic Package -->
-                    <div class="pricing-card">
-                        <h3>Startup Strategy</h3>
-                        <div class="pricing-price">$1,499<span>/plan</span></div>
-                        <p>Essential strategy development for startups and small businesses.</p>
+                    <!-- Starter Package -->
+                    <div class="pricing-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <h3 style="color: white;">Starter Package</h3>
+                        <div class="pricing-price" style="color: #ffc107;">$999<span style="color: #adb5bd;">/one-time</span></div>
+                        <p style="color: #e0e0e0;">Perfect for small businesses seeking strategic guidance and direction.</p>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Business model canvas development</li>
-                            <li><i class="fas fa-check"></i> Core value proposition definition</li>
-                            <li><i class="fas fa-check"></i> Target market analysis</li>
-                            <li><i class="fas fa-check"></i> Basic competitive analysis</li>
-                            <li><i class="fas fa-check"></i> 90-day action plan</li>
-                            <li><i class="fas fa-check"></i> 2 strategy sessions (2 hours each)</li>
-                            <li><i class="fas fa-check"></i> Implementation guidance</li>
-                            <li><i class="fas fa-check"></i> 30-day follow-up call</li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Business assessment & SWOT analysis</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Market positioning strategy</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Competitor analysis</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Basic growth roadmap</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">2 strategy consulting sessions</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Strategic recommendations report</span></li>
                         </ul>
-                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                        <div class="button-group" style="display: flex; gap: 10px; justify-content: center;">
+                            <a href="javascript:void(0)" onclick="buyNow('Starter Strategy Package', '$999', 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80', 'Business assessment, market positioning strategy, competitor analysis, and more.', 'Service')" class="btn btn-primary">Buy Now</a>
+                        </div>
                     </div>
                     
-                    <!-- Standard Package -->
-                    <div class="pricing-card">
-                        <div class="popular-tag">Popular</div>
-                        <h3>Growth Strategy</h3>
-                        <div class="pricing-price">$2,999<span>/plan</span></div>
-                        <p>Comprehensive strategy for businesses focused on scaling and growth.</p>
+                    <!-- Growth Package -->
+                    <div class="pricing-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <div class="popular-tag" style="background-color: #ffc107; color: #212529;">Popular</div>
+                        <h3 style="color: white;">Growth Package</h3>
+                        <div class="pricing-price" style="color: #ffc107;">$1,999<span style="color: #adb5bd;">/one-time</span></div>
+                        <p style="color: #e0e0e0;">Comprehensive strategy development for businesses ready to accelerate growth.</p>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Business model optimization</li>
-                            <li><i class="fas fa-check"></i> Detailed market analysis</li>
-                            <li><i class="fas fa-check"></i> Customer acquisition strategy</li>
-                            <li><i class="fas fa-check"></i> Comprehensive competitive analysis</li>
-                            <li><i class="fas fa-check"></i> Revenue growth modeling</li>
-                            <li><i class="fas fa-check"></i> Strategic partnerships plan</li>
-                            <li><i class="fas fa-check"></i> 6-month roadmap with KPIs</li>
-                            <li><i class="fas fa-check"></i> 4 strategy sessions (2 hours each)</li>
-                            <li><i class="fas fa-check"></i> Monthly implementation calls (3 months)</li>
-                            <li><i class="fas fa-check"></i> Strategy adjustment support</li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">In-depth business & market analysis</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Customer journey mapping</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Revenue stream optimization</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Detailed growth & expansion plan</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Operational efficiency assessment</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">4 strategy consulting sessions</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">90-day implementation roadmap</span></li>
                         </ul>
-                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                        <div class="button-group" style="display: flex; gap: 10px; justify-content: center;">
+                            <a href="javascript:void(0)" onclick="buyNow('Growth Strategy Package', '$1,999', 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80', 'In-depth business analysis, customer journey mapping, revenue optimization, and more.', 'Service')" class="btn btn-primary">Buy Now</a>
+                        </div>
                     </div>
                     
                     <!-- Premium Package -->
-                    <div class="pricing-card">
-                        <h3>Enterprise Strategy</h3>
-                        <div class="pricing-price">$5,999<span>/plan</span></div>
-                        <p>Advanced strategic planning for established businesses and complex initiatives.</p>
+                    <div class="pricing-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <h3 style="color: white;">Premium Package</h3>
+                        <div class="pricing-price" style="color: #ffc107;">$3,499<span style="color: #adb5bd;">/one-time</span></div>
+                        <p style="color: #e0e0e0;">Elite strategic consulting for established businesses seeking transformation and scale.</p>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Full business model innovation</li>
-                            <li><i class="fas fa-check"></i> Market expansion strategy</li>
-                            <li><i class="fas fa-check"></i> Customer retention & lifecycle optimization</li>
-                            <li><i class="fas fa-check"></i> In-depth industry analysis</li>
-                            <li><i class="fas fa-check"></i> Product/service portfolio optimization</li>
-                            <li><i class="fas fa-check"></i> Organizational structure recommendations</li>
-                            <li><i class="fas fa-check"></i> Risk management framework</li>
-                            <li><i class="fas fa-check"></i> 12-month strategic roadmap</li>
-                            <li><i class="fas fa-check"></i> Executive team workshop (1 day)</li>
-                            <li><i class="fas fa-check"></i> 6 strategy sessions (2 hours each)</li>
-                            <li><i class="fas fa-check"></i> Quarterly implementation reviews (12 months)</li>
-                            <li><i class="fas fa-check"></i> Strategic advisory retainer (10 hours)</li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Comprehensive business transformation plan</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Market expansion & diversification strategy</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Business model innovation</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Competitive advantage strategy</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Financial modeling & projections</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Performance metrics & KPI framework</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">8 strategy consulting sessions</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">6-month implementation roadmap with quarterly milestones</span></li>
                         </ul>
-                        <a href="contact.html" class="btn btn-primary">Get Started</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Strategic Frameworks Section -->
-            <div class="strategic-frameworks" style="margin-top: 80px;">
-                <h2 class="section-title">Our Strategic Frameworks</h2>
-                <p class="section-subtitle">We leverage proven methodologies tailored to your unique business challenges</p>
-                
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px;">
-                    <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                        <h3 style="color: #1a4d94; margin-bottom: 15px;"><i class="fas fa-chess" style="margin-right: 10px;"></i> Strategic Positioning</h3>
-                        <p>Define your unique place in the market and develop a compelling value proposition that sets you apart from competitors.</p>
-                    </div>
-                    <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                        <h3 style="color: #1a4d94; margin-bottom: 15px;"><i class="fas fa-chart-line" style="margin-right: 10px;"></i> Growth Modeling</h3>
-                        <p>Identify and prioritize growth opportunities through market expansion, product development, or strategic partnerships.</p>
-                    </div>
-                    <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                        <h3 style="color: #1a4d94; margin-bottom: 15px;"><i class="fas fa-users" style="margin-right: 10px;"></i> Customer Strategy</h3>
-                        <p>Develop comprehensive acquisition, retention, and expansion strategies to maximize customer lifetime value.</p>
-                    </div>
-                    <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                        <h3 style="color: #1a4d94; margin-bottom: 15px;"><i class="fas fa-cogs" style="margin-right: 10px;"></i> Operational Excellence</h3>
-                        <p>Optimize your operational processes to increase efficiency, reduce costs, and scale your business effectively.</p>
-                    </div>
-                    <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                        <h3 style="color: #1a4d94; margin-bottom: 15px;"><i class="fas fa-dollar-sign" style="margin-right: 10px;"></i> Financial Strategy</h3>
-                        <p>Develop sustainable revenue models, pricing strategies, and resource allocation frameworks to maximize profitability.</p>
-                    </div>
-                    <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                        <h3 style="color: #1a4d94; margin-bottom: 15px;"><i class="fas fa-rocket" style="margin-right: 10px;"></i> Innovation Planning</h3>
-                        <p>Create frameworks for continuous innovation in your products, services, and business model to stay ahead of market disruption.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- How It Works Section -->
-            <div class="how-it-works" style="margin-top: 80px;">
-                <h2 class="section-title">Our Strategic Planning Process</h2>
-                
-                <div class="process-grid">
-                    <div class="process-step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h3>Discovery</h3>
-                            <p>We conduct a comprehensive assessment of your current business situation, goals, challenges, and market position.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h3>Analysis</h3>
-                            <p>We analyze your industry, competitors, target market, and internal capabilities to identify opportunities and threats.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h3>Strategy Development</h3>
-                            <p>We collaborate with you to develop strategic objectives, initiatives, and key performance indicators.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">4</div>
-                        <div class="step-content">
-                            <h3>Action Planning</h3>
-                            <p>We create detailed action plans, resource requirements, and implementation timelines for each strategic initiative.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">5</div>
-                        <div class="step-content">
-                            <h3>Implementation Support</h3>
-                            <p>We provide guidance, accountability, and adjustments during the implementation phase to ensure success.</p>
+                        <div class="button-group" style="display: flex; gap: 10px; justify-content: center;">
+                            <a href="javascript:void(0)" onclick="buyNow('Premium Strategy Package', '$3,499', 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80', 'Business transformation plan, market expansion strategy, financial modeling, and more.', 'Service')" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                 </div>
             </div>
             
             <!-- Custom Solutions Section -->
-            <div class="custom-solutions" style="margin-top: 80px;">
-                <h2 class="section-title">Need a Specialized Strategy?</h2>
-                <p class="text-center">Every business faces unique challenges. Contact us to discuss your specific strategic needs for a tailored solution.</p>
+            <div class="custom-solutions" style="margin-top: 50px; background-color: #2c3035; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                <h2 class="section-title" style="color: white;">Need a Custom Solution?</h2>
+                <p class="text-center" style="color: #e0e0e0;">We understand that each business has unique strategic challenges. Contact us to discuss a tailored consulting solution that addresses your specific needs.</p>
                 <div class="text-center" style="margin-top: 30px;">
-                    <a href="contact.html" class="btn btn-primary">Request Custom Strategy</a>
+                    <a href="contact.html" class="btn btn-primary">Request a Custom Quote</a>
+                </div>
+            </div>
+            
+            <!-- How It Works Section -->
+            <div class="how-it-works" style="margin-top: 50px; background-color: #2c3035; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                <h2 class="section-title" style="color: white;">Our Strategic Consulting Process</h2>
+                
+                <div class="process-grid">
+                    <div class="process-step" style="background-color: #343a40; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                        <div class="step-number" style="background-color: #343a40; color: white; border: 2px solid #ffc107;">1</div>
+                        <div class="step-content">
+                            <h3 style="color: white;">Discovery</h3>
+                            <p style="color: #e0e0e0;">We analyze your business, market position, operations, and goals to understand your strategic needs.</p>
+                        </div>
+                    </div>
+                    <div class="process-step" style="background-color: #343a40; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                        <div class="step-number" style="background-color: #343a40; color: white; border: 2px solid #ffc107;">2</div>
+                        <div class="step-content">
+                            <h3 style="color: white;">Strategy Development</h3>
+                            <p style="color: #e0e0e0;">We create a tailored strategy blueprint aligned with your business vision and objectives.</p>
+                        </div>
+                    </div>
+                    <div class="process-step" style="background-color: #343a40; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                        <div class="step-number" style="background-color: #343a40; color: white; border: 2px solid #ffc107;">3</div>
+                        <div class="step-content">
+                            <h3 style="color: white;">Implementation Planning</h3>
+                            <p style="color: #e0e0e0;">We develop actionable implementation plans with clear milestones and responsibilities.</p>
+                        </div>
+                    </div>
+                    <div class="process-step" style="background-color: #343a40; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                        <div class="step-number" style="background-color: #343a40; color: white; border: 2px solid #ffc107;">4</div>
+                        <div class="step-content">
+                            <h3 style="color: white;">Execution Support</h3>
+                            <p style="color: #e0e0e0;">We provide guidance and support throughout the implementation process to ensure success.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-banner">
-        <div class="container">
-            <h2>Ready to transform your business vision into reality?</h2>
-            <p>Partner with our strategic experts to create a clear path to sustainable growth.</p>
-            <a href="contact.html" class="btn btn-primary">Start Your Strategic Journey</a>
+    <section class="cta-banner" style="background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; position: relative; color: white; padding: 60px 0; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); text-align: center;">
+        <!-- Dark overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.8);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2 style="color: white;">Ready to transform your business strategy?</h2>
+            <p style="color: #e0e0e0;">Let's develop a strategic roadmap that optimizes your operations and drives sustainable growth.</p>
+            <a href="contact.html" class="btn btn-primary">Get Started Today</a>
         </div>
     </section>
 
@@ -268,7 +231,7 @@
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <p>&copy; 2023 PrimeX. All Rights Reserved.</p>
+                <p>&copy; 2025 PrimeX. All Rights Reserved.</p>
                 <div class="footer-legal">
                     <a href="terms.html">Terms & Conditions</a> | 
                     <a href="privacy.html">Privacy Policy</a> | 
@@ -278,6 +241,19 @@
         </div>
     </footer>
 
+    <!-- JavaScript for Buy Now functionality -->
+    <script>
+        function buyNow(title, price, image, description, type) {
+            // Encode the values to safely include them in the URL
+            const encodedTitle = encodeURIComponent(title);
+            const encodedPrice = encodeURIComponent(price);
+            const encodedImage = encodeURIComponent(image);
+            const encodedDescription = encodeURIComponent(description);
+            
+            // Redirect to the checkout page with the product information
+            window.location.href = `checkout.html?title=${encodedTitle}&price=${encodedPrice}&image=${encodedImage}&description=${encodedDescription}&type=${type}`;
+        }
+    </script>
     <script src="js/main.js"></script>
-</body>
+    <script src="js/theme-toggle.js"></script></body>
 </html> 

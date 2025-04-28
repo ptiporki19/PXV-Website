@@ -22,9 +22,7 @@
                     <li><a href="ebooks.html" class="active">E-Books & Resources</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-                    <i id="theme-toggle-icon" class="fas fa-moon"></i>
-                </button>                <div class="mobile-menu-btn">
+                <div class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </div>
             </nav>
@@ -32,9 +30,9 @@
     </header>
 
     <!-- E-Books Hero Section -->
-    <section class="ebooks-hero" style="background-image: url('https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; position: relative; color: white;">
+    <section class="ebooks-hero" style="background-image: url('https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; position: relative; color: white; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);">
         <!-- Add an overlay for better text readability -->
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.8);"></div>
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
         <div class="container" style="position: relative; z-index: 1;">
             <div class="hero-content">
                 <h1>Practical E-Books for Business Success</h1>
@@ -48,112 +46,112 @@
     </section>
 
     <!-- E-Books Introduction -->
-    <section class="about-intro" style="background-color: #212529; color: white; padding: 80px 0;">
+    <section class="about-intro">
         <div class="container">
             <div class="about-intro-content">
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1535905748047-14b2415c77d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="E-Books Collection" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                    <img src="https://images.unsplash.com/photo-1535905748047-14b2415c77d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="E-Books Collection">
                 </div>
                 <div class="about-text">
-                    <h2 style="color: white;">No Fluff, Just Results</h2>
-                    <p style="color: #e0e0e0;">Our e-books are designed for entrepreneurs who value clarity and practical steps over theory. Each resource delivers actionable guidance that you can implement immediately to see tangible results in your business.</p>
-                    <p style="color: #e0e0e0;">Skip the endless YouTube tutorials and blog posts. Get comprehensive, structured guidance in one place—and start making progress today.</p>
+                    <h2>No Fluff, Just Results</h2>
+                    <p>Our e-books are designed for entrepreneurs who value clarity and practical steps over theory. Each resource delivers actionable guidance that you can implement immediately to see tangible results in your business.</p>
+                    <p>Skip the endless YouTube tutorials and blog posts. Get comprehensive, structured guidance in one place—and start making progress today.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Featured E-Books -->
-    <section id="featured-books" class="featured-courses" style="background-color: #2c3035; color: white; padding: 80px 0;">
+    <section id="featured-books" class="featured-courses">
         <div class="container">
-            <h2 class="section-title" style="color: white;">Featured E-Books</h2>
+            <h2 class="section-title">Featured E-Books</h2>
             <div class="courses-grid">
-                <div class="course-card" style="background-color: #212529; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                <div class="course-card">
                     <div class="course-image">
                         <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Business E-Book">
-                        <div class="course-tag" style="background-color: #ffc107; color: #212529;">Bestseller</div>
+                        <div class="course-tag">Bestseller</div>
                     </div>
-                    <div class="course-content" style="padding: 20px;">
-                        <h3 style="color: white;">From Idea to Income: Your First Client Roadmap</h3>
-                        <p style="color: #e0e0e0;">A structured guide to go from business idea to securing your first paying client in 30 days or less.</p>
-                        <div class="course-features" style="color: #adb5bd;">
+                    <div class="course-content">
+                        <h3>From Idea to Income: Your First Client Roadmap</h3>
+                        <p>A structured guide to go from business idea to securing your first paying client in 30 days or less.</p>
+                        <div class="course-features">
                             <div class="feature">
-                                <i class="fas fa-file-pdf" style="color: #ffc107;"></i>
+                                <i class="fas fa-file-pdf"></i>
                                 <span>87 Pages</span>
                             </div>
                             <div class="feature">
-                                <i class="fas fa-download" style="color: #ffc107;"></i>
+                                <i class="fas fa-download"></i>
                                 <span>Downloadable Templates</span>
                             </div>
                             <div class="feature">
-                                <i class="fas fa-tasks" style="color: #ffc107;"></i>
+                                <i class="fas fa-tasks"></i>
                                 <span>Action Plans</span>
                             </div>
                         </div>
                         <div class="course-footer">
                             <div class="course-price">
-                                <span class="price" style="color: #ffc107; font-weight: bold;">$69</span>
+                                <span class="price">$69</span>
                             </div>
                             <a href="product-details.html" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="course-card" style="background-color: #212529; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                <div class="course-card">
                     <div class="course-image">
                         <img src="https://images.unsplash.com/photo-1579389083078-4e7018379f7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Client Acquisition E-Book">
                     </div>
-                    <div class="course-content" style="padding: 20px;">
-                        <h3 style="color: white;">Client Acquisition Mastery: The First 10 Clients</h3>
-                        <p style="color: #e0e0e0;">Proven strategies to find, attract, and convert your first 10 clients without paid advertising or a large network.</p>
-                        <div class="course-features" style="color: #adb5bd;">
+                    <div class="course-content">
+                        <h3>Client Acquisition Mastery: The First 10 Clients</h3>
+                        <p>Proven strategies to find, attract, and convert your first 10 clients without paid advertising or a large network.</p>
+                        <div class="course-features">
                             <div class="feature">
-                                <i class="fas fa-file-pdf" style="color: #ffc107;"></i>
+                                <i class="fas fa-file-pdf"></i>
                                 <span>105 Pages</span>
                             </div>
                             <div class="feature">
-                                <i class="fas fa-download" style="color: #ffc107;"></i>
+                                <i class="fas fa-download"></i>
                                 <span>Outreach Templates</span>
                             </div>
                             <div class="feature">
-                                <i class="fas fa-comments" style="color: #ffc107;"></i>
+                                <i class="fas fa-comments"></i>
                                 <span>Conversation Scripts</span>
                             </div>
                         </div>
                         <div class="course-footer">
                             <div class="course-price">
-                                <span class="price" style="color: #ffc107; font-weight: bold;">$69</span>
+                                <span class="price">$69</span>
                             </div>
                             <a href="product-details.html" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="course-card" style="background-color: #212529; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                <div class="course-card">
                     <div class="course-image">
                         <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Pricing Strategy E-Book">
-                        <div class="course-tag" style="background-color: #17a2b8; color: white;">New</div>
+                        <div class="course-tag">New</div>
                     </div>
-                    <div class="course-content" style="padding: 20px;">
-                        <h3 style="color: white;">Profitable Pricing: Strategies for Service-Based Businesses</h3>
-                        <p style="color: #e0e0e0;">End the guesswork and strategically price your services to maximize profit while attracting ideal clients.</p>
-                        <div class="course-features" style="color: #adb5bd;">
+                    <div class="course-content">
+                        <h3>Profitable Pricing: Strategies for Service-Based Businesses</h3>
+                        <p>End the guesswork and strategically price your services to maximize profit while attracting ideal clients.</p>
+                        <div class="course-features">
                             <div class="feature">
-                                <i class="fas fa-file-pdf" style="color: #ffc107;"></i>
+                                <i class="fas fa-file-pdf"></i>
                                 <span>78 Pages</span>
                             </div>
                             <div class="feature">
-                                <i class="fas fa-calculator" style="color: #ffc107;"></i>
+                                <i class="fas fa-calculator"></i>
                                 <span>Pricing Calculator</span>
                             </div>
                             <div class="feature">
-                                <i class="fas fa-chart-line" style="color: #ffc107;"></i>
+                                <i class="fas fa-chart-line"></i>
                                 <span>Value Metrics</span>
                             </div>
                         </div>
                         <div class="course-footer">
                             <div class="course-price">
-                                <span class="price" style="color: #ffc107; font-weight: bold;">$45</span>
+                                <span class="price">$45</span>
                             </div>
                             <a href="product-details.html" class="btn btn-primary">Learn More</a>
                         </div>
@@ -164,47 +162,47 @@
     </section>
 
     <!-- More E-Books Section -->
-    <section class="ebooks-section" style="background-color: #212529; color: white; padding: 80px 0;">
+    <section class="ebooks-section">
         <div class="container">
-            <h2 class="section-title" style="color: white;">More Essential E-Books</h2>
+            <h2 class="section-title">More Essential E-Books</h2>
             <div class="ebooks-grid">
-                <div class="ebook-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                <div class="ebook-card">
                     <div class="ebook-image">
                         <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Systems E-Book">
                     </div>
-                    <div class="ebook-content" style="padding: 20px;">
-                        <h3 style="color: white;">The Solopreneur's Systems Guide</h3>
-                        <p style="color: #e0e0e0;">Essential tools, templates, and workflows to automate your business and save 10+ hours per week.</p>
+                    <div class="ebook-content">
+                        <h3>The Solopreneur's Systems Guide</h3>
+                        <p>Essential tools, templates, and workflows to automate your business and save 10+ hours per week.</p>
                         <div class="ebook-footer">
-                            <span class="ebook-price" style="color: #ffc107; font-weight: bold;">$39</span>
+                            <span class="ebook-price">$39</span>
                             <a href="product-details.html" class="btn btn-secondary">View Details</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="ebook-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                <div class="ebook-card">
                     <div class="ebook-image">
                         <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Business Foundations E-Book">
                     </div>
-                    <div class="ebook-content" style="padding: 20px;">
-                        <h3 style="color: white;">Business Foundations: Legal, Financial & Tax Essentials</h3>
-                        <p style="color: #e0e0e0;">Protect your business and set up the right foundation for long-term success and compliance.</p>
+                    <div class="ebook-content">
+                        <h3>Business Foundations: Legal, Financial & Tax Essentials</h3>
+                        <p>Protect your business and set up the right foundation for long-term success and compliance.</p>
                         <div class="ebook-footer">
-                            <span class="ebook-price" style="color: #ffc107; font-weight: bold;">$49</span>
+                            <span class="ebook-price">$49</span>
                             <a href="product-details.html" class="btn btn-secondary">View Details</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="ebook-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                <div class="ebook-card">
                     <div class="ebook-image">
                         <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Scaling E-Book">
                     </div>
-                    <div class="ebook-content" style="padding: 20px;">
-                        <h3 style="color: white;">Scale Without Burnout: From Freelancer to Agency</h3>
-                        <p style="color: #e0e0e0;">How to transition from solo operator to building a team that delivers results without sacrificing quality.</p>
+                    <div class="ebook-content">
+                        <h3>Scale Without Burnout: From Freelancer to Agency</h3>
+                        <p>How to transition from solo operator to building a team that delivers results without sacrificing quality.</p>
                         <div class="ebook-footer">
-                            <span class="ebook-price" style="color: #ffc107; font-weight: bold;">$79</span>
+                            <span class="ebook-price">$79</span>
                             <a href="product-details.html" class="btn btn-secondary">View Details</a>
                         </div>
                     </div>
@@ -214,90 +212,83 @@
     </section>
 
     <!-- Bundle Offer -->
-    <section class="bundle-offer" style="background-image: url('https://images.unsplash.com/photo-1505664194779-8beace693744?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; position: relative; color: white; padding: 80px 0;">
-        <!-- Dark overlay for better text readability -->
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.85);"></div>
-        <div class="container" style="position: relative; z-index: 1;">
+    <section class="bundle-offer">
+        <div class="container">
             <div class="bundle-content">
                 <div class="bundle-text">
-                    <h2 style="color: white;">Complete Business Starter Bundle</h2>
-                    <p style="color: #e0e0e0;">Get all 6 premium e-books at one discounted price. Everything you need to start, grow, and optimize your business from day one.</p>
-                    <ul class="bundle-features" style="color: #e0e0e0;">
-                        <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> All 6 premium e-books</li>
-                        <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> 25+ ready-to-use templates</li>
-                        <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> Exclusive bonus worksheets</li>
-                        <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> Business plan framework</li>
-                        <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> Free future updates</li>
+                    <h2>Complete Business Starter Bundle</h2>
+                    <p>Get all 6 premium e-books at one discounted price. Everything you need to start, grow, and optimize your business from day one.</p>
+                    <ul class="bundle-features">
+                        <li><i class="fas fa-check-circle"></i> All 6 premium e-books</li>
+                        <li><i class="fas fa-check-circle"></i> 25+ ready-to-use templates</li>
+                        <li><i class="fas fa-check-circle"></i> Exclusive bonus worksheets</li>
+                        <li><i class="fas fa-check-circle"></i> Business plan framework</li>
+                        <li><i class="fas fa-check-circle"></i> Free future updates</li>
                     </ul>
                     <div class="bundle-price">
-                        <div class="original-price" style="color: #adb5bd;">$330</div>
-                        <div class="sale-price" style="color: #ffc107; font-size: 2.5rem; font-weight: bold;">$219</div>
+                        <div class="original-price">$330</div>
+                        <div class="sale-price">$219</div>
                     </div>
                     <a href="product-details.html" class="btn btn-primary">Get The Bundle</a>
                 </div>
                 <div class="bundle-image">
-                    <img src="https://images.unsplash.com/photo-1561489413-985b06da5bee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Bundle Offer" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                    <img src="https://images.unsplash.com/photo-1561489413-985b06da5bee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Bundle Offer">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials" style="background-color: #212529; color: white; padding: 80px 0;">
+    <section class="testimonials">
         <div class="container">
-            <h2 class="section-title" style="color: white;">What Our Readers Say</h2>
+            <h2 class="section-title">What Our Readers Say</h2>
             <div class="testimonial-carousel">
                 <div class="testimonial-item active">
-                    <div class="testimonial-content" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-                        <i class="fas fa-quote-left testimonial-quote-icon" style="color: #ffc107;"></i>
-                        <p style="color: #e0e0e0;">"I've spent thousands on business coaching that didn't give me half the clarity I got from the 'From Idea to Income' e-book. Within 3 weeks of implementing the strategies, I landed my first three clients!"</p>
+                    <div class="testimonial-content">
+                        <p>"I've spent thousands on business coaching that didn't give me half the clarity I got from the 'From Idea to Income' e-book. Within 3 weeks of implementing the strategies, I landed my first three clients!"</p>
                         <div class="client-info">
-                            <h4 style="color: #ffc107;">David Chen</h4>
-                            <p style="color: #e0e0e0;">Web Designer</p>
+                            <h4>David Chen</h4>
+                            <p>Web Designer</p>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item">
-                    <div class="testimonial-content" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-                         <i class="fas fa-quote-left testimonial-quote-icon" style="color: #ffc107;"></i>
-                        <p style="color: #e0e0e0;">"The Profitable Pricing guide completely transformed how I package my services. I increased my rates by 40% and clients are actually saying yes more often than before."</p>
+                    <div class="testimonial-content">
+                        <p>"The Profitable Pricing guide completely transformed how I package my services. I increased my rates by 40% and clients are actually saying yes more often than before."</p>
                         <div class="client-info">
-                            <h4 style="color: #ffc107;">Amanda Wilson</h4>
-                            <p style="color: #e0e0e0;">Social Media Consultant</p>
+                            <h4>Amanda Wilson</h4>
+                            <p>Social Media Consultant</p>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item">
-                    <div class="testimonial-content" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-                         <i class="fas fa-quote-left testimonial-quote-icon" style="color: #ffc107;"></i>
-                        <p style="color: #e0e0e0;">"I was drowning in 60-hour weeks until I implemented the systems from The Solopreneur's Systems Guide. Now I've cut my working hours in half while increasing revenue by 30%."</p>
+                    <div class="testimonial-content">
+                        <p>"I was drowning in 60-hour weeks until I implemented the systems from The Solopreneur's Systems Guide. Now I've cut my working hours in half while increasing revenue by 30%."</p>
                         <div class="client-info">
-                            <h4 style="color: #ffc107;">Marcus Johnson</h4>
-                            <p style="color: #e0e0e0;">Digital Marketing Consultant</p>
+                            <h4>Marcus Johnson</h4>
+                            <p>Digital Marketing Consultant</p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-controls">
-                    <button class="prev-btn" style="color: #ffc107;"><i class="fas fa-chevron-left"></i></button>
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
                     <div class="carousel-dots">
                         <span class="dot active"></span>
                         <span class="dot"></span>
                         <span class="dot"></span>
                     </div>
-                    <button class="next-btn" style="color: #ffc107;"><i class="fas fa-chevron-right"></i></button>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-banner" style="background-image: url('https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; position: relative; color: white; padding: 60px 0; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); text-align: center;">
-         <!-- Dark overlay for better text readability -->
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.8);"></div>
-        <div class="container" style="position: relative; z-index: 1;">
-            <h2 style="color: white; font-size: 2.2rem; margin-bottom: 15px;">Ready to build your business the right way?</h2>
-            <p style="color: #e0e0e0; font-size: 1.1rem; margin-bottom: 30px;">Stop wasting time with endless research. Get clear, actionable guidance today.</p>
-            <a href="#featured-books" class="btn btn-primary" style="padding: 12px 28px; font-size: 1.1rem; font-weight: 600;">Browse All E-Books</a>
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Ready to build your business the right way?</h2>
+            <p>Stop wasting time with endless research. Get clear, actionable guidance today.</p>
+            <a href="#" class="btn btn-primary">Browse All E-Books</a>
         </div>
     </section>
 
@@ -480,5 +471,5 @@
         });
     </script>
     <script src="js/main.js"></script>
-    <script src="js/theme-toggle.js"></script></body>
+</body>
 </html> 

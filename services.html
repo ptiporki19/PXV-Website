@@ -22,7 +22,9 @@
                     <li><a href="ebooks.html">E-Books & Resources</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="mobile-menu">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i id="theme-toggle-icon" class="fas fa-moon"></i>
+                </button>                <div class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </div>
             </nav>
@@ -30,8 +32,10 @@
     </header>
 
     <!-- Services Hero Section -->
-    <section class="services-hero">
-        <div class="container">
+    <section class="services-hero" style="background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; position: relative; color: white; padding: 80px 0;">
+        <!-- Dark overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.8);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
             <div class="hero-content">
                 <h1>Premium Agency Services</h1>
                 <p>Comprehensive, results-driven solutions tailored to help your business thrive in today's competitive landscape.</p>
@@ -44,102 +48,102 @@
     </section>
 
     <!-- Services Intro -->
-    <section class="services-intro">
+    <section class="services-intro" style="background-color: #212529; color: white; padding: 80px 0;">
         <div class="container">
             <div class="services-intro-content">
                 <div class="services-intro-image">
-                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Business Agency Services">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Business Agency Services" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
                 </div>
                 <div class="services-intro-text">
-                    <h2>Why Partner With Our Agency</h2>
-                    <p>PrimeX Agency delivers premium services that help businesses establish authority, attract ideal clients, and scale their operations. We combine deep industry knowledge with cutting-edge strategies to create tailored solutions for your business.</p>
-                    <p>Let us handle your business growth needs while you focus on what you do best - serving your clients and developing your core offerings.</p>
+                    <h2 style="color: white;">Why Partner With Our Agency</h2>
+                    <p style="color: #e0e0e0;">PrimeX Agency delivers premium services that help businesses establish authority, attract ideal clients, and scale their operations. We combine deep industry knowledge with cutting-edge strategies to create tailored solutions for your business.</p>
+                    <p style="color: #e0e0e0;">Let us handle your business growth needs while you focus on what you do best - serving your clients and developing your core offerings.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Service Categories -->
-    <section class="service-categories">
+    <section id="service-packages" class="service-categories" style="background-color: #2c3035; color: white; padding: 80px 0;">
         <div class="container">
-            <h2 class="section-title">Our Premium Agency Services</h2>
-            <p class="section-subtitle">Select a service to learn more about how we can help your business grow</p>
+            <h2 class="section-title" style="color: white;">Our Premium Agency Services</h2>
+            <p class="section-subtitle" style="color: #e0e0e0;">Select a service to learn more about how we can help your business grow</p>
             
             <div class="services-grid">
                 <!-- Content Strategy Service -->
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="service-card" style="background-color: #212529; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                    <div class="service-icon" style="background-color: #ffc107; color: #212529;">
                         <i class="fas fa-pen-fancy"></i>
                     </div>
-                    <h3>Content Strategy & Creation</h3>
-                    <p>High-quality, engaging content that positions your brand as an authority and drives conversions.</p>
+                    <h3 style="color: white;">Content Strategy & Creation</h3>
+                    <p style="color: #e0e0e0;">High-quality, engaging content that positions your brand as an authority and drives conversions.</p>
                     <div class="service-price">
-                        <span>Starting at $499</span>
+                        <span style="color: #ffc107; font-weight: bold;">Starting at $499</span>
                     </div>
                     <a href="service-content.html" class="btn btn-primary">Learn More</a>
                 </div>
                 
                 <!-- Market Research Service -->
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="service-card" style="background-color: #212529; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                    <div class="service-icon" style="background-color: #ffc107; color: #212529;">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Market Research & Analysis</h3>
-                    <p>Data-driven insights to inform your business strategy and help you make confident decisions.</p>
+                    <h3 style="color: white;">Market Research & Analysis</h3>
+                    <p style="color: #e0e0e0;">Data-driven insights to inform your business strategy and help you make confident decisions.</p>
                     <div class="service-price">
-                        <span>Starting at $849</span>
+                        <span style="color: #ffc107; font-weight: bold;">Starting at $849</span>
                     </div>
                     <a href="service-market.html" class="btn btn-primary">Learn More</a>
                 </div>
                 
                 <!-- MVP Development Service -->
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="service-card" style="background-color: #212529; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                    <div class="service-icon" style="background-color: #ffc107; color: #212529;">
                         <i class="fas fa-rocket"></i>
                     </div>
-                    <h3>MVP Development</h3>
-                    <p>Fast-track your business idea with a minimum viable product that validates your concept and attracts early users.</p>
+                    <h3 style="color: white;">MVP Development</h3>
+                    <p style="color: #e0e0e0;">Fast-track your business idea with a minimum viable product that validates your concept and attracts early users.</p>
                     <div class="service-price">
-                        <span>Starting at $2,499</span>
+                        <span style="color: #ffc107; font-weight: bold;">Starting at $2,499</span>
                     </div>
                     <a href="service-mvp.html" class="btn btn-primary">Learn More</a>
                 </div>
                 
                 <!-- Brand Identity Service -->
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="service-card" style="background-color: #212529; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                    <div class="service-icon" style="background-color: #ffc107; color: #212529;">
                         <i class="fas fa-paint-brush"></i>
                     </div>
-                    <h3>Brand Identity & Design</h3>
-                    <p>Create a compelling visual brand identity that captivates your audience and sets you apart from competitors.</p>
+                    <h3 style="color: white;">Brand Identity & Design</h3>
+                    <p style="color: #e0e0e0;">Create a compelling visual brand identity that captivates your audience and sets you apart from competitors.</p>
                     <div class="service-price">
-                        <span>Starting at $999</span>
+                        <span style="color: #ffc107; font-weight: bold;">Starting at $999</span>
                     </div>
                     <a href="service-branding.html" class="btn btn-primary">Learn More</a>
                 </div>
                 
                 <!-- Social Media Management -->
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="service-card" style="background-color: #212529; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                    <div class="service-icon" style="background-color: #ffc107; color: #212529;">
                         <i class="fas fa-bullhorn"></i>
                     </div>
-                    <h3>Social Media Management</h3>
-                    <p>Strategic social media presence that engages your audience and builds meaningful connections with potential clients.</p>
+                    <h3 style="color: white;">Social Media Management</h3>
+                    <p style="color: #e0e0e0;">Strategic social media presence that engages your audience and builds meaningful connections with potential clients.</p>
                     <div class="service-price">
-                        <span>Starting at $399/month</span>
+                        <span style="color: #ffc107; font-weight: bold;">Starting at $399/month</span>
                     </div>
                     <a href="service-social.html" class="btn btn-primary">Learn More</a>
                 </div>
                 
                 <!-- SEO Optimization -->
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="service-card" style="background-color: #212529; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                    <div class="service-icon" style="background-color: #ffc107; color: #212529;">
                         <i class="fas fa-search"></i>
                     </div>
-                    <h3>SEO Optimization</h3>
-                    <p>Boost your online visibility and attract organic traffic with data-driven search engine optimization strategies.</p>
+                    <h3 style="color: white;">SEO Optimization</h3>
+                    <p style="color: #e0e0e0;">Boost your online visibility and attract organic traffic with data-driven search engine optimization strategies.</p>
                     <div class="service-price">
-                        <span>Starting at $649</span>
+                        <span style="color: #ffc107; font-weight: bold;">Starting at $649</span>
                     </div>
                     <a href="service-seo.html" class="btn btn-primary">Learn More</a>
                 </div>
@@ -148,36 +152,38 @@
     </section>
 
     <!-- How We Work -->
-    <section class="how-we-work">
-        <div class="container">
-            <h2 class="section-title">How We Work With Clients</h2>
+    <section class="how-we-work" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; position: relative; color: white; padding: 80px 0;">
+        <!-- Dark overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.85);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2 class="section-title" style="color: white;">How We Work With Clients</h2>
             <div class="process-grid">
-                <div class="process-step">
-                    <div class="step-number">1</div>
+                <div class="process-step" style="background-color: rgba(44, 48, 53, 0.7); padding: 25px; border-radius: 8px;">
+                    <div class="step-number" style="background-color: #343a40; color: white; border: 1px solid #ffc107;">1</div>
                     <div class="step-content">
-                        <h3>Discovery</h3>
-                        <p>We start with a comprehensive consultation to understand your business goals, challenges, and vision.</p>
+                        <h3 style="color: white;">Discovery</h3>
+                        <p style="color: #e0e0e0;">We start with a comprehensive consultation to understand your business goals, challenges, and vision.</p>
                     </div>
                 </div>
-                <div class="process-step">
-                    <div class="step-number">2</div>
+                <div class="process-step" style="background-color: rgba(44, 48, 53, 0.7); padding: 25px; border-radius: 8px;">
+                    <div class="step-number" style="background-color: #343a40; color: white; border: 1px solid #ffc107;">2</div>
                     <div class="step-content">
-                        <h3>Strategy</h3>
-                        <p>Our team develops a tailored strategy that aligns with your objectives and maximizes your return on investment.</p>
+                        <h3 style="color: white;">Strategy</h3>
+                        <p style="color: #e0e0e0;">Our team develops a tailored strategy that aligns with your objectives and maximizes your return on investment.</p>
                     </div>
                 </div>
-                <div class="process-step">
-                    <div class="step-number">3</div>
+                <div class="process-step" style="background-color: rgba(44, 48, 53, 0.7); padding: 25px; border-radius: 8px;">
+                    <div class="step-number" style="background-color: #343a40; color: white; border: 1px solid #ffc107;">3</div>
                     <div class="step-content">
-                        <h3>Implementation</h3>
-                        <p>We execute the plan with precision, keeping you informed and involved throughout the process.</p>
+                        <h3 style="color: white;">Implementation</h3>
+                        <p style="color: #e0e0e0;">We execute the plan with precision, keeping you informed and involved throughout the process.</p>
                     </div>
                 </div>
-                <div class="process-step">
-                    <div class="step-number">4</div>
+                <div class="process-step" style="background-color: rgba(44, 48, 53, 0.7); padding: 25px; border-radius: 8px;">
+                    <div class="step-number" style="background-color: #343a40; color: white; border: 1px solid #ffc107;">4</div>
                     <div class="step-content">
-                        <h3>Optimization</h3>
-                        <p>We continuously monitor performance, making data-driven adjustments to optimize results and maximize success.</p>
+                        <h3 style="color: white;">Optimization</h3>
+                        <p style="color: #e0e0e0;">We continuously monitor performance, making data-driven adjustments to optimize results and maximize success.</p>
                     </div>
                 </div>
             </div>
@@ -188,47 +194,47 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq-section">
+    <section class="faq-section" style="background-color: #212529; color: white; padding: 80px 0;">
         <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
+            <h2 class="section-title" style="color: white;">Frequently Asked Questions</h2>
             <div class="faq-container">
-                <div class="faq-item">
+                <div class="faq-item" style="background-color: #2c3035; border-color: #444;">
                     <div class="faq-question">
-                        <h3>What makes your agency services different?</h3>
-                        <i class="fas fa-chevron-down"></i>
+                        <h3 style="color: white;">What makes your agency services different?</h3>
+                        <i class="fas fa-chevron-down" style="color: #ffc107;"></i>
                     </div>
-                    <div class="faq-answer">
-                        <p>We combine industry expertise with data-driven strategies to deliver premium, customized solutions. Unlike generic agencies, we take time to deeply understand your business goals and target audience before creating tailored strategies that deliver measurable results.</p>
+                    <div class="faq-answer" style="color: #e0e0e0; background-color: #2c3035;">
+                        <p style="color: #e0e0e0;">We combine industry expertise with data-driven strategies to deliver premium, customized solutions. Unlike generic agencies, we take time to deeply understand your business goals and target audience before creating tailored strategies that deliver measurable results.</p>
                     </div>
                 </div>
                 
-                <div class="faq-item">
+                <div class="faq-item" style="background-color: #2c3035; border-color: #444;">
                     <div class="faq-question">
-                        <h3>How do you determine the pricing for each project?</h3>
-                        <i class="fas fa-chevron-down"></i>
+                        <h3 style="color: white;">How do you determine the pricing for each project?</h3>
+                        <i class="fas fa-chevron-down" style="color: #ffc107;"></i>
                     </div>
-                    <div class="faq-answer">
-                        <p>Our pricing is transparent and based on the scope, complexity, and timeline of your project. We offer tiered pricing options with clear deliverables so you know exactly what you're getting. After our discovery call, we'll provide a detailed proposal with all costs outlined.</p>
+                    <div class="faq-answer" style="color: #e0e0e0; background-color: #2c3035;">
+                        <p style="color: #e0e0e0;">Our pricing is transparent and based on the scope, complexity, and timeline of your project. We offer tiered pricing options with clear deliverables so you know exactly what you're getting. After our discovery call, we'll provide a detailed proposal with all costs outlined.</p>
                     </div>
                 </div>
                 
-                <div class="faq-item">
+                <div class="faq-item" style="background-color: #2c3035; border-color: #444;">
                     <div class="faq-question">
-                        <h3>What's your typical timeline for delivering projects?</h3>
-                        <i class="fas fa-chevron-down"></i>
+                        <h3 style="color: white;">What's your typical timeline for delivering projects?</h3>
+                        <i class="fas fa-chevron-down" style="color: #ffc107;"></i>
                     </div>
-                    <div class="faq-answer">
-                        <p>Project timelines vary based on scope and complexity. Typically, our content creation projects are delivered within 2-3 weeks, while comprehensive brand identity and research projects may take 4-6 weeks. MVP development typically takes 6-8 weeks. We'll provide a detailed timeline in your proposal and keep you updated throughout the process.</p>
+                    <div class="faq-answer" style="color: #e0e0e0; background-color: #2c3035;">
+                        <p style="color: #e0e0e0;">Project timelines vary based on scope and complexity. Typically, our content creation projects are delivered within 2-3 weeks, while comprehensive brand identity and research projects may take 4-6 weeks. MVP development typically takes 6-8 weeks. We'll provide a detailed timeline in your proposal and keep you updated throughout the process.</p>
                     </div>
                 </div>
                 
-                <div class="faq-item">
+                <div class="faq-item" style="background-color: #2c3035; border-color: #444;">
                     <div class="faq-question">
-                        <h3>Do you offer ongoing support after project completion?</h3>
-                        <i class="fas fa-chevron-down"></i>
+                        <h3 style="color: white;">Do you offer ongoing support after project completion?</h3>
+                        <i class="fas fa-chevron-down" style="color: #ffc107;"></i>
                     </div>
-                    <div class="faq-answer">
-                        <p>Yes, we offer both project-based services and ongoing retainer packages. Many clients choose to continue working with us after the initial project to maintain momentum and ensure consistent implementation. We can discuss the best arrangement for your business during our consultation.</p>
+                    <div class="faq-answer" style="color: #e0e0e0; background-color: #2c3035;">
+                        <p style="color: #e0e0e0;">Yes, we offer both project-based services and ongoing retainer packages. Many clients choose to continue working with us after the initial project to maintain momentum and ensure consistent implementation. We can discuss the best arrangement for your business during our consultation.</p>
                     </div>
                 </div>
             </div>
@@ -236,11 +242,13 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-banner">
-        <div class="container">
-            <h2>Ready to elevate your business?</h2>
-            <p>Let our agency handle your growth strategy while you focus on your core business.</p>
-            <a href="contact.html" class="btn btn-primary">Get Your Proposal</a>
+    <section class="cta-banner" style="background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80'); background-size: cover; background-position: center; position: relative; color: white; padding: 60px 0; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); text-align: center;">
+        <!-- Dark overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.8);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2 style="color: white; font-size: 2.2rem; margin-bottom: 15px;">Ready to elevate your business?</h2>
+            <p style="color: #e0e0e0; font-size: 1.1rem; margin-bottom: 30px;">Let our agency handle your growth strategy while you focus on your core business.</p>
+            <a href="contact.html" class="btn btn-primary" style="padding: 12px 28px; font-size: 1.1rem; font-weight: 600;">Get Your Proposal</a>
         </div>
     </section>
 
@@ -284,7 +292,7 @@
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <p>&copy; 2023 PrimeX. All Rights Reserved.</p>
+                <p>&copy; 2025 PrimeX. All Rights Reserved.</p>
                 <div class="footer-legal">
                     <a href="terms.html">Terms & Conditions</a> | 
                     <a href="privacy.html">Privacy Policy</a> | 
@@ -295,5 +303,5 @@
     </footer>
 
     <script src="js/main.js"></script>
-</body>
+    <script src="js/theme-toggle.js"></script></body>
 </html> 

@@ -1,9 +1,16 @@
+#!/bin/bash
+
+# Create backup
+cp service-branding.html service-branding.html.bak2
+
+# Create new file with correct content
+cat > service-branding.html << 'EOL'
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Content Strategy & Creation - PrimeX</title>
+    <title>Brand Identity & Design - PrimeX</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -24,7 +31,7 @@
                 </ul>
                 <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
                     <i id="theme-toggle-icon" class="fas fa-moon"></i>
-                </button>
+                </button>                
                 <div class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -33,12 +40,12 @@
     </header>
 
     <!-- Service Hero Section -->
-    <section class="service-detail-hero" style="background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; position: relative; color: white; padding: 100px 0;">
+    <section class="service-detail-hero" style="background-image: url('https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80'); background-size: cover; background-position: center; position: relative; color: white; padding: 100px 0;">
         <!-- Dark overlay for better text readability -->
         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.8);"></div>
         <div class="container" style="position: relative; z-index: 1;">
-            <h1>Content Strategy & Creation</h1>
-            <p>High-quality, engaging content that positions your brand as an authority and drives conversions</p>
+            <h1>Brand Identity & Design</h1>
+            <p>Create a compelling visual brand identity that captivates your audience and sets you apart from competitors</p>
         </div>
     </section>
 
@@ -48,21 +55,21 @@
             <!-- Service Overview -->
             <div class="service-overview" style="background-color: #2c3035; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
                 <div class="service-image">
-                    <img src="https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Content Strategy and Creation" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80" alt="Brand Identity & Design" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
                 </div>
                 <div class="service-text">
-                    <h2 style="color: white;">Compelling Content That Converts</h2>
-                    <p style="color: #e0e0e0;">In today's digital landscape, quality content isn't just nice to have—it's essential for building trust, engaging your audience, and driving business results.</p>
-                    <p style="color: #e0e0e0;">Our content strategy and creation service helps you develop a cohesive content approach that aligns with your business goals and resonates with your target audience. From blog posts and website copy to lead magnets and email sequences, we create compelling content that positions your brand as an authority and drives conversions.</p>
+                    <h2 style="color: white;">Create a Strong Brand Identity</h2>
+                    <p style="color: #e0e0e0;">In today's competitive marketplace, a strong brand identity isn't just a nice-to-have—it's essential for making a lasting impression and building trust with your audience.</p>
+                    <p style="color: #e0e0e0;">Our brand identity and design service helps you develop a cohesive visual identity that communicates your unique value proposition and resonates with your target audience. From logos and color schemes to typography and brand guidelines, we create memorable visual assets that position your brand for success.</p>
                     
                     <div class="service-features">
                         <h3 style="color: #ffc107;">Key Benefits</h3>
                         <ul>
-                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Establish your brand as an industry authority</span></li>
-                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Attract and engage your ideal audience</span></li>
-                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Improve search engine visibility with SEO-optimized content</span></li>
-                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Generate more leads with valuable, relevant content</span></li>
-                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Build trust and credibility with your audience</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Stand out from your competitors with a unique visual identity</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Build trust and recognition with consistent branding</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Connect emotionally with your target audience</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Create a professional impression that builds credibility</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Establish a foundation for all your marketing materials</span></li>
                         </ul>
                     </div>
                 </div>
@@ -70,25 +77,25 @@
             
             <!-- Service Pricing Packages -->
             <div class="service-packages" style="margin-top: 50px;">
-                <h2 class="section-title" style="color: white;">Our Content Packages</h2>
+                <h2 class="section-title" style="color: white;">Our Branding Packages</h2>
                 <p class="section-subtitle" style="color: #e0e0e0;">Select the package that best fits your business needs</p>
                 
                 <div class="pricing-grid">
                     <!-- Starter Package -->
                     <div class="pricing-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
                         <h3 style="color: white;">Starter Package</h3>
-                        <div class="pricing-price" style="color: #ffc107;">$499<span style="color: #adb5bd;">/one-time</span></div>
-                        <p style="color: #e0e0e0;">Perfect for businesses just starting to develop their content strategy.</p>
+                        <div class="pricing-price" style="color: #ffc107;">$999<span style="color: #adb5bd;">/one-time</span></div>
+                        <p style="color: #e0e0e0;">Perfect for small businesses or startups needing essential branding elements.</p>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Content strategy assessment</span></li>
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">4 SEO-optimized blog articles</span></li>
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">1 lead magnet (PDF guide or checklist)</span></li>
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">5 social media posts</span></li>
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Basic keyword research</span></li>
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Content calendar template</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Logo design (3 concepts with revisions)</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Brand color palette</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Typography selection</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Business card design</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Basic brand guidelines</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">All source files included</span></li>
                         </ul>
                         <div class="button-group" style="display: flex; gap: 10px; justify-content: center;">
-                            <a href="javascript:void(0)" onclick="buyNow('Starter Content Package', '$499', 'https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80', 'Content strategy assessment, 4 SEO-optimized blog articles, 1 lead magnet, and more.', 'Service')" class="btn btn-primary">Buy Now</a>
+                            <a href="javascript:void(0)" onclick="buyNow('Starter Branding Package', '$999', 'https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80', 'Logo design, brand color palette, typography selection, and more.', 'Service')" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                     
@@ -96,39 +103,39 @@
                     <div class="pricing-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
                         <div class="popular-tag" style="background-color: #ffc107; color: #212529;">Popular</div>
                         <h3 style="color: white;">Growth Package</h3>
-                        <div class="pricing-price" style="color: #ffc107;">$899<span style="color: #adb5bd;">/one-time</span></div>
-                        <p style="color: #e0e0e0;">Comprehensive content strategy for businesses ready to scale their online presence.</p>
+                        <div class="pricing-price" style="color: #ffc107;">$1,899<span style="color: #adb5bd;">/one-time</span></div>
+                        <p style="color: #e0e0e0;">Comprehensive brand identity for businesses ready to make a significant impact.</p>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">In-depth content strategy development</span></li>
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">8 SEO-optimized blog articles</span></li>
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">2 lead magnets (with custom design)</span></li>
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">10 social media posts</span></li>
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Advanced keyword research</span></li>
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">3-month content calendar</span></li>
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Email newsletter sequence (5 emails)</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Premium logo design (5 concepts with revisions)</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Extended color palette & typography system</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Business card & letterhead design</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Social media profile graphics</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Email signature design</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Comprehensive brand guidelines</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">All source files & brand assets</span></li>
                         </ul>
                         <div class="button-group" style="display: flex; gap: 10px; justify-content: center;">
-                            <a href="javascript:void(0)" onclick="buyNow('Growth Content Package', '$899', 'https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80', 'In-depth content strategy development, 8 SEO-optimized blog articles, 2 lead magnets, and more.', 'Service')" class="btn btn-primary">Buy Now</a>
+                            <a href="javascript:void(0)" onclick="buyNow('Growth Branding Package', '$1,899', 'https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80', 'Premium logo design, extended color palette & typography, social media graphics, and more.', 'Service')" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                     
                     <!-- Premium Package -->
                     <div class="pricing-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
                         <h3 style="color: white;">Premium Package</h3>
-                        <div class="pricing-price" style="color: #ffc107;">$1,499<span style="color: #adb5bd;">/one-time</span></div>
-                        <p style="color: #e0e0e0;">Elite content strategy and creation for established businesses seeking maximum impact.</p>
+                        <div class="pricing-price" style="color: #ffc107;">$2,999<span style="color: #adb5bd;">/one-time</span></div>
+                        <p style="color: #e0e0e0;">Complete brand identity system for established businesses seeking a premium presence.</p>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Comprehensive content strategy blueprint</span></li>
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">12 SEO-optimized blog articles</span></li>
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">3 premium lead magnets with design</span></li>
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">20 social media posts</span></li>
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Competitive content analysis</span></li>
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">6-month content calendar</span></li>
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Email nurture sequence (8 emails)</span></li>
-                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Website copy audit and recommendations</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Exclusive logo & visual identity system</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Custom iconography set</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Complete stationery design package</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Social media brand kit & templates</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Presentation template design</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Brand photography direction</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Extensive brand guidelines manual</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Brand implementation strategy</span></li>
                         </ul>
                         <div class="button-group" style="display: flex; gap: 10px; justify-content: center;">
-                            <a href="javascript:void(0)" onclick="buyNow('Premium Content Package', '$1,499', 'https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80', 'Comprehensive content strategy blueprint, 12 SEO-optimized blog articles, 3 premium lead magnets, and more.', 'Service')" class="btn btn-primary">Buy Now</a>
+                            <a href="javascript:void(0)" onclick="buyNow('Premium Branding Package', '$2,999', 'https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80', 'Exclusive logo & visual identity system, custom iconography, complete stationery package, and more.', 'Service')" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -137,7 +144,7 @@
             <!-- Custom Solutions Section -->
             <div class="custom-solutions" style="margin-top: 50px; background-color: #2c3035; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
                 <h2 class="section-title" style="color: white;">Need a Custom Solution?</h2>
-                <p class="text-center" style="color: #e0e0e0;">We understand that each business has unique content needs. Contact us to discuss a tailored content strategy that aligns perfectly with your specific goals.</p>
+                <p class="text-center" style="color: #e0e0e0;">We understand that each business has unique branding needs. Contact us to discuss a tailored brand identity solution that aligns perfectly with your specific goals.</p>
                 <div class="text-center" style="margin-top: 30px;">
                     <a href="contact.html" class="btn btn-primary">Request a Custom Quote</a>
                 </div>
@@ -145,35 +152,35 @@
             
             <!-- How It Works Section -->
             <div class="how-it-works" style="margin-top: 50px; background-color: #2c3035; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-                <h2 class="section-title" style="color: white;">Our Content Creation Process</h2>
+                <h2 class="section-title" style="color: white;">Our Branding Process</h2>
                 
                 <div class="process-grid">
                     <div class="process-step" style="background-color: #343a40; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
                         <div class="step-number" style="background-color: #343a40; color: white; border: 2px solid #ffc107;">1</div>
                         <div class="step-content">
                             <h3 style="color: white;">Discovery</h3>
-                            <p style="color: #e0e0e0;">We analyze your business, target audience, competitors, and goals to understand your content needs.</p>
+                            <p style="color: #e0e0e0;">We analyze your business, target audience, competitors, and goals to understand your branding needs.</p>
                         </div>
                     </div>
                     <div class="process-step" style="background-color: #343a40; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
                         <div class="step-number" style="background-color: #343a40; color: white; border: 2px solid #ffc107;">2</div>
                         <div class="step-content">
-                            <h3 style="color: white;">Strategy</h3>
-                            <p style="color: #e0e0e0;">We develop a custom content strategy tailored to your audience and business objectives.</p>
+                            <h3 style="color: white;">Conceptualization</h3>
+                            <p style="color: #e0e0e0;">We develop initial brand concepts that capture your essence and resonate with your audience.</p>
                         </div>
                     </div>
                     <div class="process-step" style="background-color: #343a40; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
                         <div class="step-number" style="background-color: #343a40; color: white; border: 2px solid #ffc107;">3</div>
                         <div class="step-content">
-                            <h3 style="color: white;">Creation</h3>
-                            <p style="color: #e0e0e0;">Our expert content team crafts engaging, valuable content aligned with your brand voice.</p>
+                            <h3 style="color: white;">Refinement</h3>
+                            <p style="color: #e0e0e0;">We refine the selected concepts based on your feedback until your brand identity is perfect.</p>
                         </div>
                     </div>
                     <div class="process-step" style="background-color: #343a40; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
                         <div class="step-number" style="background-color: #343a40; color: white; border: 2px solid #ffc107;">4</div>
                         <div class="step-content">
                             <h3 style="color: white;">Delivery</h3>
-                            <p style="color: #e0e0e0;">You receive finalized content ready for implementation, with support for any revisions needed.</p>
+                            <p style="color: #e0e0e0;">You receive your complete brand identity package with all the assets and guidelines for implementation.</p>
                         </div>
                     </div>
                 </div>
@@ -182,12 +189,12 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-banner" style="background-image: url(https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=1000); background-size: cover; background-position: center; position: relative; color: white; padding: 60px 0; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); text-align: center;">
+    <section class="cta-banner" style="background-image: url(https://images.unsplash.com/photo-1588702547923-7093a6c3ba33?q=80&w=1000); background-size: cover; background-position: center; position: relative; color: white; padding: 60px 0; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); text-align: center;">
         <!-- Dark overlay for better text readability -->
         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.8);"></div>
         <div class="container" style="position: relative; z-index: 1;">
-            <h2 style="color: white;">Ready to elevate your content strategy?</h2>
-            <p style="color: #e0e0e0;">Let's create compelling content that resonates with your audience and drives business growth.</p>
+            <h2 style="color: white;">Ready to elevate your brand identity?</h2>
+            <p style="color: #e0e0e0;">Let's create a compelling brand identity that resonates with your audience and sets you apart from competitors.</p>
             <a href="contact.html" class="btn btn-primary">Get Started Today</a>
         </div>
     </section>
@@ -288,3 +295,6 @@
     </script>
 </body>
 </html>
+EOL
+
+echo "Branding service page updated successfully!" 

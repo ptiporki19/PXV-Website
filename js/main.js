@@ -6,28 +6,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     // Mobile menu toggle
-    const mobileMenuBtn = document.querySelector('.mobile-menu');
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navMenu = document.querySelector('nav ul');
     
     if (mobileMenuBtn) {
         mobileMenuBtn.addEventListener('click', function() {
+            this.classList.toggle('active');
             navMenu.classList.toggle('active');
-            // Close menu when clicking outside
-            document.addEventListener('click', function(event) {
-                if (!event.target.closest('nav') && navMenu.classList.contains('active')) {
-                    navMenu.classList.remove('active');
-                }
-            });
+            document.body.classList.toggle('menu-open');
         });
     }
-    
-    // Close menu when clicking a link
-    const navLinks = document.querySelectorAll('nav ul li a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-        });
-    });
     
     // Scroll animation for elements
     const scrollElements = document.querySelectorAll('.scroll-animation');
@@ -123,8 +111,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
                 
                 // If mobile menu is open, close it
-                if (mobileMenu && mobileMenu.classList.contains('active')) {
-                    mobileMenuBtn.click();
+                const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+                const navMenu = document.querySelector('nav ul');
+                if (mobileMenuBtn && mobileMenuBtn.classList.contains('active')) {
+                    mobileMenuBtn.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    document.body.classList.remove('menu-open');
                 }
             }
         });

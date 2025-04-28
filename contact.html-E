@@ -22,9 +22,7 @@
                     <li><a href="ebooks.html">E-Books & Resources</a></li>
                     <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
-                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-                    <i id="theme-toggle-icon" class="fas fa-moon"></i>
-                </button>                <div class="mobile-menu-btn">
+                <div class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </div>
             </nav>
@@ -32,10 +30,8 @@
     </header>
 
     <!-- Contact Hero Section - Redesigned -->
-    <section class="contact-hero" style="background-image: url('https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; position: relative; color: white; padding: 100px 0;">
-        <!-- Dark overlay for better text readability -->
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.8);"></div>
-        <div class="container" style="position: relative; z-index: 1;">
+    <section class="contact-hero" style="background: linear-gradient(135deg, #1a2b3c 0%, #2a3b4c 50%, #1a2b3c 100%); color: white; padding: 100px 0;">
+        <div class="container">
             <div class="hero-content">
                 <h1>Get in Touch With Us</h1>
                 <p>We're here to listen, collaborate, and provide solutions tailored to your business needs. Reach out to discuss how PrimeX can help transform your vision into reality.</p>
@@ -48,90 +44,90 @@
     </section>
 
     <!-- Contact Info Section - Redesigned -->
-    <section class="contact-info-redesigned" style="background-color: #212529; color: white; padding: 80px 0;">
+    <section class="contact-info-redesigned" style="background: linear-gradient(135deg, #192635 0%, #293645 50%, #192635 100%); color: white; padding: 80px 0;">
         <div class="container">
-            <h2 class="section-title" style="color: white;">How to Reach Us</h2>
-            <p class="section-subtitle" style="color: #e0e0e0;">Choose your preferred method to connect with the PrimeX team</p>
+            <h2 class="section-title">How to Reach Us</h2>
+            <p class="section-subtitle">Choose your preferred method to connect with the PrimeX team</p>
             
             <div class="info-grid-redesigned">
                 <!-- Email Card -->
-                <div class="info-card-redesigned" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-                    <div class="info-icon-redesigned" style="background-color: #ffc107; color: #212529;">
+                <div class="info-card-redesigned">
+                    <div class="info-icon-redesigned">
                         <i class="fas fa-envelope-open-text"></i>
                     </div>
-                    <h3 style="color: white;">Email Us</h3>
-                    <p style="color: #e0e0e0;">For general inquiries, service quotes, or support.</p>
-                    <a href="mailto:info@primexvanguard.com" style="color: #ffc107;">info@primexvanguard.com</a>
+                    <h3>Email Us</h3>
+                    <p>For general inquiries, service quotes, or support.</p>
+                    <a href="mailto:info@primexvanguard.com">info@primexvanguard.com</a>
                 </div>
                 
                 <!-- Phone Card -->
-                <div class="info-card-redesigned" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-                    <div class="info-icon-redesigned" style="background-color: #ffc107; color: #212529;">
+                <div class="info-card-redesigned">
+                    <div class="info-icon-redesigned">
                         <i class="fas fa-phone-alt"></i>
                     </div>
-                    <h3 style="color: white;">Call Us</h3>
-                    <p style="color: #e0e0e0;">Speak directly with a team member during business hours.</p>
-                    <a href="tel:+12494871688" style="color: #ffc107;">+1 (249) 487-1688</a>
-                    <p style="font-size: 0.8rem; margin-top: 5px; color: #adb5bd;">(Mon-Fri, 9 AM - 5 PM EST)</p>
+                    <h3>Call Us</h3>
+                    <p>Speak directly with a team member during business hours.</p>
+                    <a href="tel:+12494871688">+1 (249) 487-1688</a>
+                    <p style="font-size: 0.8rem; margin-top: 5px;">(Mon-Fri, 9 AM - 5 PM EST)</p>
                 </div>
                 
                 <!-- Address Card -->
-                <div class="info-card-redesigned" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-                    <div class="info-icon-redesigned" style="background-color: #ffc107; color: #212529;">
+                <div class="info-card-redesigned">
+                    <div class="info-icon-redesigned">
                         <i class="fas fa-map-marked-alt"></i>
                     </div>
-                    <h3 style="color: white;">Visit Us</h3>
-                    <p style="color: #e0e0e0;">Our office location for scheduled meetings.</p>
-                    <p style="color: #e0e0e0;">7520 NW 104TH AVE<br>UNIT A103, DORAL, FL 33178</p>
+                    <h3>Visit Us</h3>
+                    <p>Our office location for scheduled meetings.</p>
+                    <p>7520 NW 104TH AVE<br>UNIT A103, DORAL, FL 33178</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Form & Map Section - Redesigned -->
-    <section class="contact-form-map-section" style="background-color: #2c3035; padding: 80px 0;">
+    <section class="contact-form-map-section">
         <div class="container">
             <div class="contact-grid-redesigned">
-                <div class="form-container-redesigned" style="background-color: #212529; color: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-                    <h2 style="color: white;">Send Us a Message</h2>
-                    <p style="color: #e0e0e0;">Fill out the form below, and we'll get back to you as soon as possible.</p>
+                <div class="form-container-redesigned">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below, and we'll get back to you as soon as possible.</p>
                     <form id="contact-form" action="#" method="post">
                         <div class="form-row">
                             <div class="form-group half-width">
-                                <label for="name" style="color: #e0e0e0;">Full Name <span class="required">*</span></label>
-                                <input type="text" id="name" name="name" placeholder="Your Full Name" required style="background-color: #343a40; color: white; border-color: #495057;">
+                                <label for="name">Full Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
                             </div>
                             <div class="form-group half-width">
-                                <label for="email" style="color: #e0e0e0;">Email Address <span class="required">*</span></label>
-                                <input type="email" id="email" name="email" placeholder="your.email@example.com" required style="background-color: #343a40; color: white; border-color: #495057;">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group half-width">
-                                <label for="phone" style="color: #e0e0e0;">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" style="background-color: #343a40; color: white; border-color: #495057;">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
                             </div>
                             <div class="form-group half-width">
-                                <label for="subject" style="color: #e0e0e0;">Subject <span class="required">*</span></label>
-                                <input type="text" id="subject" name="subject" placeholder="Reason for contacting us" required style="background-color: #343a40; color: white; border-color: #495057;">
+                                <label for="subject">Subject <span class="required">*</span></label>
+                                <input type="text" id="subject" name="subject" placeholder="Reason for contacting us" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="message" style="color: #e0e0e0;">Message <span class="required">*</span></label>
-                            <textarea id="message" name="message" rows="6" placeholder="Tell us more about your inquiry..." required style="background-color: #343a40; color: white; border-color: #495057;"></textarea>
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell us more about your inquiry..." required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block">Send Message</button>
                     </form>
                 </div>
                 
-                <div class="map-container-redesigned" style="color: white;">
-                    <h2 style="color: white;">Find Us on the Map</h2>
-                    <p style="color: #e0e0e0;">Our office is conveniently located in Doral, Florida.</p>
+                <div class="map-container-redesigned">
+                    <h2>Find Us on the Map</h2>
+                    <p>Our office is conveniently located in Doral, Florida.</p>
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.733547750647!2d-80.3613386849779!3d25.81228698361313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9bb36e7f5067f%3A0xb2b1a392a3e78b86!2s7520%20NW%20104th%20Ave%20Unit%20A103%2C%20Doral%2C%20FL%2033178%2C%20USA!5e0!3m2!1sen!2sca!4v1678886400000!5m2!1sen!2sca" 
                         width="100%" 
                         height="400" 
-                        style="border:0; border-radius: var(--border-radius); box-shadow: var(--shadow); filter: grayscale(1) invert(0.9);" 
+                        style="border:0; border-radius: var(--border-radius); box-shadow: var(--shadow);" 
                         allowfullscreen="" 
                         loading="lazy" 
                         referrerpolicy="no-referrer-when-downgrade">
@@ -202,5 +198,5 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/theme-toggle.js"></script></body>
+</body>
 </html> 

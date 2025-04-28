@@ -12,7 +12,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1>PrimeX</h1>
+                <a href="index.html"><h1>PrimeX</h1></a>
             </div>
             <nav>
                 <ul>
@@ -22,7 +22,9 @@
                     <li><a href="ebooks.html">E-Books & Resources</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="mobile-menu">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i id="theme-toggle-icon" class="fas fa-moon"></i>
+                </button>                <div class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </div>
             </nav>
@@ -30,179 +32,162 @@
     </header>
 
     <!-- Service Hero Section -->
-    <section class="service-detail-hero">
-        <div class="container">
+    <section class="service-detail-hero" style="background-image: url('https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'); background-size: cover; background-position: center; position: relative; color: white; padding: 100px 0;">
+        <!-- Dark overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.8);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
             <h1>MVP Development</h1>
             <p>Fast-track your business idea with a minimum viable product that validates your concept and attracts early users</p>
         </div>
     </section>
 
     <!-- Service Detail Content -->
-    <section class="service-detail-content">
+    <section class="service-detail-content" style="background-color: #212529; color: white; padding: 60px 0;">
         <div class="container">
             <!-- Service Overview -->
-            <div class="service-overview">
+            <div class="service-overview" style="background-color: #2c3035; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
                 <div class="service-image">
-                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="MVP Development">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80auto=formathttps://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80fit=crophttps://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80w=1170https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80q=80" alt="Content Strategy and Creation" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
                 </div>
                 <div class="service-text">
-                    <h2>Bring Your Idea to Life Quickly</h2>
-                    <p>In today's fast-paced business environment, speed to market is critical. Our MVP (Minimum Viable Product) development service helps entrepreneurs and startups launch their core product features quickly to test assumptions, validate their market, and attract early users or investors.</p>
-                    <p>We focus on building the essential features that solve your customers' core problems, while keeping development costs manageable. This lean approach minimizes risk and provides valuable user feedback that can guide future product iterations.</p>
+                    <h2 style="color: white;">Validate Your Business Idea Faster</h2>
+                    <p style="color: #e0e0e0;">In today's digital landscape, quality content isn't just nice to have—it's essential for building trust, engaging your audience, and driving business results.</p>
+                    <p style="color: #e0e0e0;">Our content strategy and creation service helps you develop a cohesive content approach that aligns with your business goals and resonates with your target audience. From blog posts and website copy to lead magnets and email sequences, we create compelling content that positions your brand as an authority and drives conversions.</p>
                     
                     <div class="service-features">
-                        <h3>Key Benefits</h3>
+                        <h3 style="color: #ffc107;">Key Benefits</h3>
                         <ul>
-                            <li><i class="fas fa-check-circle"></i> <span>Validate your business concept quickly with real users</span></li>
-                            <li><i class="fas fa-check-circle"></i> <span>Reduce development costs by focusing on essential features</span></li>
-                            <li><i class="fas fa-check-circle"></i> <span>Get to market faster than your competitors</span></li>
-                            <li><i class="fas fa-check-circle"></i> <span>Gather valuable feedback to inform future development</span></li>
-                            <li><i class="fas fa-check-circle"></i> <span>Attract investors with a functional product demonstration</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Establish your brand as an industry authority</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Attract and engage your ideal audience</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Improve search engine visibility with SEO-optimized content</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Generate more leads with valuable, relevant content</span></li>
+                            <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Build trust and credibility with your audience</span></li>
                         </ul>
                     </div>
                 </div>
             </div>
             
             <!-- Service Pricing Packages -->
-            <div class="service-packages">
-                <h2 class="section-title">Our MVP Development Packages</h2>
-                <p class="section-subtitle">Select the package that best fits your business idea and goals</p>
+            <div class="service-packages" style="margin-top: 50px;">
+                <h2 class="section-title" style="color: white;">Our MVP Development Packages</h2>
+                <p class="section-subtitle" style="color: #e0e0e0;">Select the package that best fits your business needs</p>
                 
                 <div class="pricing-grid">
-                    <!-- Basic Package -->
-                    <div class="pricing-card">
-                        <h3>Basic MVP</h3>
-                        <div class="pricing-price">$1,499<span>/one-time</span></div>
-                        <p>Perfect for validating simple product concepts with core functionality.</p>
+                    <!-- Starter Package -->
+                    <div class="pricing-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <h3 style="color: white;">Starter Package</h3>
+                        <div class="pricing-price" style="color: #ffc107;">$499<span style="color: #adb5bd;">/one-time</span></div>
+                        <p style="color: #e0e0e0;">Perfect for businesses just starting to develop their content strategy.</p>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Discovery workshop (2 hours)</li>
-                            <li><i class="fas fa-check"></i> User journey mapping</li>
-                            <li><i class="fas fa-check"></i> Core feature implementation</li>
-                            <li><i class="fas fa-check"></i> Simple user interface design</li>
-                            <li><i class="fas fa-check"></i> Basic responsive design</li>
-                            <li><i class="fas fa-check"></i> 1-2 user roles</li>
-                            <li><i class="fas fa-check"></i> 30 days of basic support</li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Content strategy assessment</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">4 SEO-optimized blog articles</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">1 lead magnet (PDF guide or checklist)</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">5 social media posts</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Basic keyword research</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Content calendar template</span></li>
                         </ul>
-                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                        <div class="button-group" style="display: flex; gap: 10px; justify-content: center;">
+                            <a href="javascript:void(0)" onclick="buyNow('Starter Content Package', '$499', 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80auto=formathttps://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80fit=crophttps://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80w=1170https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80q=80', 'Content strategy assessment, 4 SEO-optimized blog articles, 1 lead magnet, and more.', 'Service')" class="btn btn-primary">Buy Now</a>
+                        </div>
                     </div>
                     
-                    <!-- Standard Package -->
-                    <div class="pricing-card">
-                        <div class="popular-tag">Popular</div>
-                        <h3>Standard MVP</h3>
-                        <div class="pricing-price">$2,999<span>/one-time</span></div>
-                        <p>Comprehensive solution for startups ready to launch a polished product.</p>
+                    <!-- Growth Package -->
+                    <div class="pricing-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <div class="popular-tag" style="background-color: #ffc107; color: #212529;">Popular</div>
+                        <h3 style="color: white;">Growth Package</h3>
+                        <div class="pricing-price" style="color: #ffc107;">$899<span style="color: #adb5bd;">/one-time</span></div>
+                        <p style="color: #e0e0e0;">Comprehensive content strategy for businesses ready to scale their online presence.</p>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Extended discovery workshop (4 hours)</li>
-                            <li><i class="fas fa-check"></i> Detailed user stories and wireframes</li>
-                            <li><i class="fas fa-check"></i> Core + secondary feature implementation</li>
-                            <li><i class="fas fa-check"></i> Professional UI/UX design</li>
-                            <li><i class="fas fa-check"></i> Full responsive implementation</li>
-                            <li><i class="fas fa-check"></i> 2-3 user roles with permissions</li>
-                            <li><i class="fas fa-check"></i> Basic analytics integration</li>
-                            <li><i class="fas fa-check"></i> 60 days of technical support</li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">In-depth content strategy development</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">8 SEO-optimized blog articles</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">2 lead magnets (with custom design)</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">10 social media posts</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Advanced keyword research</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">3-month content calendar</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Email newsletter sequence (5 emails)</span></li>
                         </ul>
-                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                        <div class="button-group" style="display: flex; gap: 10px; justify-content: center;">
+                            <a href="javascript:void(0)" onclick="buyNow('Growth Content Package', '$899', 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80auto=formathttps://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80fit=crophttps://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80w=1170https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80q=80', 'In-depth content strategy development, 8 SEO-optimized blog articles, 2 lead magnets, and more.', 'Service')" class="btn btn-primary">Buy Now</a>
+                        </div>
                     </div>
                     
                     <!-- Premium Package -->
-                    <div class="pricing-card">
-                        <h3>Advanced MVP</h3>
-                        <div class="pricing-price">$4,999<span>/one-time</span></div>
-                        <p>Comprehensive solution for complex business ideas requiring advanced functionality.</p>
+                    <div class="pricing-card" style="background-color: #2c3035; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <h3 style="color: white;">Premium Package</h3>
+                        <div class="pricing-price" style="color: #ffc107;">$1,499<span style="color: #adb5bd;">/one-time</span></div>
+                        <p style="color: #e0e0e0;">Elite content strategy and creation for established businesses seeking maximum impact.</p>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Comprehensive strategy session (8 hours)</li>
-                            <li><i class="fas fa-check"></i> Complete product roadmap</li>
-                            <li><i class="fas fa-check"></i> Full feature set implementation</li>
-                            <li><i class="fas fa-check"></i> Premium UI/UX design</li>
-                            <li><i class="fas fa-check"></i> Advanced user management system</li>
-                            <li><i class="fas fa-check"></i> Third-party integrations</li>
-                            <li><i class="fas fa-check"></i> Comprehensive analytics</li>
-                            <li><i class="fas fa-check"></i> 90 days of priority support</li>
-                            <li><i class="fas fa-check"></i> Post-launch strategy session</li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Comprehensive content strategy blueprint</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">12 SEO-optimized blog articles</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">3 premium lead magnets with design</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">20 social media posts</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Competitive content analysis</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">6-month content calendar</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Email nurture sequence (8 emails)</span></li>
+                            <li><i class="fas fa-check" style="color: #ffc107;"></i> <span style="color: #e0e0e0;">Website copy audit and recommendations</span></li>
                         </ul>
-                        <a href="contact.html" class="btn btn-primary">Get Started</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Technology Stack Section -->
-            <div class="technology-stack" style="margin-top: 80px;">
-                <h2 class="section-title">Our Technology Stack</h2>
-                <p class="section-subtitle">We use modern, scalable technologies to build your MVP</p>
-                
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px; text-align: center;">
-                    <div>
-                        <i class="fas fa-laptop-code" style="font-size: 48px; color: #1a4d94; margin-bottom: 15px;"></i>
-                        <h3>Frontend</h3>
-                        <p>React, Vue.js, Angular, HTML5, CSS3, Bootstrap, Tailwind CSS</p>
-                    </div>
-                    <div>
-                        <i class="fas fa-server" style="font-size: 48px; color: #1a4d94; margin-bottom: 15px;"></i>
-                        <h3>Backend</h3>
-                        <p>Node.js, Python, Ruby on Rails, PHP, Laravel, Express</p>
-                    </div>
-                    <div>
-                        <i class="fas fa-database" style="font-size: 48px; color: #1a4d94; margin-bottom: 15px;"></i>
-                        <h3>Database</h3>
-                        <p>MongoDB, MySQL, PostgreSQL, Firebase, AWS</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- How It Works Section -->
-            <div class="how-it-works" style="margin-top: 80px;">
-                <h2 class="section-title">Our MVP Development Process</h2>
-                
-                <div class="process-grid">
-                    <div class="process-step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h3>Discovery</h3>
-                            <p>We analyze your business idea, target audience, and goals to define the scope of your MVP.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h3>Design</h3>
-                            <p>We create wireframes and mockups of your MVP, focusing on user experience and core functionality.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h3>Development</h3>
-                            <p>Our development team builds your MVP using agile methodologies, with regular progress updates.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">4</div>
-                        <div class="step-content">
-                            <h3>Launch</h3>
-                            <p>We deploy your MVP, provide testing support, and help you gather initial user feedback.</p>
+                        <div class="button-group" style="display: flex; gap: 10px; justify-content: center;">
+                            <a href="javascript:void(0)" onclick="buyNow('Premium Content Package', '$1,499', 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80auto=formathttps://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80fit=crophttps://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80w=1170https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80q=80', 'Comprehensive content strategy blueprint, 12 SEO-optimized blog articles, 3 premium lead magnets, and more.', 'Service')" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                 </div>
             </div>
             
             <!-- Custom Solutions Section -->
-            <div class="custom-solutions" style="margin-top: 80px;">
-                <h2 class="section-title">Need a Custom MVP Solution?</h2>
-                <p class="text-center">Every business idea is unique. Contact us to discuss your specific requirements and get a tailored MVP development quote.</p>
+            <div class="custom-solutions" style="margin-top: 50px; background-color: #2c3035; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                <h2 class="section-title" style="color: white;">Need a Custom Solution?</h2>
+                <p class="text-center" style="color: #e0e0e0;">We understand that each business has unique content needs. Contact us to discuss a tailored content strategy that aligns perfectly with your specific goals.</p>
                 <div class="text-center" style="margin-top: 30px;">
                     <a href="contact.html" class="btn btn-primary">Request a Custom Quote</a>
+                </div>
+            </div>
+            
+            <!-- How It Works Section -->
+            <div class="how-it-works" style="margin-top: 50px; background-color: #2c3035; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                <h2 class="section-title" style="color: white;">Our MVP Development Process</h2>
+                
+                <div class="process-grid">
+                    <div class="process-step" style="background-color: #343a40; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                        <div class="step-number" style="background-color: #343a40; color: white; border: 2px solid #ffc107;">1</div>
+                        <div class="step-content">
+                            <h3 style="color: white;">Discovery</h3>
+                            <p style="color: #e0e0e0;">We analyze your business, target audience, competitors, and goals to understand your content needs.</p>
+                        </div>
+                    </div>
+                    <div class="process-step" style="background-color: #343a40; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                        <div class="step-number" style="background-color: #343a40; color: white; border: 2px solid #ffc107;">2</div>
+                        <div class="step-content">
+                            <h3 style="color: white;">Strategy</h3>
+                            <p style="color: #e0e0e0;">We develop a custom content strategy tailored to your audience and business objectives.</p>
+                        </div>
+                    </div>
+                    <div class="process-step" style="background-color: #343a40; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                        <div class="step-number" style="background-color: #343a40; color: white; border: 2px solid #ffc107;">3</div>
+                        <div class="step-content">
+                            <h3 style="color: white;">Creation</h3>
+                            <p style="color: #e0e0e0;">Our expert content team crafts engaging, valuable content aligned with your brand voice.</p>
+                        </div>
+                    </div>
+                    <div class="process-step" style="background-color: #343a40; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                        <div class="step-number" style="background-color: #343a40; color: white; border: 2px solid #ffc107;">4</div>
+                        <div class="step-content">
+                            <h3 style="color: white;">Delivery</h3>
+                            <p style="color: #e0e0e0;">You receive finalized content ready for implementation, with support for any revisions needed.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-banner">
-        <div class="container">
-            <h2>Ready to turn your idea into reality?</h2>
-            <p>Let's build your MVP together and validate your business concept quickly.</p>
-            <a href="contact.html" class="btn btn-primary">Start Your MVP Journey</a>
+    <section class="cta-banner" style="background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; position: relative; color: white; padding: 60px 0; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); text-align: center;">
+        <!-- Dark overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(13, 20, 33, 0.8);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2 style="color: white;">Ready to launch your MVP?</h2>
+            <p style="color: #e0e0e0;">Let's build a functional MVP that validates your concept and positions your business for success.</p>
+            <a href="contact.html" class="btn btn-primary">Get Started Today</a>
         </div>
     </section>
 
@@ -246,7 +231,7 @@
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <p>&copy; 2023 PrimeX. All Rights Reserved.</p>
+                <p>&copy; 2025 PrimeX. All Rights Reserved.</p>
                 <div class="footer-legal">
                     <a href="terms.html">Terms & Conditions</a> | 
                     <a href="privacy.html">Privacy Policy</a> | 
@@ -256,6 +241,19 @@
         </div>
     </footer>
 
+    <!-- JavaScript for Buy Now functionality -->
+    <script>
+        function buyNow(title, price, image, description, type) {
+            // Encode the values to safely include them in the URL
+            const encodedTitle = encodeURIComponent(title);
+            const encodedPrice = encodeURIComponent(price);
+            const encodedImage = encodeURIComponent(image);
+            const encodedDescription = encodeURIComponent(description);
+            
+            // Redirect to the checkout page with the product information
+            window.location.href = `checkout.html?title=${encodedTitle}&price=${encodedPrice}&image=${encodedImage}&description=${encodedDescription}&type=${type}`;
+        }
+    </script>
     <script src="js/main.js"></script>
-</body>
+    <script src="js/theme-toggle.js"></script></body>
 </html> 

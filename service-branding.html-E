@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Identity & Design - PrimeX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>PrimeX</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html" class="active">Agency Services</a></li>
+                    <li><a href="ebooks.html">E-Books & Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Service Hero Section -->
+    <section class="service-detail-hero" style="background: linear-gradient(135deg, #1a2b3c 0%, #2a3b4c 50%, #1a2b3c 100%); color: white; padding: 100px 0;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Brand Identity & Design Services</h1>
+                <p>Create a distinctive, memorable brand that resonates with your target audience and sets you apart from competitors.</p>
+                <div class="cta-buttons">
+                    <a href="#pricing" class="btn btn-primary">View Pricing</a>
+                    <a href="contact.html" class="btn btn-secondary">Request a Brand Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Detail Content -->
+    <section class="service-detail-content">
+        <div class="container">
+            <!-- Service Overview -->
+            <div class="service-overview">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Brand Identity and Design">
+                </div>
+                <div class="service-text">
+                    <h2>Craft a Powerful Brand Presence</h2>
+                    <p>Your brand is more than just a logo; it's the emotional connection you build with your audience. Our Brand Identity & Design service helps you define your brand essence and translate it into a compelling visual identity that resonates with your target market.</p>
+                    <p>We go beyond aesthetics to create a cohesive brand experience across all touchpoints. From logo design and color palettes to typography and brand guidelines, we provide the strategic foundation and visual assets you need to build a strong, memorable brand.</p>
+                    
+                    <div class="service-features">
+                        <h3>Key Benefits</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> <span>Build a strong, recognizable brand identity</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Differentiate your business from competitors</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Attract your ideal customers with a cohesive visual style</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Ensure brand consistency across all platforms</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span>Increase brand trust and credibility</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Pricing Packages -->
+            <div class="service-packages">
+                <h2 class="section-title">Branding Packages</h2>
+                <p class="section-subtitle">Choose the package that aligns with your branding goals</p>
+                
+                <div class="pricing-grid">
+                    <!-- Essentials Package -->
+                    <div class="pricing-card">
+                        <h3>Brand Essentials</h3>
+                        <div class="pricing-price">$899<span>/one-time</span></div>
+                        <p>Perfect for new businesses needing a foundational brand identity.</p>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Brand discovery session</li>
+                            <li><i class="fas fa-check"></i> 2 Logo concepts</li>
+                            <li><i class="fas fa-check"></i> Primary logo design (finalized)</li>
+                            <li><i class="fas fa-check"></i> Color palette definition</li>
+                            <li><i class="fas fa-check"></i> Typography selection</li>
+                            <li><i class="fas fa-check"></i> Basic brand guidelines</li>
+                            <li><i class="fas fa-check"></i> 2 rounds of revisions</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                    
+                    <!-- Complete Package -->
+                    <div class="pricing-card">
+                        <div class="popular-tag">Popular</div>
+                        <h3>Complete Branding</h3>
+                        <div class="pricing-price">$1,999<span>/one-time</span></div>
+                        <p>Comprehensive branding for businesses ready to establish a strong presence.</p>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> In-depth brand discovery</li>
+                            <li><i class="fas fa-check"></i> 3 Logo concepts</li>
+                            <li><i class="fas fa-check"></i> Primary & secondary logo designs</li>
+                            <li><i class="fas fa-check"></i> Full color palette & usage rules</li>
+                            <li><i class="fas fa-check"></i> Full typography suite</li>
+                            <li><i class="fas fa-check"></i> Brand voice & tone guide</li>
+                            <li><i class="fas fa-check"></i> Basic brand pattern/texture</li>
+                            <li><i class="fas fa-check"></i> Social media profile graphics</li>
+                            <li><i class="fas fa-check"></i> Detailed brand guidelines</li>
+                            <li><i class="fas fa-check"></i> 3 rounds of revisions</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                    
+                    <!-- Premium Package -->
+                    <div class="pricing-card">
+                        <h3>Premium Branding Suite</h3>
+                        <div class="pricing-price">$3,499<span>/one-time</span></div>
+                        <p>Full-service branding for businesses seeking a cohesive identity system.</p>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Comprehensive brand strategy</li>
+                            <li><i class="fas fa-check"></i> 4 Logo concepts</li>
+                            <li><i class="fas fa-check"></i> Full logo suite (primary, secondary, icon)</li>
+                            <li><i class="fas fa-check"></i> Custom color palette</li>
+                            <li><i class="fas fa-check"></i> Custom typography system</li>
+                            <li><i class="fas fa-check"></i> Brand messaging framework</li>
+                            <li><i class="fas fa-check"></i> Custom brand patterns & illustrations</li>
+                            <li><i class="fas fa-check"></i> Full social media branding kit</li>
+                            <li><i class="fas fa-check"></i> Business card design</li>
+                            <li><i class="fas fa-check"></i> Letterhead design</li>
+                            <li><i class="fas fa-check"></i> Comprehensive brand guidelines</li>
+                            <li><i class="fas fa-check"></i> Unlimited revisions (30 days)</li>
+                            <li><i class="fas fa-check"></i> Brand launch consultation</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Brand Design Process Section -->
+            <div class="brand-design-process" style="margin-top: 80px;">
+                <h2 class="section-title">Our Branding Process</h2>
+                <p class="section-subtitle">A collaborative approach to crafting your unique brand identity</p>
+                
+                <div class="process-grid" style="grid-template-columns: repeat(5, 1fr);">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Discovery</h3>
+                            <p>We dive deep into your business, audience, and vision to understand your brand's core.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Strategy</h3>
+                            <p>We define your brand positioning, personality, and key messaging.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Design</h3>
+                            <p>Our designers create visual concepts based on the brand strategy.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Refinement</h3>
+                            <p>We gather your feedback and iterate on the designs until perfect.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Delivery</h3>
+                            <p>You receive all final brand assets and comprehensive guidelines.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Custom Solutions Section -->
+            <div class="custom-solutions" style="margin-top: 80px;">
+                <h2 class="section-title">Need Specific Design Assets?</h2>
+                <p class="text-center">Beyond full branding packages, we offer à la carte design services. Contact us to discuss your specific design needs.</p>
+                <div class="text-center" style="margin-top: 30px;">
+                    <a href="contact.html" class="btn btn-primary">Request Custom Design</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-banner" style="background: linear-gradient(90deg, #091e36 0%, #1c3f60 100%); padding: 60px 0; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); position: relative; overflow: hidden;">
+        <div class="container">
+            <h2>Ready to build a brand that stands out?</h2>
+            <p>Let's craft a unique and compelling brand identity for your business.</p>
+            <a href="contact.html" class="btn btn-primary">Start Your Branding Project</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>PrimeX</h2>
+                    <p>Empowering businesses through premium agency services and practical resources.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Agency Services</a></li>
+                        <li><a href="ebooks.html">E-Books</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 7520 NW 104TH AVE UNIT A103 DORAL, FLORIDA 33178</p>
+                    <p><i class="fas fa-phone"></i> +1 (249) 487-1688</p>
+                    <p><i class="fas fa-envelope"></i> info@primexvanguard.com</p>
+                </div>
+                <div class="newsletter">
+                    <h3>Join Our Newsletter</h3>
+                    <p>Stay updated with our latest resources and agency insights.</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn btn-sm">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>&copy; 2025 PrimeX. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="terms.html">Terms & Conditions</a> | 
+                    <a href="privacy.html">Privacy Policy</a> | 
+                    <a href="refund.html">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
