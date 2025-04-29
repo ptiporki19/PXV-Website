@@ -14,7 +14,7 @@
     <header>
         <div class="container" style="position: relative; z-index: 1;">
             <div class="logo">
-                <a href="index.html"><h1>PrimeX</h1></a>
+                <a href="index.html"><h1><span class="px">Px</span><span class="v">V</span></h1></a>
             </div>
             <nav>
                 <ul>
@@ -175,9 +175,11 @@
                     <div class="ebook-content" style="padding: 20px;">
                         <h3 style="color: white;">The Solopreneur's Systems Guide</h3>
                         <p style="color: #e0e0e0;">Essential tools, templates, and workflows to automate your business and save 10+ hours per week.</p>
-                        <div class="ebook-footer">
+                        <div class="ebook-footer" style="display: flex; align-items: center; justify-content: space-between;">
                             <span class="ebook-price" style="color: #ffc107; font-weight: bold;">$39</span>
-                            <a href="product-details.html?title=The%20Solopreneur's%20Systems%20Guide&price=$39&image=https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&description=Essential%20tools,%20templates,%20and%20workflows%20to%20automate%20your%20business%20and%20save%2010+%20hours%20per%20week." class="btn btn-secondary">View Details</a>
+                            <span>
+                                <a href="product-details.html?title=The%20Solopreneur's%20Systems%20Guide&price=$39&image=https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&description=Essential%20tools,%20templates,%20and%20workflows%20to%20automate%20your%20business%20and%20save%2010+%20hours%20per%20week." class="btn btn-secondary">View Details</a>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -189,9 +191,11 @@
                     <div class="ebook-content" style="padding: 20px;">
                         <h3 style="color: white;">Business Foundations: Legal, Financial & Tax Essentials</h3>
                         <p style="color: #e0e0e0;">Protect your business and set up the right foundation for long-term success and compliance.</p>
-                        <div class="ebook-footer">
+                        <div class="ebook-footer" style="display: flex; align-items: center; justify-content: space-between;">
                             <span class="ebook-price" style="color: #ffc107; font-weight: bold;">$49</span>
-                            <a href="product-details.html?title=Business%20Foundations:%20Legal,%20Financial%20%26%20Tax%20Essentials&price=$49&image=https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&description=Protect%20your%20business%20and%20set%20up%20the%20right%20foundation%20for%20long-term%20success%20and%20compliance." class="btn btn-secondary">View Details</a>
+                            <span>
+                                <a href="product-details.html?title=Business%20Foundations:%20Legal,%20Financial%20%26%20Tax%20Essentials&price=$49&image=https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&description=Protect%20your%20business%20and%20set%20up%20the%20right%20foundation%20for%20long-term%20success%20and%20compliance." class="btn btn-secondary">View Details</a>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -203,9 +207,11 @@
                     <div class="ebook-content" style="padding: 20px;">
                         <h3 style="color: white;">Scale Without Burnout: From Freelancer to Agency</h3>
                         <p style="color: #e0e0e0;">How to transition from solo operator to building a team that delivers results without sacrificing quality.</p>
-                        <div class="ebook-footer">
+                        <div class="ebook-footer" style="display: flex; align-items: center; justify-content: space-between;">
                             <span class="ebook-price" style="color: #ffc107; font-weight: bold;">$79</span>
-                            <a href="product-details.html?title=Scale%20Without%20Burnout:%20From%20Freelancer%20to%20Agency&price=$79&image=https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&description=How%20to%20transition%20from%20solo%20operator%20to%20building%20a%20team%20that%20delivers%20results%20without%20sacrificing%20quality." class="btn btn-secondary">View Details</a>
+                            <span>
+                                <a href="product-details.html?title=Scale%20Without%20Burnout:%20From%20Freelancer%20to%20Agency&price=$79&image=https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&description=How%20to%20transition%20from%20solo%20operator%20to%20building%20a%20team%20that%20delivers%20results%20without%20sacrificing%20quality." class="btn btn-secondary">View Details</a>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -434,9 +440,13 @@
                 const footer = card.querySelector('.ebook-footer');
                 const viewDetailsBtn = footer.querySelector('.btn-secondary');
                 const priceSpan = footer.querySelector('.ebook-price');
+                const buttonWrapper = footer.querySelector('span:last-child'); // Target the new button wrapper
 
                 // Apply uniform style to View Details button
-                applyButtonStyles(viewDetailsBtn, false);
+                if (viewDetailsBtn) {
+                     applyButtonStyles(viewDetailsBtn, false);
+                     buttonWrapper.appendChild(viewDetailsBtn); // Ensure it's inside the wrapper
+                }
 
                 // Create Buy Now button with uniform style
                 const buyNowBtn = document.createElement('a');
@@ -445,12 +455,19 @@
                 buyNowBtn.innerHTML = "Buy Now";
                 applyButtonStyles(buyNowBtn, true);
                 buyNowBtn.onclick = function() { return buyNow(card); };
-                
-                // Re-arrange footer elements: Price | View Details | Buy Now
-                footer.innerHTML = '';
+
+                // Add Buy Now button to the wrapper
+                 if (buttonWrapper) {
+                     buttonWrapper.appendChild(buyNowBtn);
+                 } else {
+                     // Fallback if wrapper isn't found (shouldn't happen with HTML changes)
+                     footer.appendChild(buyNowBtn);
+                 }
+
+                // Ensure footer elements are correctly ordered and styled
+                footer.innerHTML = ''; // Clear existing content first
                 footer.appendChild(priceSpan);
-                footer.appendChild(viewDetailsBtn);
-                footer.appendChild(buyNowBtn);
+                footer.appendChild(buttonWrapper); // Add the wrapper containing both buttons
 
                 footer.style.display = "flex";
                 footer.style.alignItems = "center";
